@@ -2,19 +2,30 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import { homeNl } from "@/config/content.nl";
 import { businessInfo } from "@/config/business-info";
 
-export function Header() {
+interface HeaderProps {
+  locale?: "en" | "nl";
+}
+
+export function Header({ locale = "en" }: HeaderProps) {
   const [open, setOpen] = useState(false);
-  const t = home.nav;
+  const pathname = usePathname();
+  const t = locale === "nl" ? homeNl.nav : home.nav;
+
+  // Switcher: EN → remove /nl prefix; NL → add /nl prefix
+  const enUrl = pathname.startsWith("/nl") ? pathname.slice(3) || "/" : pathname;
+  const nlUrl = pathname.startsWith("/nl") ? pathname : "/nl" + (pathname === "/" ? "" : pathname);
 
   return (
     <header className="sticky top-0 z-50 border-b border-hairline bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link href="/" className="flex flex-col leading-tight">
+        <Link href={locale === "nl" ? "/nl" : "/"} className="flex flex-col leading-tight">
           <span className="font-voice text-[1.15rem] font-medium text-navy">Inner Strength Compass</span>
           <span className="text-[10.5px] font-medium tracking-wide text-muted">by James Daime</span>
         </Link>
@@ -32,7 +43,23 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          {/* Language switcher */}
+          <div className="flex items-center gap-1 text-[13px]">
+            <Link
+              href={enUrl}
+              className={locale === "en" ? "font-semibold text-navy" : "text-muted hover:text-navy"}
+            >
+              EN
+            </Link>
+            <span className="text-hairline">|</span>
+            <Link
+              href={nlUrl}
+              className={locale === "nl" ? "font-semibold text-navy" : "text-muted hover:text-navy"}
+            >
+              NL
+            </Link>
+          </div>
           <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
             {t.cta}
           </Button>
@@ -62,6 +89,12 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
+            {/* Language switcher mobile */}
+            <div className="flex items-center gap-2 border-t border-hairline pt-3 text-[14px]">
+              <Link href={enUrl} className={locale === "en" ? "font-semibold text-navy" : "text-muted"} onClick={() => setOpen(false)}>EN</Link>
+              <span className="text-muted">/</span>
+              <Link href={nlUrl} className={locale === "nl" ? "font-semibold text-navy" : "text-muted"} onClick={() => setOpen(false)}>NL</Link>
+            </div>
             <Button href={businessInfo.bookingUrl} surface="light" variant="primary" fullWidth external>
               {t.cta}
             </Button>

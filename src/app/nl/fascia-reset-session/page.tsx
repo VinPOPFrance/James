@@ -4,15 +4,15 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
-import { fascia } from "@/config/content.fascia.en";
+import { fasciaNl } from "@/config/content.fascia.nl";
 import { businessInfo } from "@/config/business-info";
 import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
-  title: fascia.meta.title,
-  description: fascia.meta.description,
+  title: fasciaNl.meta.title,
+  description: fasciaNl.meta.description,
   alternates: {
-    canonical: `${siteConfig.siteUrl}/fascia-reset-session`,
+    canonical: `${siteConfig.siteUrl}/nl/fascia-reset-session`,
     languages: {
       en: `${siteConfig.siteUrl}/fascia-reset-session`,
       nl: `${siteConfig.siteUrl}/nl/fascia-reset-session`,
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FasciaPage() {
-  const t = fascia;
+export default function FasciaNlPage() {
+  const t = fasciaNl;
 
   return (
-    <PageLayout>
+    <PageLayout locale="nl">
       <Reveal>
         <PageHero
           eyebrow={t.hero.eyebrow}
@@ -36,7 +36,6 @@ export default function FasciaPage() {
         />
       </Reveal>
 
-      {/* What is it */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
@@ -59,7 +58,6 @@ export default function FasciaPage() {
         </section>
       </Reveal>
 
-      {/* Tiers */}
       <Reveal>
         <section className="rounded-section bg-[#F1F3F6] px-8 py-14 md:px-12">
           <div className="mx-auto max-w-3xl">
@@ -67,10 +65,7 @@ export default function FasciaPage() {
             <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.tiers.title}</h2>
             <div className="mb-6 grid gap-4 md:grid-cols-2">
               {t.tiers.items.map((tier, i) => (
-                <div
-                  key={i}
-                  className={`rounded-card p-7 ${tier.dark ? "bg-navy text-ivory" : "border border-hairline bg-white"}`}
-                >
+                <div key={i} className={`rounded-card p-7 ${tier.dark ? "bg-navy text-ivory" : "border border-hairline bg-white"}`}>
                   <p className={`mb-1 text-[12px] font-medium uppercase tracking-wider ${tier.dark ? "text-copper" : "text-muted"}`}>{tier.sub}</p>
                   <p className={`mb-1 text-[1.1rem] font-semibold ${tier.dark ? "text-ivory" : "text-navy"}`}>{tier.dur}</p>
                   <p className={`mb-3 font-voice text-[2rem] font-medium ${tier.dark ? "text-copper" : "text-navy"}`}>{tier.price}</p>
@@ -83,7 +78,6 @@ export default function FasciaPage() {
         </section>
       </Reveal>
 
-      {/* For whom */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-2xl">
@@ -101,7 +95,6 @@ export default function FasciaPage() {
         </section>
       </Reveal>
 
-      {/* Promise-like callout */}
       <Reveal>
         <section className="relative overflow-hidden rounded-section bg-navy px-8 py-14 md:px-12">
           <div className="pointer-events-none absolute right-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-copper/15 blur-3xl" />
@@ -115,7 +108,6 @@ export default function FasciaPage() {
         </section>
       </Reveal>
 
-      {/* Final CTA */}
       <Reveal>
         <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-8 py-20 md:px-14">
           <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />

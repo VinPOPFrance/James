@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Faq() {
-  const t = home.faq;
+type FaqContent = DeepLoosen<typeof home.faq>;
+
+export function Faq({ content }: { content?: FaqContent }) {
+  const t = content ?? home.faq;
   const [open, setOpen] = useState(0);
 
   return (

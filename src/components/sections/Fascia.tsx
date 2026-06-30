@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Fascia() {
-  const t = home.fascia;
+type FasciaContent = DeepLoosen<typeof home.fascia>;
+
+export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content?: FasciaContent; ctaHref?: string }) {
+  const t = content ?? home.fascia;
 
   return (
     <section className="rounded-section bg-[#F1F3F6] px-6 py-14 md:px-12">
@@ -50,7 +53,7 @@ export function Fascia() {
           ))}
         </div>
 
-        <Button href="/fascia-reset-session" surface="light" variant="secondary">
+        <Button href={ctaHref} surface="light" variant="secondary">
           {t.cta}
         </Button>
       </div>

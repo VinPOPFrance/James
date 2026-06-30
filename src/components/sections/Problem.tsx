@@ -1,9 +1,12 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
 import type { IconName } from "@/lib/icons";
+import type { DeepLoosen } from "@/types/content";
 
-export function Problem() {
-  const t = home.problem;
+type ProblemContent = DeepLoosen<typeof home.problem>;
+
+export function Problem({ content }: { content?: ProblemContent }) {
+  const t = content ?? home.problem;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

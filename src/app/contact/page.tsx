@@ -3,11 +3,20 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { businessInfo } from "@/config/business-info";
+import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
   title: "Book or Contact | Inner Strength Compass · Rotterdam",
   description:
     "Book a free discovery call, send an email or find the studio in Rotterdam. Inner Strength Compass — movement therapy for women with chronic back pain.",
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/contact`,
+    languages: {
+      en: `${siteConfig.siteUrl}/contact`,
+      nl: `${siteConfig.siteUrl}/nl/contact`,
+      "x-default": `${siteConfig.siteUrl}/contact`,
+    },
+  },
 };
 
 const socialLinks = [

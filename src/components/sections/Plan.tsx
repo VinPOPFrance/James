@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import type { DeepLoosen } from "@/types/content";
 
-export function Plan() {
-  const t = home.plan;
+type PlanContent = DeepLoosen<typeof home.plan>;
+
+export function Plan({ content, ctaLabel }: { content?: PlanContent; ctaLabel?: string }) {
+  const t = content ?? home.plan;
 
   return (
     <section className="rounded-section border border-hairline bg-ivory px-6 py-14 md:px-12">
@@ -31,7 +34,7 @@ export function Plan() {
         </div>
 
         <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
-          {home.finalCta.primary}
+          {ctaLabel ?? home.finalCta.primary}
         </Button>
       </div>
     </section>

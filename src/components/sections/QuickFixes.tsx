@@ -1,8 +1,11 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function QuickFixes() {
-  const t = home.quickFixes;
+type QuickFixesContent = DeepLoosen<typeof home.quickFixes>;
+
+export function QuickFixes({ content }: { content?: QuickFixesContent }) {
+  const t = content ?? home.quickFixes;
 
   return (
     <section className="rounded-section bg-[#F4F6F2] px-6 py-14 md:px-12">

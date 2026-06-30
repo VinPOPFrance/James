@@ -1,4 +1,7 @@
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
+
+type PhasesContent = DeepLoosen<typeof home.phases>;
 
 const phaseColor: Record<string, string> = {
   sage: "bg-sage text-white",
@@ -6,8 +9,8 @@ const phaseColor: Record<string, string> = {
   navy: "bg-navy text-ivory",
 };
 
-export function Phases() {
-  const t = home.phases;
+export function Phases({ content }: { content?: PhasesContent }) {
+  const t = content ?? home.phases;
 
   return (
     <section className="rounded-section border border-hairline bg-ivory px-6 py-14 md:px-12">

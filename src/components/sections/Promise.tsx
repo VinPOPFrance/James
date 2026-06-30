@@ -1,8 +1,11 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Promise() {
-  const t = home.promise;
+type PromiseContent = DeepLoosen<typeof home.promise>;
+
+export function Promise({ content }: { content?: PromiseContent }) {
+  const t = content ?? home.promise;
 
   return (
     <section className="relative overflow-hidden rounded-section bg-navy px-6 py-14 md:px-12">

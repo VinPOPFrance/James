@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site-config";
+import { homeNl } from "@/config/content.nl";
 import { Reveal } from "@/components/ui/Reveal";
 import { Header } from "@/components/sections/Header";
-
-export const metadata: Metadata = {
-  alternates: {
-    canonical: siteConfig.siteUrl,
-    languages: {
-      en: siteConfig.siteUrl,
-      nl: `${siteConfig.siteUrl}/nl`,
-      "x-default": siteConfig.siteUrl,
-    },
-  },
-};
 import { Hero } from "@/components/sections/Hero";
 import { ProofBar } from "@/components/sections/ProofBar";
 import { Problem } from "@/components/sections/Problem";
@@ -34,91 +24,103 @@ import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
 import { StickyMobileCta } from "@/components/sections/StickyMobileCta";
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title: homeNl.meta.title,
+  description: homeNl.meta.description,
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/nl`,
+    languages: {
+      en: `${siteConfig.siteUrl}/`,
+      nl: `${siteConfig.siteUrl}/nl`,
+      "x-default": `${siteConfig.siteUrl}/`,
+    },
+  },
+};
+
+export default function HomeNlPage() {
   return (
     <>
-      <Header locale="en" />
+      <Header locale="nl" />
 
       <main className="mx-auto max-w-6xl space-y-4 px-4 py-4 pb-24 md:pb-4">
         <Reveal>
-          <Hero />
+          <Hero content={homeNl.hero} ctaSecondaryHref="/nl/fascia-reset-session" />
         </Reveal>
 
-        {/* Sentinel: sticky mobile CTA appears once this leaves the viewport */}
         <div id="hero-sentinel" aria-hidden />
 
         <Reveal delay={0.05}>
-          <ProofBar />
+          <ProofBar content={homeNl.proofBar} />
         </Reveal>
 
         <Reveal>
-          <Problem />
+          <Problem content={homeNl.problem} />
         </Reveal>
 
         <Reveal>
-          <VideoSection />
+          <VideoSection content={homeNl.video} />
         </Reveal>
 
         <Reveal>
-          <QuickFixes />
+          <QuickFixes content={homeNl.quickFixes} />
         </Reveal>
 
         <Reveal>
-          <Solution />
+          <Solution content={homeNl.solution} />
         </Reveal>
 
         <Reveal>
-          <Plan />
+          <Plan content={homeNl.plan} ctaLabel={homeNl.finalCta.primary} />
         </Reveal>
 
         <Reveal>
-          <Program />
+          <Program content={homeNl.program} />
         </Reveal>
 
         <Reveal>
-          <Newsletter />
+          <Newsletter content={homeNl.newsletter} />
         </Reveal>
 
         <Reveal>
-          <Phases />
+          <Phases content={homeNl.phases} />
         </Reveal>
 
         <Reveal>
-          <Included />
+          <Included content={homeNl.included} />
         </Reveal>
 
         <Reveal>
-          <Fit />
+          <Fit content={homeNl.fit} />
         </Reveal>
 
         <Reveal>
-          <Testimonials />
+          <Testimonials content={homeNl.testimonials} />
         </Reveal>
 
         <Reveal>
-          <Fascia />
+          <Fascia content={homeNl.fascia} ctaHref="/nl/fascia-reset-session" />
         </Reveal>
 
         <Reveal>
-          <Promise />
+          <Promise content={homeNl.promise} />
         </Reveal>
 
         <Reveal>
-          <About />
+          <About content={homeNl.about} />
         </Reveal>
 
         <Reveal>
-          <Faq />
+          <Faq content={homeNl.faq} />
         </Reveal>
 
         <Reveal>
-          <FinalCta />
+          <FinalCta content={homeNl.finalCta} />
         </Reveal>
 
-        <Footer locale="en" />
+        <Footer locale="nl" />
       </main>
 
-      <StickyMobileCta />
+      <StickyMobileCta ctaLabel={homeNl.hero.ctaPrimary} />
     </>
   );
 }

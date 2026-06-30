@@ -1,8 +1,11 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Fit() {
-  const t = home.fit;
+type FitContent = DeepLoosen<typeof home.fit>;
+
+export function Fit({ content }: { content?: FitContent }) {
+  const t = content ?? home.fit;
 
   return (
     <section className="rounded-section border border-hairline bg-ivory px-6 py-14 md:px-12">

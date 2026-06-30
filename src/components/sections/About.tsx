@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import type { DeepLoosen } from "@/types/content";
 
-export function About() {
-  const t = home.about;
+type AboutContent = DeepLoosen<typeof home.about>;
+
+export function About({ content }: { content?: AboutContent }) {
+  const t = content ?? home.about;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

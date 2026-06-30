@@ -4,17 +4,17 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
-import { program } from "@/config/content.program.en";
+import { programNl } from "@/config/content.program.nl";
 import { businessInfo } from "@/config/business-info";
+import { siteConfig } from "@/config/site-config";
 import { media } from "@/config/media.config";
 import type { MediaKey } from "@/config/media.config";
-import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
-  title: program.meta.title,
-  description: program.meta.description,
+  title: programNl.meta.title,
+  description: programNl.meta.description,
   alternates: {
-    canonical: `${siteConfig.siteUrl}/12-week-body-reset-program`,
+    canonical: `${siteConfig.siteUrl}/nl/12-week-body-reset-program`,
     languages: {
       en: `${siteConfig.siteUrl}/12-week-body-reset-program`,
       nl: `${siteConfig.siteUrl}/nl/12-week-body-reset-program`,
@@ -31,7 +31,7 @@ const phaseColor: Record<string, string> = {
 
 function TestimonialAvatar({ mediaKey, name }: { mediaKey: MediaKey; name: string }) {
   const item = media[mediaKey];
-  const initials = name.split(",")[0].trim().split(" ").map((w) => w[0]).join("").slice(0, 2);
+  const initials = name.trim().split(" ").map((w) => w[0]).join("").slice(0, 2);
   if (!item.src) {
     return (
       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sand text-[13px] font-semibold text-navy">
@@ -43,22 +43,21 @@ function TestimonialAvatar({ mediaKey, name }: { mediaKey: MediaKey; name: strin
   return <img src={item.src} alt={item.alt} className="h-11 w-11 shrink-0 rounded-full object-cover" />;
 }
 
-export default function ProgramPage() {
-  const t = program;
+export default function ProgramNlPage() {
+  const t = programNl;
 
   return (
-    <PageLayout>
+    <PageLayout locale="nl">
       <Reveal>
         <PageHero
           eyebrow={t.hero.eyebrow}
           title={t.hero.title}
           body={t.hero.body}
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
-          ctaSecondary={{ label: t.hero.ctaSecondary, href: "/fascia-reset-session" }}
+          ctaSecondary={{ label: t.hero.ctaSecondary, href: "/nl/fascia-reset-session" }}
         />
       </Reveal>
 
-      {/* Intro */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-3xl">
@@ -69,7 +68,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Phases */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-ivory px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl text-center">
@@ -92,7 +90,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Included */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
@@ -114,7 +111,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Pricing */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-ivory px-8 py-14 md:px-12">
           <div className="mx-auto max-w-3xl">
@@ -130,7 +126,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Fit */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
@@ -160,7 +155,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Promise */}
       <Reveal>
         <section className="relative overflow-hidden rounded-section bg-navy px-8 py-14 md:px-12">
           <div className="pointer-events-none absolute right-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-copper/15 blur-3xl" />
@@ -175,25 +169,22 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Testimonials */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.testimonials.eyebrow}</p>
             <h2 className="mb-2 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.testimonials.title}</h2>
-            {t.testimonials.note && (
-              <p className="mb-8 rounded-md border border-copper/30 bg-copper/5 px-4 py-2.5 text-[12.5px] text-copper">⚠ {t.testimonials.note}</p>
-            )}
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="mb-5 grid gap-5 md:grid-cols-3">
               {t.testimonials.items.map((item, i) => (
-                <div key={i} className="rounded-card border border-hairline bg-ivory p-6">
+                <div key={i} className="flex flex-col rounded-card border border-hairline bg-ivory p-6">
                   <span className="mb-3 inline-block rounded-full border border-hairline bg-white px-3 py-1 text-[11.5px] text-muted">{item.tag}</span>
-                  <p className="mb-5 text-[15px] leading-relaxed text-inkSoft">&ldquo;{item.quote}&rdquo;</p>
+                  <p className="mb-1 text-[13px] tracking-wide text-copper">★★★★★</p>
+                  <p className="mb-5 flex-1 text-[15px] leading-relaxed text-inkSoft">&ldquo;{item.quote}&rdquo;</p>
                   <div className="flex items-center gap-3">
                     <TestimonialAvatar mediaKey={item.media as MediaKey} name={item.name} />
                     <div>
                       <p className="text-[14px] font-medium text-navy">{item.name}</p>
-                      <p className="text-[12.5px] text-muted">{item.city}</p>
+                      <p className="text-[12px] text-muted">{item.city} · Google</p>
                     </div>
                   </div>
                 </div>
@@ -203,7 +194,6 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
-      {/* Final CTA */}
       <Reveal>
         <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-8 py-20 md:px-14">
           <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
@@ -213,7 +203,7 @@ export default function ProgramPage() {
             <p className="mb-8 text-[16px] text-ivory/70">{t.finalCta.body}</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>{t.finalCta.primary}</Button>
-              <Button href="/faq" surface="dark" variant="secondary">{t.finalCta.secondary}</Button>
+              <Button href="/nl/faq" surface="dark" variant="secondary">{t.finalCta.secondary}</Button>
             </div>
           </div>
         </section>

@@ -1,7 +1,10 @@
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function ProofBar() {
-  const stats = home.proofBar;
+type ProofBarContent = DeepLoosen<typeof home.proofBar>;
+
+export function ProofBar({ content }: { content?: ProofBarContent }) {
+  const stats = content ?? home.proofBar;
 
   return (
     <section className="rounded-section bg-navy px-6 py-8">

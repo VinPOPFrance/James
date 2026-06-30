@@ -1,8 +1,11 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Included() {
-  const t = home.included;
+type IncludedContent = DeepLoosen<typeof home.included>;
+
+export function Included({ content }: { content?: IncludedContent }) {
+  const t = content ?? home.included;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

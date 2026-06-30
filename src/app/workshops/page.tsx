@@ -5,10 +5,19 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
 import { workshops } from "@/config/content.workshops.en";
+import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
   title: workshops.meta.title,
   description: workshops.meta.description,
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/workshops`,
+    languages: {
+      en: `${siteConfig.siteUrl}/workshops`,
+      nl: `${siteConfig.siteUrl}/nl/workshops`,
+      "x-default": `${siteConfig.siteUrl}/workshops`,
+    },
+  },
 };
 
 export default function WorkshopsPage() {

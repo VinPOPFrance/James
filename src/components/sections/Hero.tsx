@@ -11,9 +11,12 @@ import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import type { DeepLoosen } from "@/types/content";
 
-export function Hero() {
-  const t = home.hero;
+type HeroContent = DeepLoosen<typeof home.hero>;
+
+export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { content?: HeroContent; ctaSecondaryHref?: string }) {
+  const t = content ?? home.hero;
   return (
     <section className="grid overflow-hidden rounded-section border border-hairline bg-ivory md:grid-cols-[1.05fr_0.95fr]">
       <div className="flex flex-col justify-center p-8 md:p-12">
@@ -32,7 +35,7 @@ export function Hero() {
           <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
             {t.ctaPrimary}
           </Button>
-          <Button href="/fascia-reset-session" surface="light" variant="secondary">
+          <Button href={ctaSecondaryHref} surface="light" variant="secondary">
             {t.ctaSecondary}
           </Button>
         </div>

@@ -1,6 +1,9 @@
 import { home } from "@/config/content.en";
 import { media } from "@/config/media.config";
 import type { MediaKey } from "@/config/media.config";
+import type { DeepLoosen } from "@/types/content";
+
+type TestimonialsContent = DeepLoosen<typeof home.testimonials>;
 
 function Avatar({ mediaKey, name }: { mediaKey: MediaKey; name: string }) {
   const item = media[mediaKey];
@@ -29,8 +32,8 @@ function Avatar({ mediaKey, name }: { mediaKey: MediaKey; name: string }) {
   );
 }
 
-export function Testimonials() {
-  const t = home.testimonials;
+export function Testimonials({ content }: { content?: TestimonialsContent }) {
+  const t = content ?? home.testimonials;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

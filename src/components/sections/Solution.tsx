@@ -1,9 +1,12 @@
 import { icons } from "@/lib/icons";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Solution() {
-  const t = home.solution;
+type SolutionContent = DeepLoosen<typeof home.solution>;
+
+export function Solution({ content }: { content?: SolutionContent }) {
+  const t = content ?? home.solution;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

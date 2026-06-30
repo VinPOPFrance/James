@@ -1,13 +1,22 @@
 import Link from "next/link";
 import { home } from "@/config/content.en";
+import { homeNl } from "@/config/content.nl";
 import { businessInfo } from "@/config/business-info";
 
-const exploreLinks = [
+const exploreLinksEn = [
   { label: "12-Week Program", href: "/12-week-body-reset-program" },
   { label: "Fascia Reset Session", href: "/fascia-reset-session" },
   { label: "Workshops for Groups", href: "/workshops" },
   { label: "About James", href: "/about" },
   { label: "FAQ", href: "/faq" },
+];
+
+const exploreLinksNl = [
+  { label: "12-Weken Programma", href: "/nl/12-week-body-reset-program" },
+  { label: "Fascia Reset Sessie", href: "/nl/fascia-reset-session" },
+  { label: "Workshops voor Groepen", href: "/nl/workshops" },
+  { label: "Over James", href: "/nl/about" },
+  { label: "FAQ", href: "/nl/faq" },
 ];
 
 const socialLinks = [
@@ -40,8 +49,13 @@ const socialLinks = [
   },
 ];
 
-export function Footer() {
-  const t = home.footer;
+interface FooterProps {
+  locale?: "en" | "nl";
+}
+
+export function Footer({ locale = "en" }: FooterProps) {
+  const t = locale === "nl" ? homeNl.footer : home.footer;
+  const exploreLinks = locale === "nl" ? exploreLinksNl : exploreLinksEn;
 
   return (
     <footer className="rounded-section border border-hairline bg-white px-6 py-12 md:px-12">
@@ -112,15 +126,20 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="inline-flex rounded-md border border-navy px-3 py-1.5 text-[13px] font-medium text-navy transition-colors hover:bg-navy hover:text-ivory"
                 >
-                  Book a session →
+                  {locale === "nl" ? "Sessie boeken →" : "Book a session →"}
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-hairline pt-6 text-center text-[12px] text-muted">
-          © {new Date().getFullYear()} {businessInfo.brandName} · {businessInfo.address.short}
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-hairline pt-6 text-[12px] text-muted">
+          <span>© {new Date().getFullYear()} {businessInfo.brandName} · {businessInfo.address.short}</span>
+          <div className="flex items-center gap-2">
+            <Link href={locale === "nl" ? "/" : "#"} className={locale === "en" ? "font-semibold text-navy" : "hover:text-navy"}>EN</Link>
+            <span>/</span>
+            <Link href={locale === "en" ? "/nl" : "#"} className={locale === "nl" ? "font-semibold text-navy" : "hover:text-navy"}>NL</Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import type { DeepLoosen } from "@/types/content";
 
-export function FinalCta() {
-  const t = home.finalCta;
+type FinalCtaContent = DeepLoosen<typeof home.finalCta>;
+
+export function FinalCta({ content }: { content?: FinalCtaContent }) {
+  const t = content ?? home.finalCta;
 
   return (
     <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-6 py-20 md:px-14">

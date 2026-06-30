@@ -1,7 +1,10 @@
 import { home } from "@/config/content.en";
+import type { DeepLoosen } from "@/types/content";
 
-export function Program() {
-  const t = home.program;
+type ProgramContent = DeepLoosen<typeof home.program>;
+
+export function Program({ content }: { content?: ProgramContent }) {
+  const t = content ?? home.program;
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">

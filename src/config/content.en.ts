@@ -195,6 +195,18 @@ export const home = {
       { q: "What if I don\u2019t improve?", a: "That\u2019s exactly why we have the Progress Promise. If after the first 6 weeks you\u2019ve followed the plan and feel no meaningful improvement, we\u2019ll review it together and agree on the fairest next step — including a partial refund if appropriate." },
     ],
   },
+  newsletter: {
+    eyebrow: "Free guidance",
+    title: "Not ready to book yet? Start with one small step.",
+    description: "Get simple, body-aware guidance to understand your pain, reduce tension, and rebuild trust in your movement — one small step at a time.",
+    emailPlaceholder: "Email",
+    firstNamePlaceholder: "First name",
+    lastNamePlaceholder: "Last name",
+    buttonLabel: "Send me the guidance",
+    privacyText: "No spam. Just practical guidance to help you understand your body better.",
+    successTitle: "Great move — you’re in",
+    successText: "You’ll hear from us soon.",
+  },
   finalCta: {
     title: "Stop feeling broken. Start feeling like yourself again.",
     body: "One free call is all it takes to see if this is right for you.",

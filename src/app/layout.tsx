@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import { siteConfig } from "@/config/site-config";
 import "./globals.css";
 
 const voice = Fraunces({ subsets: ["latin"], variable: "--font-voice", display: "swap" });
@@ -20,7 +21,7 @@ const jsonLd = {
     "@type": "Person",
     name: businessInfo.founderName,
   },
-  url: "https://innerstrengthcompass.com",
+  url: siteConfig.siteUrl,
   telephone: businessInfo.phoneDisplay,
   email: businessInfo.email,
   address: {

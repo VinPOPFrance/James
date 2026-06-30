@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
+import type { DeepLoosen } from "@/types/content";
 
-export function VideoSection() {
-  const t = home.video;
+type VideoContent = DeepLoosen<typeof home.video>;
+
+export function VideoSection({ content }: { content?: VideoContent }) {
+  const t = content ?? home.video;
 
   return (
     <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-6 py-16 md:px-14">
