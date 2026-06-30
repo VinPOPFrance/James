@@ -2,7 +2,7 @@ export const about = {
   meta: {
     title: "About James | Inner Strength Compass",
     description:
-      "James has spent 6+ years helping people move with more confidence. Calm, clear and honest — he listens first and never rushes you through pain.",
+      "James Daime — movement therapist based in Rotterdam, Netherlands. 6+ years helping people understand their body and move with more confidence, through a calm and honest approach.",
   },
   hero: {
     eyebrow: "Your guide",

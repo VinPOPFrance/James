@@ -10,6 +10,7 @@
 import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function Hero() {
   const t = home.hero;
@@ -28,7 +29,7 @@ export function Hero() {
         <p className="mb-7 max-w-prose text-[15.5px] leading-relaxed text-muted">{t.sub}</p>
 
         <div className="mb-5 flex flex-wrap gap-3">
-          <Button href="/book" surface="light" variant="primary">
+          <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
             {t.ctaPrimary}
           </Button>
           <Button href="/fascia-reset-session" surface="light" variant="secondary">

@@ -2,7 +2,7 @@ export const fascia = {
   meta: {
     title: "Fascia Reset Session | Inner Strength Compass",
     description:
-      "A 60-minute session to release tension, understand what’s happening in your body, and see if the full program is right for you. No commitment required.",
+      "A fascia reset session in Rotterdam with James Daime. A calm first session to understand what&apos;s driving your tension and explore whether the full programme is right for you.",
   },
   hero: {
     eyebrow: "Not sure yet? Start here",

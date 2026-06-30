@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 // Appears once the hero CTA buttons scroll out of view.
 // Watches #hero-cta-anchor placed just after the hero buttons.
@@ -24,7 +25,7 @@ export function StickyMobileCta() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-hairline bg-ivory/95 px-4 py-3 backdrop-blur-sm md:hidden">
-      <Button href="/book" surface="light" variant="primary" fullWidth>
+      <Button href={businessInfo.bookingUrl} surface="light" variant="primary" fullWidth external>
         {home.hero.ctaPrimary}
       </Button>
     </div>

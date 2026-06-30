@@ -1,11 +1,17 @@
 import { Button } from "@/components/ui/Button";
 
+interface CtaLink {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+
 interface PageHeroProps {
   eyebrow?: string;
   title: string;
   body?: string;
-  ctaPrimary?: { label: string; href: string };
-  ctaSecondary?: { label: string; href: string };
+  ctaPrimary?: CtaLink;
+  ctaSecondary?: CtaLink;
   surface?: "light" | "dark";
   dark?: boolean;
 }
@@ -65,6 +71,7 @@ export function PageHero({
                 href={ctaPrimary.href}
                 surface={dark ? "dark" : "light"}
                 variant="primary"
+                external={ctaPrimary.external}
               >
                 {ctaPrimary.label}
               </Button>
@@ -74,6 +81,7 @@ export function PageHero({
                 href={ctaSecondary.href}
                 surface={dark ? "dark" : "light"}
                 variant="secondary"
+                external={ctaSecondary.external}
               >
                 {ctaSecondary.label}
               </Button>

@@ -7,6 +7,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { faqPage } from "@/config/content.faq.en";
+import { businessInfo } from "@/config/business-info";
 
 export default function FaqPage() {
   const t = faqPage;
@@ -64,7 +65,7 @@ export default function FaqPage() {
           <div className="relative mx-auto max-w-2xl text-center">
             <h2 className="mb-4 font-voice text-[clamp(1.6rem,3.5vw,2.2rem)] font-medium leading-snug text-ivory">{t.finalCta.title}</h2>
             <p className="mb-8 text-[16px] text-ivory/70">{t.finalCta.body}</p>
-            <Button href="/book" surface="dark" variant="primary">{t.finalCta.primary}</Button>
+            <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>{t.finalCta.primary}</Button>
           </div>
         </section>
       </Reveal>

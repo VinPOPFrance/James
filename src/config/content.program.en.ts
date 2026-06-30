@@ -2,7 +2,7 @@ export const program = {
   meta: {
     title: "The 12-Week Body Reset Program | Inner Strength Compass",
     description:
-      "A structured 12-week program to understand, release and rebuild your body — for women with chronic back pain who are ready to stop guessing and start moving freely.",
+      "A structured 12-week movement programme based in Rotterdam. For women with chronic back pain who want to understand, release and rebuild their body — step by step, without pushing through pain.",
   },
   hero: {
     eyebrow: "The 12-week body reset program",

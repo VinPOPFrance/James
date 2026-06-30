@@ -6,9 +6,9 @@
 
 export const home = {
   meta: {
-    title: "Inner Strength Compass | Chronic Back Pain Program for Women",
+    title: "Inner Strength Compass | Chronic Back Pain Program for Women · Rotterdam",
     description:
-      "A clear 12-week body reset program for women with chronic back pain who are tired of quick fixes and ready to understand, release and rebuild their body.",
+      "A guided 12-week body reset program based in Rotterdam, Netherlands. For women with chronic back pain who want to understand, release and rebuild their body — without pushing through pain.",
   },
   nav: {
     links: [

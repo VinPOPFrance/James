@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function FinalCta() {
   const t = home.finalCta;
@@ -16,10 +17,10 @@ export function FinalCta() {
         </h2>
         <p className="mb-8 text-[16px] text-ivory/70">{t.body}</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button href="/book" surface="dark" variant="primary">
+          <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>
             {t.primary}
           </Button>
-          <Button href="/fascia-reset-session" surface="dark" variant="secondary">
+          <Button href={businessInfo.bookingUrl} surface="dark" variant="secondary" external>
             {t.secondary}
           </Button>
         </div>

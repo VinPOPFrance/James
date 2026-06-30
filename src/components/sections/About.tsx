@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function About() {
   const t = home.about;
@@ -24,7 +25,7 @@ export function About() {
               </p>
             ))}
           </div>
-          <Button href="/book" surface="light" variant="primary">
+          <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
             {t.cta}
           </Button>
         </div>

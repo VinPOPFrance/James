@@ -5,6 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
 import { program } from "@/config/content.program.en";
+import { businessInfo } from "@/config/business-info";
 import { media } from "@/config/media.config";
 import type { MediaKey } from "@/config/media.config";
 
@@ -43,7 +44,7 @@ export default function ProgramPage() {
           eyebrow={t.hero.eyebrow}
           title={t.hero.title}
           body={t.hero.body}
-          ctaPrimary={{ label: t.hero.ctaPrimary, href: "/book" }}
+          ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
           ctaSecondary={{ label: t.hero.ctaSecondary, href: "/fascia-reset-session" }}
         />
       </Reveal>
@@ -200,7 +201,7 @@ export default function ProgramPage() {
             <h2 className="mb-4 font-voice text-[clamp(1.6rem,3.5vw,2.2rem)] font-medium leading-snug text-ivory">{t.finalCta.title}</h2>
             <p className="mb-8 text-[16px] text-ivory/70">{t.finalCta.body}</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/book" surface="dark" variant="primary">{t.finalCta.primary}</Button>
+              <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>{t.finalCta.primary}</Button>
               <Button href="/faq" surface="dark" variant="secondary">{t.finalCta.secondary}</Button>
             </div>
           </div>

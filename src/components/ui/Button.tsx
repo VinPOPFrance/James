@@ -7,6 +7,8 @@ type Surface = "light" | "dark";
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
+  /** Set true for external URLs — renders <a> with target="_blank" rel="noopener noreferrer" */
+  external?: boolean;
   variant?: Variant;
   /** The background the button sits ON. Picks the correct contrast pair automatically. */
   surface?: Surface;
@@ -40,6 +42,7 @@ const base =
 export function Button({
   children,
   href,
+  external = false,
   variant = "primary",
   surface = "light",
   fullWidth = false,
@@ -47,6 +50,14 @@ export function Button({
   onClick,
 }: ButtonProps) {
   const cls = clsx(base, styles[surface][variant], fullWidth && "w-full", className);
+
+  if (href && external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>
+        {children}
+      </a>
+    );
+  }
 
   if (href) {
     return (

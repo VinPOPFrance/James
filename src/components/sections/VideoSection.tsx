@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function VideoSection() {
   const t = home.video;
@@ -22,7 +23,7 @@ export function VideoSection() {
 
         <MediaSlot name="presentationVideo" className="mb-8 w-full" />
 
-        <Button href="/book" surface="dark" variant="primary">
+        <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>
           {t.cta}
         </Button>
       </div>

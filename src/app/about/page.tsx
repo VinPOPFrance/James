@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { MediaSlot } from "@/components/ui/MediaSlot";
 import { icons } from "@/lib/icons";
 import { about } from "@/config/content.about.en";
+import { businessInfo } from "@/config/business-info";
 
 export const metadata: Metadata = {
   title: about.meta.title,
@@ -87,8 +88,8 @@ export default function AboutPage() {
             <h2 className="mb-4 font-voice text-[clamp(1.6rem,3.5vw,2.2rem)] font-medium leading-snug text-ivory">{t.finalCta.title}</h2>
             <p className="mb-8 text-[16px] text-ivory/70">{t.finalCta.body}</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/book" surface="dark" variant="primary">{t.finalCta.primary}</Button>
-              <Button href="/fascia-reset-session" surface="dark" variant="secondary">{t.finalCta.secondary}</Button>
+              <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>{t.finalCta.primary}</Button>
+              <Button href={businessInfo.bookingUrl} surface="dark" variant="secondary" external>{t.finalCta.secondary}</Button>
             </div>
           </div>
         </section>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -32,7 +33,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/book" surface="light" variant="primary">
+          <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
             {t.cta}
           </Button>
         </div>

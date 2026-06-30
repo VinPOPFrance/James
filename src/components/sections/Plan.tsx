@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
+import { businessInfo } from "@/config/business-info";
 
 export function Plan() {
   const t = home.plan;
@@ -29,8 +30,8 @@ export function Plan() {
           ))}
         </div>
 
-        <Button href="/book" surface="light" variant="primary">
-          Book a free discovery call
+        <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
+          {home.finalCta.primary}
         </Button>
       </div>
     </section>
