@@ -1,27 +1,25 @@
-"use client";
-
-import { motion, useReducedMotion } from "framer-motion";
-
 interface RevealProps {
   children: React.ReactNode;
   delay?: number;
   className?: string;
 }
 
-/** Subtle scroll-in. Disabled automatically when the user prefers reduced motion. */
+/**
+ * Fade-in + slide-up on mount. Uses a CSS animation so content is always
+ * visible — no JS IntersectionObserver timing issues.
+ */
 export function Reveal({ children, delay = 0, className }: RevealProps) {
-  const reduce = useReducedMotion();
-  if (reduce) return <div className={className}>{children}</div>;
+  const style = {
+    animationName: "reveal-in",
+    animationDuration: "0.5s",
+    animationDelay: `${delay}s`,
+    animationFillMode: "both" as const,
+    animationTimingFunction: "cubic-bezier(0.22,1,0.36,1)",
+  };
 
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <div className={className} style={style}>
       {children}
-    </motion.div>
+    </div>
   );
 }

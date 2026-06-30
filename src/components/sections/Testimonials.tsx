@@ -5,7 +5,6 @@ import type { MediaKey } from "@/config/media.config";
 function Avatar({ mediaKey, name }: { mediaKey: MediaKey; name: string }) {
   const item = media[mediaKey];
   const initials = name
-    .split(",")[0]
     .trim()
     .split(" ")
     .map((w) => w[0])
@@ -46,27 +45,40 @@ export function Testimonials() {
           <span className="hidden text-[12.5px] text-muted md:block">{t.badge}</span>
         </div>
 
-        {/* Placeholder notice */}
-        <p className="mb-8 rounded-md border border-copper/30 bg-copper/5 px-4 py-2.5 text-[12.5px] text-copper">
-          ⚠ {t.note}
-        </p>
+        {t.note && (
+          <p className="mb-8 rounded-md border border-copper/30 bg-copper/5 px-4 py-2.5 text-[12.5px] text-copper">
+            ⚠ {t.note}
+          </p>
+        )}
 
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="mb-5 grid gap-5 md:grid-cols-3">
           {t.items.map((item, i) => (
-            <div key={i} className="rounded-card border border-hairline bg-ivory p-6">
+            <div key={i} className="flex flex-col rounded-card border border-hairline bg-ivory p-6">
               <span className="mb-3 inline-block rounded-full border border-hairline bg-white px-3 py-1 text-[11.5px] text-muted">
                 {item.tag}
               </span>
-              <p className="mb-5 text-[15px] leading-relaxed text-inkSoft">&ldquo;{item.quote}&rdquo;</p>
+              <p className="mb-1 text-[13px] tracking-wide text-copper">★★★★★</p>
+              <p className="mb-5 flex-1 text-[15px] leading-relaxed text-inkSoft">&ldquo;{item.quote}&rdquo;</p>
               <div className="flex items-center gap-3">
                 <Avatar mediaKey={item.media as MediaKey} name={item.name} />
                 <div>
                   <p className="text-[14px] font-medium text-navy">{item.name}</p>
-                  <p className="text-[12.5px] text-muted">{item.city}</p>
+                  <p className="text-[12px] text-muted">{item.city} · Google</p>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="text-center">
+          <a
+            href="https://g.page/r/motionline-rotterdam/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[13px] text-muted underline-offset-2 hover:text-navy hover:underline"
+          >
+            <span className="text-copper">★★★★★</span>
+            {t.badge}
+          </a>
         </div>
       </div>
     </section>

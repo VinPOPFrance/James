@@ -76,13 +76,31 @@ export const program = {
   },
   testimonials: {
     eyebrow: "Real client stories",
-    title: "From “broken” to back in control",
-    badge: "119+ reviews · avg 5.0",
-    note: "Placeholder — replace with real verified reviews before launch.",
+    title: "From \u201Cbroken\u201D to back in control",
+    badge: "118 reviews on Google \u00b7 5.0 \u2605",
+    note: "",
     items: [
-      { quote: "For the first time I understand what my back actually needs. I walk my dog every morning again — without fear.", tag: "Back to daily walks", name: "Anneke, 52", city: "Utrecht", media: "testimonialAnneke" },
-      { quote: "After years of physio that never stuck, this finally gave me a plan I can keep on my own. Night and day.", tag: "Independent at last", name: "Margriet, 47", city: "Amsterdam", media: "testimonialMargriet" },
-      { quote: "Calm, patient and clear. He explained my body in a way no one ever had. I finally feel like myself again.", tag: "Feeling like herself", name: "Saskia, 58", city: "Haarlem", media: "testimonialSaskia" },
+      {
+        quote: "James is an excellent body therapist. I\u2019ve seen him 3 times now, and every time he has resolved my issue, along with helped to improve my posture. An expert in his field, and just a great guy in general. Highly recommend.",
+        tag: "Posture & pain resolved",
+        name: "Danielle Hibbert",
+        city: "Rotterdam",
+        media: "testimonialDanielle",
+      },
+      {
+        quote: "It is impossible not to notice the passion James has. His thorough and clear explanations make sessions much more educative and fun than any physio\u2019s. Highly recommended for anyone, both for fixing things as well as preventative assistance.",
+        tag: "Beyond any physio",
+        name: "Jelle van Rossum",
+        city: "Rotterdam",
+        media: "testimonialShara",
+      },
+      {
+        quote: "James is a proper body therapist. He understands how the muscles and tissues are interconnected and takes the time to figure out the root cause of the pain. After a few sessions, my shoulder feels much better and my body feels more mobile.",
+        tag: "Root cause found",
+        name: "Ibrahim Mikati",
+        city: "Rotterdam",
+        media: "testimonialIbrahim",
+      },
     ],
   },
   finalCta: {

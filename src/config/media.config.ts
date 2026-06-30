@@ -20,35 +20,35 @@ export type MediaItem = {
 export const media = {
   heroImage: {
     type: "image",
-    src: "", // e.g. "/media/hero-james-studio.jpg"
-    alt: "Woman moving calmly, free of tension",
+    src: "/media/heroImage.jpg",
+    alt: "James guiding a client through a movement session in the studio",
     ratio: "4/5",
   },
   presentationVideo: {
     type: "video",
-    src: "", // e.g. "/media/presentation.mp4"
-    poster: "", // e.g. "/media/presentation-poster.jpg"
+    src: "/media/presentationVideo.mp4",
+    poster: "",
     alt: "A calm look at a session in the studio",
     ratio: "16/9",
-    captionsSrc: "", // e.g. "/media/presentation.en.vtt"
+    captionsSrc: "",
   },
   movementClip: {
     type: "video",
-    src: "",
+    src: "/media/movementClip.mp4",
     poster: "",
-    alt: "Slow guided stretch",
+    alt: "Guided movement session with James",
     ratio: "1/1",
   },
   jamesPortrait: {
     type: "image",
-    src: "",
-    alt: "James, movement guide",
+    src: "/media/jamesPortrait.png",
+    alt: "James Daime in his Rotterdam studio",
     ratio: "3/4",
   },
   // Optional per-testimonial photos (round). Leave src empty to show initials avatar.
-  testimonialAnneke: { type: "image", src: "", alt: "Anneke", ratio: "1/1" },
-  testimonialMargriet: { type: "image", src: "", alt: "Margriet", ratio: "1/1" },
-  testimonialSaskia: { type: "image", src: "", alt: "Saskia", ratio: "1/1" },
+  testimonialDanielle: { type: "image", src: "", alt: "Danielle Hibbert", ratio: "1/1" },
+  testimonialShara: { type: "image", src: "", alt: "Shara Brennan", ratio: "1/1" },
+  testimonialIbrahim: { type: "image", src: "", alt: "Ibrahim Mikati", ratio: "1/1" },
 } satisfies Record<string, MediaItem>;
 
 export type MediaKey = keyof typeof media;

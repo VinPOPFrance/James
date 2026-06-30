@@ -172,7 +172,9 @@ export default function ProgramPage() {
           <div className="mx-auto max-w-4xl">
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.testimonials.eyebrow}</p>
             <h2 className="mb-2 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.testimonials.title}</h2>
-            <p className="mb-8 rounded-md border border-copper/30 bg-copper/5 px-4 py-2.5 text-[12.5px] text-copper">⚠ {t.testimonials.note}</p>
+            {t.testimonials.note && (
+              <p className="mb-8 rounded-md border border-copper/30 bg-copper/5 px-4 py-2.5 text-[12.5px] text-copper">⚠ {t.testimonials.note}</p>
+            )}
             <div className="grid gap-5 md:grid-cols-3">
               {t.testimonials.items.map((item, i) => (
                 <div key={i} className="rounded-card border border-hairline bg-ivory p-6">

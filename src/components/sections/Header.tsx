@@ -62,7 +62,7 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
-            <Button href="/book" surface="light" variant="primary" fullWidth>
+            <Button href={businessInfo.bookingUrl} surface="light" variant="primary" fullWidth external>
               {t.cta}
             </Button>
           </nav>
