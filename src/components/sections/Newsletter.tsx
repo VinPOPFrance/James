@@ -12,8 +12,8 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
   const t = content ?? home.newsletter;
 
   return (
-    <section className="rounded-section border border-hairline bg-[#F4F6F2] px-6 py-14 md:px-12">
-      <div className="mx-auto max-w-2xl">
+    <section className="rounded-section bg-[#F4F6F2] px-6 py-14 md:px-12">
+      <div className="mx-auto max-w-2xl rounded-section border border-hairline bg-white/70 p-8 shadow-[0_20px_50px_-30px_rgba(31,42,60,0.25)] backdrop-blur-sm md:p-10">
         <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-sage">
           {t.eyebrow}
         </p>
@@ -43,7 +43,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
                 name="fields[name]"
                 placeholder={t.firstNamePlaceholder}
                 autoComplete="given-name"
-                className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy placeholder:text-muted focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy transition-all duration-200 placeholder:text-muted hover:border-sage/60 focus:border-sage focus:outline-none focus:ring-2 focus:ring-sage/30"
               />
             </div>
             <div>
@@ -56,7 +56,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
                 name="fields[last_name]"
                 placeholder={t.lastNamePlaceholder}
                 autoComplete="family-name"
-                className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy placeholder:text-muted focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy transition-all duration-200 placeholder:text-muted hover:border-sage/60 focus:border-sage focus:outline-none focus:ring-2 focus:ring-sage/30"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
               placeholder={t.emailPlaceholder}
               autoComplete="email"
               required
-              className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy placeholder:text-muted focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+              className="w-full rounded-card border border-hairline bg-white px-4 py-3 text-[15px] text-navy transition-all duration-200 placeholder:text-muted hover:border-sage/60 focus:border-sage focus:outline-none focus:ring-2 focus:ring-sage/30"
             />
           </div>
 

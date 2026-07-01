@@ -1,5 +1,6 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import type { DeepLoosen } from "@/types/content";
 
 type IncludedContent = DeepLoosen<typeof home.included>;
@@ -17,16 +18,16 @@ export function Included({ content }: { content?: IncludedContent }) {
           {t.title}
         </h2>
 
-        <div className="mb-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+        <RevealGroup className="mb-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
           {t.items.map((item, i) => (
-            <div key={i} className="flex items-start gap-3">
+            <RevealItem key={i} className="flex items-start gap-3">
               <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
               <span className="text-[15px] text-inkSoft">{item}</span>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
 
-        <div className="flex items-start gap-3 rounded-card border border-sage/30 bg-[#F4F6F2] p-5">
+        <div className="card-lift flex items-start gap-3 rounded-card border border-sage/30 bg-[#F4F6F2] p-5">
           <icons.leaf size={18} className="mt-0.5 shrink-0 text-sage" />
           <p className="text-[14.5px] leading-relaxed text-inkSoft">{t.effort}</p>
         </div>

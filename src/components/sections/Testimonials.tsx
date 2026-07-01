@@ -1,5 +1,6 @@
 import { home } from "@/config/content.en";
 import { media } from "@/config/media.config";
+import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import type { MediaKey } from "@/config/media.config";
 import type { DeepLoosen } from "@/types/content";
 
@@ -54,9 +55,9 @@ export function Testimonials({ content }: { content?: TestimonialsContent }) {
           </p>
         )}
 
-        <div className="mb-5 grid gap-5 md:grid-cols-3">
+        <RevealGroup className="mb-5 grid gap-5 md:grid-cols-3">
           {t.items.map((item, i) => (
-            <div key={i} className="flex flex-col rounded-card border border-hairline bg-ivory p-6">
+            <RevealItem key={i} className="card-lift flex flex-col rounded-card border border-hairline bg-ivory p-6">
               <span className="mb-3 inline-block rounded-full border border-hairline bg-white px-3 py-1 text-[11.5px] text-muted">
                 {item.tag}
               </span>
@@ -69,9 +70,9 @@ export function Testimonials({ content }: { content?: TestimonialsContent }) {
                   <p className="text-[12px] text-muted">{item.city} · Google</p>
                 </div>
               </div>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
         <div className="text-center">
           <a
             href="https://g.page/r/motionline-rotterdam/review"

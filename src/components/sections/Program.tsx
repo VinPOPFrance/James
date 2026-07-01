@@ -17,7 +17,7 @@ export function Program({ content }: { content?: ProgramContent }) {
         </h2>
         <p className="mb-8 text-[15.5px] leading-relaxed text-inkSoft">{t.body}</p>
 
-        <div className="inline-flex flex-col rounded-card border border-hairline bg-ivory p-7">
+        <div className="card-lift inline-flex flex-col rounded-card border border-hairline bg-ivory p-7">
           <span className="mb-1 text-[13px] text-muted">{t.priceLabel}</span>
           <span className="font-voice text-[2.2rem] font-medium text-navy">{t.price}</span>
           <span className="text-[13px] text-muted">{t.priceSub}</span>

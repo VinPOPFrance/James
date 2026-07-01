@@ -1,5 +1,6 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import type { DeepLoosen } from "@/types/content";
 
 type QuickFixesContent = DeepLoosen<typeof home.quickFixes>;
@@ -18,25 +19,25 @@ export function QuickFixes({ content }: { content?: QuickFixesContent }) {
         </h2>
         <p className="mb-10 text-[15.5px] leading-relaxed text-inkSoft">{t.body}</p>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <RevealGroup className="grid gap-4 md:grid-cols-2">
           {/* Quick-fix loop */}
-          <div className="rounded-card border border-hairline bg-white p-6">
+          <RevealItem className="card-lift rounded-card border border-hairline bg-white p-6">
             <div className="mb-3 flex items-center gap-2">
               <icons.refresh size={16} className="text-muted" />
               <span className="text-[13px] font-medium text-muted">{t.loop.label}</span>
             </div>
             <p className="text-[15px] text-inkSoft">{t.loop.text}</p>
-          </div>
+          </RevealItem>
 
           {/* Reset path */}
-          <div className="rounded-card border border-sage/30 bg-white p-6">
+          <RevealItem className="card-lift rounded-card border border-sage/30 bg-white p-6">
             <div className="mb-3 flex items-center gap-2">
               <icons.arrow size={16} className="text-sage" />
               <span className="text-[13px] font-medium text-sage">{t.reset.label}</span>
             </div>
             <p className="text-[15px] text-inkSoft">{t.reset.text}</p>
-          </div>
-        </div>
+          </RevealItem>
+        </RevealGroup>
       </div>
     </section>
   );

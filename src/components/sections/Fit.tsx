@@ -1,5 +1,6 @@
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
+import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import type { DeepLoosen } from "@/types/content";
 
 type FitContent = DeepLoosen<typeof home.fit>;
@@ -9,9 +10,9 @@ export function Fit({ content }: { content?: FitContent }) {
 
   return (
     <section className="rounded-section border border-hairline bg-ivory px-6 py-14 md:px-12">
-      <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+      <RevealGroup className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
         {/* For you */}
-        <div className="rounded-card border border-sage/40 bg-white p-7">
+        <RevealItem className="card-lift rounded-card border border-sage/40 bg-white p-7">
           <h3 className="mb-5 text-[1rem] font-semibold text-navy">{t.forYou.title}</h3>
           <ul className="space-y-3">
             {t.forYou.items.map((item, i) => (
@@ -21,10 +22,10 @@ export function Fit({ content }: { content?: FitContent }) {
               </li>
             ))}
           </ul>
-        </div>
+        </RevealItem>
 
         {/* Not for you */}
-        <div className="rounded-card border border-copper/30 bg-white p-7">
+        <RevealItem className="card-lift rounded-card border border-copper/30 bg-white p-7">
           <h3 className="mb-5 text-[1rem] font-semibold text-navy">{t.notForYou.title}</h3>
           <ul className="space-y-3">
             {t.notForYou.items.map((item, i) => (
@@ -34,8 +35,8 @@ export function Fit({ content }: { content?: FitContent }) {
               </li>
             ))}
           </ul>
-        </div>
-      </div>
+        </RevealItem>
+      </RevealGroup>
     </section>
   );
 }
