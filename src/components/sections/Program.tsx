@@ -8,16 +8,18 @@ export function Program({ content }: { content?: ProgramContent }) {
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">
-      <div className="mx-auto max-w-3xl">
-        <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">
-          {t.eyebrow}
-        </p>
-        <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
-          {t.title}
-        </h2>
-        <p className="mb-8 text-[15.5px] leading-relaxed text-inkSoft">{t.body}</p>
+      <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1.4fr_0.8fr] lg:items-center">
+        <div>
+          <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">
+            {t.eyebrow}
+          </p>
+          <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
+            {t.title}
+          </h2>
+          <p className="text-[15.5px] leading-relaxed text-inkSoft">{t.body}</p>
+        </div>
 
-        <div className="card-lift inline-flex flex-col rounded-card border border-hairline bg-ivory p-7">
+        <div className="card-lift flex w-full max-w-[280px] flex-col rounded-card border border-hairline bg-ivory p-7 lg:justify-self-end">
           <span className="mb-1 text-[13px] text-muted">{t.priceLabel}</span>
           <span className="font-voice text-[2.2rem] font-medium text-navy">{t.price}</span>
           <span className="text-[13px] text-muted">{t.priceSub}</span>
