@@ -1,6 +1,8 @@
 import { home } from "@/config/content.en";
 import { media } from "@/config/media.config";
+import { businessInfo } from "@/config/business-info";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+import { GoogleReviewsBadge } from "@/components/ui/GoogleReviewsBadge";
 import type { MediaKey } from "@/config/media.config";
 import type { DeepLoosen } from "@/types/content";
 
@@ -42,11 +44,14 @@ export function Testimonials({ content }: { content?: TestimonialsContent }) {
         <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">
           {t.eyebrow}
         </p>
-        <div className="mb-2 flex items-end justify-between">
+        <div className="mb-2 flex items-end justify-between gap-4">
           <h2 className="font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
             {t.title}
           </h2>
-          <span className="hidden text-[12.5px] text-muted md:block">{t.badge}</span>
+          <GoogleReviewsBadge
+            href={businessInfo.googleReviewsUrl}
+            className="hidden shrink-0 md:inline-flex"
+          />
         </div>
 
         {t.note && (
@@ -75,7 +80,7 @@ export function Testimonials({ content }: { content?: TestimonialsContent }) {
         </RevealGroup>
         <div className="text-center">
           <a
-            href="https://g.page/r/motionline-rotterdam/review"
+            href={businessInfo.googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[13px] text-muted underline-offset-2 hover:text-navy hover:underline"
