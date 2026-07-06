@@ -8,7 +8,7 @@ export const homeNl = {
   meta: {
     title: "Inner Strength Compass | Chronische rugpijn programma voor vrouwen · Rotterdam",
     description:
-      "Een begeleid 12-weken lichaamsreset programma in Rotterdam. Voor vrouwen met chronische rugpijn die hun lichaam willen begrijpen, loslaten en opbouwen — stap voor stap, zonder door pijn heen te duwen.",
+      "Een begeleid 12-weken lichaamsreset programma in Rotterdam. Voor vrouwen met chronische rugpijn die hun lichaam willen begrijpen, loslaten en opbouwen, stap voor stap, zonder door pijn heen te duwen.",
   },
   nav: {
     links: [
@@ -22,15 +22,15 @@ export const homeNl = {
   hero: {
     badge: "Voor vrouwen 40+ · Nederland",
     h1: "Leer je lichaam opnieuw vertrouwen en beweeg voorbij chronische rugpijn.",
-    sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie — en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
+    sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie, en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
     ctaPrimary: "Gratis kennismakingsgesprek",
     ctaSecondary: "Begin met een fascia reset sessie",
-    proof: "119+ vijfsterren beoordelingen · 6+ jaar praktijkervaring",
+    proof: "119+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
     overlay: "Geen “no pain, no gain”",
   },
   proofBar: [
     { value: "119+", label: "vijfsterren reviews" },
-    { value: "6+ jr", label: "praktijkervaring" },
+    { value: "10+ jr", label: "praktijkervaring" },
     { value: "★★★★★", label: "gem. beoordeling" },
     { value: "20–30m", label: "thuisoefeningen, 3×/week" },
   ],
@@ -38,7 +38,7 @@ export const homeNl = {
     eyebrow: "Herken je dit?",
     quote: "“Ik voel me kapot en ik weet niet meer wat ik moet doen.”",
     cards: [
-      { icon: "refresh", text: "Je hebt fysiotherapie, osteopathie en chiropractie geprobeerd — maar de verlichting houdt nooit lang aan." },
+      { icon: "refresh", text: "Je hebt fysiotherapie, osteopathie en chiropractie geprobeerd, maar de verlichting houdt nooit lang aan." },
       { icon: "alert", text: "Je beweegt voorzichtig, bang dat de volgende stap je weer terugwerpt." },
       { icon: "help", text: "Niemand heeft je ooit echt uitgelegd waarom de pijn steeds terugkomt." },
     ],
@@ -46,23 +46,23 @@ export const homeNl = {
   video: {
     eyebrow: "Ontmoet de aanpak",
     title: "Zie hoe een sessie aanvoelt",
-    body: "Een korte, rustige blik op de studio, het tempo en de manier van werken — zodat je precies weet wat je kunt verwachten voor je boekt.",
+    body: "Een korte, rustige blik op de studio, het tempo en de manier van werken, zodat je precies weet wat je kunt verwachten voor je boekt.",
     cta: "Gratis kennismakingsgesprek",
   },
   quickFixes: {
     eyebrow: "De echte reden",
     title: "Waarom snelle oplossingen niet werken",
-    body: "Passieve behandelingen kunnen een symptoom tijdelijk verlichten — maar ze leren je lichaam niets. Zodra je stopt, keert het oude patroon terug. Blijvende verandering ontstaat door te begrijpen wat de spanning vasthoudt en door te leren bewegen op een manier die vol­houdt.",
+    body: "Passieve behandelingen kunnen een symptoom tijdelijk verlichten, maar ze leren je lichaam niets. Zodra je stopt, keert het oude patroon terug. Blijvende verandering ontstaat door te begrijpen wat de spanning vasthoudt en door te leren bewegen op een manier die vol­houdt.",
     loop: { label: "De snelle-fix-cirkel", text: "Verlichting → het trekt weg → terug bij af → frustratie." },
     reset: { label: "Het resetpad", text: "Begrijpen → loslaten → opbouwen → zelfstandig." },
   },
   solution: {
     eyebrow: "Een andere aanpak",
     title: "Een begeleide weg naar een lichaam dat je kunt vertrouwen",
-    body: "In plaats van symptomen achtervolgen, werken we samen door je lichaam heen — spanning loslaten, beweging herontdekken en een routine opbouwen die van jou blijft.",
+    body: "In plaats van symptomen achtervolgen, werken we samen door je lichaam heen, spanning loslaten, beweging herontdekken en een routine opbouwen die van jou blijft.",
     points: [
-      "Holistisch: fascia, ademhaling, beweging en biomechanica",
-      "Progressief — nooit “no pain, no gain”",
+      "Whole body approach: fascia, ademhaling, beweging en biomechanica",
+      "Progressief, nooit “no pain, no gain”",
       "Afgestemd op jou, niet op een generiek protocol",
     ],
   },
@@ -71,8 +71,8 @@ export const homeNl = {
     title: "Drie stappen van vastgelopen naar zelfverzekerd",
     steps: [
       { n: 1, title: "Gratis gesprek boeken", text: "Vertel wat er speelt. Geen druk, geen jargon." },
-      { n: 2, title: "Lichaamsanalyse sessie", text: "Een eerlijke uitleg over jouw situatie en een mini-plan." },
-      { n: 3, title: "Je lichaam resetten in 12 weken", text: "Begrijpen, loslaten en opbouwen — stap voor stap." },
+      { n: 2, title: "Face-to-face sessie", text: "Een eerlijke uitleg over jouw situatie en een mini-plan." },
+      { n: 3, title: "Je lichaam resetten in 12 weken", text: "Begrijpen, loslaten en opbouwen, stap voor stap." },
     ],
   },
   program: {
@@ -89,7 +89,7 @@ export const homeNl = {
     items: [
       { n: 1, weeks: "Weken 1–4", title: "Begrijpen & loslaten", text: "Het systeem kalmeren, spanning verminderen, leren wat de pijn in stand houdt.", color: "sage" },
       { n: 2, weeks: "Weken 5–8", title: "Beweging opbouwen", text: "Herontdekken hoe je zonder angst kunt bewegen en geleidelijk kracht opbouwen.", color: "copper" },
-      { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is — zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
+      { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is, zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
     ],
   },
   included: {
@@ -169,14 +169,14 @@ export const homeNl = {
   },
   promise: {
     badge: "Voortgangsbelofte",
-    body: "Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap — inclusief een gedeeltelijke terugbetaling indien van toepassing.",
-    sub: "Een eerlijke belofte, gebaseerd op een duidelijke evaluatie — voor cliënten die aanwezig zijn, oefenen en communiceren.",
+    body: "Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap, inclusief een gedeeltelijke terugbetaling indien van toepassing.",
+    sub: "Een eerlijke belofte, gebaseerd op een duidelijke evaluatie, voor cliënten die aanwezig zijn, oefenen en communiceren.",
   },
   about: {
     eyebrow: "Je gids",
     title: "Maak kennis met James",
     body: [
-      "James helpt al meer dan 6 jaar mensen met meer zelfvertrouwen te bewegen. Hij luistert eerst, legt helder uit en jaagt je nooit door pijn heen. Zijn aanpak is rustig, menselijk en gebaseerd op hoe het lichaam echt werkt — zonder je te overladen met jargon.",
+      "James helpt al meer dan 10 jaar mensen met meer zelfvertrouwen te bewegen. Hij luistert eerst, legt helder uit en jaagt je nooit door pijn heen. Zijn aanpak is rustig, menselijk en gebaseerd op hoe het lichaam echt werkt, zonder je te overladen met jargon.",
       "Jij doet het werk. James is de gids die je helpt je lichaam te begrijpen en het opnieuw te vertrouwen.",
     ],
     cta: "Gratis kennismakingsgesprek",
@@ -185,14 +185,14 @@ export const homeNl = {
     eyebrow: "Voordat je boekt",
     title: "Vragen die vrouwen vaak stellen",
     items: [
-      { q: "Werkt dit ook voor mij als ik al van alles geprobeerd heb?", a: "Veel vrouwen komen bij ons na fysiotherapie, osteopathie en chiropractie. Het verschil hier is niet een nieuwe techniek — maar begrijpen wat jouw spanning in stand houdt en opnieuw leren bewegen zodat de verandering beklijft. Binnen de eerste sessies weten we of dit de juiste aanpak voor je is, en we zijn daar eerlijk over." },
-      { q: "Hoe verschilt dit van fysiotherapie?", a: "Fysiotherapie behandelt vaak één gebied per sessie. Hier werken we met het hele lichaam — fascia, ademhaling, beweging en biomechanica — met als doel zelfstandigheid, niet terugkerende afspraken. Je vertrekt met een routine die je zelf kunt bijhouden. Dit is een aanvulling op medische zorg, geen vervanging." },
-      { q: "Doet het pijn? Moet ik fit zijn?", a: "Nee. Er is geen “no pain, no gain” en we duwen nooit door pijn heen. Alles is zacht en progressief, afgestemd op waar je lichaam nu staat. Je hoeft niet fit, soepel of ervaren te zijn — we starten precies waar jij bent." },
-      { q: "Hoe snel voel ik verbetering?", a: "Veel vrouwen merken al binnen de eerste weken minder spanning en meer gemak. Maar het echte doel is blijvende verandering, geen tijdelijke verlichting — daarom is het programma opgebouwd over 12 weken. Ieders lichaam is anders en we volgen je voortgang eerlijk." },
-      { q: "Wat gebeurt er tijdens het kennismakingsgesprek?", a: "Een gratis, ontspannen gesprek van 20 minuten. Jij vertelt wat er speelt, James luistert en helpt je begrijpen of deze aanpak iets voor jou kan zijn. Geen druk, geen verplichting — gewoon duidelijkheid over je volgende stap." },
-      { q: "Wat gebeurt er tijdens de lichaamsanalyse sessie?", a: "In 30–45 minuten kijken we naar je houding en beweging, leggen we helder uit wat waarschijnlijk je pijn veroorzaakt, en geven we je een persoonlijk mini-plan mee. Je krijgt ook een eerlijke aanbeveling — of het volledige programma bij je past of niet." },
+      { q: "Werkt dit ook voor mij als ik al van alles geprobeerd heb?", a: "Veel vrouwen komen bij ons na fysiotherapie, osteopathie en chiropractie. Het verschil hier is niet een nieuwe techniek, maar begrijpen wat jouw spanning in stand houdt en opnieuw leren bewegen zodat de verandering beklijft. Binnen de eerste sessies weten we of dit de juiste aanpak voor je is, en we zijn daar eerlijk over." },
+      { q: "Hoe verschilt dit van fysiotherapie?", a: "Fysiotherapie behandelt vaak één gebied per sessie. Hier werken we met het hele lichaam, fascia, ademhaling, beweging en biomechanica, met als doel zelfstandigheid, niet terugkerende afspraken. Je vertrekt met een routine die je zelf kunt bijhouden. Dit is een aanvulling op medische zorg, geen vervanging." },
+      { q: "Doet het pijn? Moet ik fit zijn?", a: "Nee. Er is geen “no pain, no gain” en we duwen nooit door pijn heen. Alles is zacht en progressief, afgestemd op waar je lichaam nu staat. Je hoeft niet fit, soepel of ervaren te zijn, we starten precies waar jij bent." },
+      { q: "Hoe snel voel ik verbetering?", a: "Veel vrouwen merken al binnen de eerste weken minder spanning en meer gemak. Maar het echte doel is blijvende verandering, geen tijdelijke verlichting, daarom is het programma opgebouwd over 12 weken. Ieders lichaam is anders en we volgen je voortgang eerlijk." },
+      { q: "Wat gebeurt er tijdens het kennismakingsgesprek?", a: "Een gratis, ontspannen gesprek van 20 minuten. Jij vertelt wat er speelt, James luistert en helpt je begrijpen of deze aanpak iets voor jou kan zijn. Geen druk, geen verplichting, gewoon duidelijkheid over je volgende stap." },
+      { q: "Wat gebeurt er tijdens de lichaamsanalyse sessie?", a: "In 30–45 minuten kijken we naar je houding en beweging, leggen we helder uit wat waarschijnlijk je pijn veroorzaakt, en geven we je een persoonlijk mini-plan mee. Je krijgt ook een eerlijke aanbeveling, of het volledige programma bij je past of niet." },
       { q: "Is dit een medische behandeling?", a: "Nee. Dit is een bewegings- en lichaamsbesef programma, geen medische behandeling, diagnose of genezing. Het werkt naast de zorg van je arts of specialist. Als iets erop wijst dat je medische aandacht nodig hebt, zullen we je daar altijd op wijzen." },
-      { q: "Wat als ik niet verbeter?", a: "Dat is precies waarom we de Voortgangsbelofte hebben. Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap — inclusief een gedeeltelijke terugbetaling indien van toepassing." },
+      { q: "Wat als ik niet verbeter?", a: "Dat is precies waarom we de Voortgangsbelofte hebben. Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap, inclusief een gedeeltelijke terugbetaling indien van toepassing." },
     ],
   },
   newsletter: {
@@ -204,7 +204,7 @@ export const homeNl = {
     lastNamePlaceholder: "Achternaam",
     buttonLabel: "Stuur mij de tips",
     privacyText: "Geen spam. Alleen praktische tips om je lichaam beter te begrijpen.",
-    successTitle: "Goede stap — je bent erbij",
+    successTitle: "Goede stap, je bent erbij",
     successText: "Je hoort snel van ons.",
   },
   finalCta: {
@@ -214,7 +214,7 @@ export const homeNl = {
     secondary: "Begin met een fascia reset",
   },
   footer: {
-    tagline: "Vrouwen helpen hun lichaam te begrijpen, los te laten en op te bouwen — voorbij chronische rugpijn.",
+    tagline: "Vrouwen helpen hun lichaam te begrijpen, los te laten en op te bouwen, voorbij chronische rugpijn.",
     explore: ["12-Weken Programma", "Fascia Reset Sessie", "Workshops voor Groepen", "Over James"],
     contact: ["Studio · Nederland", "Gratis gesprek boeken", "Nederlands / English"],
   },

@@ -1,5 +1,4 @@
 import { icons } from "@/lib/icons";
-import { MediaSlot } from "@/components/ui/MediaSlot";
 import { home } from "@/config/content.en";
 import type { DeepLoosen } from "@/types/content";
 
@@ -10,9 +9,7 @@ export function Solution({ content }: { content?: SolutionContent }) {
 
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">
-      <div className="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-2">
-        <MediaSlot name="movementClip" className="w-full" />
-
+      <div className="mx-auto max-w-4xl">
         <div>
           <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">
             {t.eyebrow}

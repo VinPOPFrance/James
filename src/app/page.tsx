@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 import { Hero } from "@/components/sections/Hero";
 import { ProofBar } from "@/components/sections/ProofBar";
 import { Problem } from "@/components/sections/Problem";
-import { VideoSection } from "@/components/sections/VideoSection";
 import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
@@ -53,10 +52,6 @@ export default function HomePage() {
 
         <Reveal>
           <Problem />
-        </Reveal>
-
-        <Reveal>
-          <VideoSection />
         </Reveal>
 
         <Reveal>

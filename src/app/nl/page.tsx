@@ -6,7 +6,6 @@ import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { ProofBar } from "@/components/sections/ProofBar";
 import { Problem } from "@/components/sections/Problem";
-import { VideoSection } from "@/components/sections/VideoSection";
 import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
@@ -55,10 +54,6 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Problem content={homeNl.problem} />
-        </Reveal>
-
-        <Reveal>
-          <VideoSection content={homeNl.video} />
         </Reveal>
 
         <Reveal>
