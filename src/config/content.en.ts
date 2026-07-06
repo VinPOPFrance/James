@@ -71,7 +71,7 @@ export const home = {
     title: "Three steps from stuck to confident",
     steps: [
       { n: 1, title: "Book a free call", text: "Tell us what\u2019s going on. No pressure, no jargon." },
-      { n: 2, title: "Face to face session", text: "A real explanation of your problem and a mini plan." },
+      { n: 2, title: "Face to face session", text: "Assessment of your problem and mini plan." },
       { n: 3, title: "Reset your body in 12 weeks", text: "Understand, release and rebuild, step by step." },
     ],
   },
@@ -198,11 +198,11 @@ export const home = {
   newsletter: {
     eyebrow: "Free guidance",
     title: "Not ready to book yet? Start with one small step.",
-    description: "Get simple, body-aware guidance to understand your pain, reduce tension, and rebuild trust in your movement, one small step at a time.",
+    description: "You are not a machine, discover a new way to look at your body. Download the e-book by joining the bi-weekly newsletter.",
     emailPlaceholder: "Email",
     firstNamePlaceholder: "First name",
     lastNamePlaceholder: "Last name",
-    buttonLabel: "Send me the guidance",
+    buttonLabel: "Download the e-book",
     privacyText: "No spam. Just practical guidance to help you understand your body better.",
     successTitle: "Great move, you’re in",
     successText: "You’ll hear from us soon.",

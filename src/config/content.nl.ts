@@ -71,7 +71,7 @@ export const homeNl = {
     title: "Drie stappen van vastgelopen naar zelfverzekerd",
     steps: [
       { n: 1, title: "Gratis gesprek boeken", text: "Vertel wat er speelt. Geen druk, geen jargon." },
-      { n: 2, title: "Face-to-face sessie", text: "Een eerlijke uitleg over jouw situatie en een mini-plan." },
+      { n: 2, title: "Face-to-face sessie", text: "Beoordeling van je probleem en een mini-plan." },
       { n: 3, title: "Je lichaam resetten in 12 weken", text: "Begrijpen, loslaten en opbouwen, stap voor stap." },
     ],
   },
@@ -198,11 +198,11 @@ export const homeNl = {
   newsletter: {
     eyebrow: "Gratis begeleiding",
     title: "Nog niet klaar om te boeken? Begin met één kleine stap.",
-    description: "Ontvang eenvoudige, lichaamsgerichte tips om je pijn beter te begrijpen, spanning te verminderen en stap voor stap weer vertrouwen te krijgen in je beweging.",
+    description: "Je bent geen machine, ontdek een nieuwe manier om naar je lichaam te kijken. Download het e-book door je in te schrijven op de tweewekelijkse nieuwsbrief.",
     emailPlaceholder: "E-mail",
     firstNamePlaceholder: "Voornaam",
     lastNamePlaceholder: "Achternaam",
-    buttonLabel: "Stuur mij de tips",
+    buttonLabel: "Download het e-book",
     privacyText: "Geen spam. Alleen praktische tips om je lichaam beter te begrijpen.",
     successTitle: "Goede stap, je bent erbij",
     successText: "Je hoort snel van ons.",
