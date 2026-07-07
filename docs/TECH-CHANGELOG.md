@@ -40,6 +40,24 @@ Files:
 - src/components/sections/Newsletter.tsx
 - docs/AI-HANDOFF.md
 Change summary:
+- Fixed root cause of false newsletter errors: `event.currentTarget` used after `await` could become invalid and throw during `reset()`.
+- Captured form reference before async boundary and reused it safely.
+Impact:
+- Runtime impact: successful subscriptions now show success reliably instead of a false error.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
+Scope: data | build
+Files:
+- src/components/sections/Newsletter.tsx
+- docs/AI-HANDOFF.md
+Change summary:
 - Hardened newsletter client logic: treat 2xx API response as success and make JSON parsing non-fatal.
 - This addresses intermittent cases where API returns success but UI still shows an error.
 Impact:

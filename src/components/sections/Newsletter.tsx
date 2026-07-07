@@ -15,6 +15,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
 
     if (isSubmittingRef.current) {
       return;
@@ -25,7 +26,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
     setSuccess(false);
     setError(null);
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const firstName = String(formData.get("fields[name]") ?? "").trim();
     const lastName = String(formData.get("fields[last_name]") ?? "").trim();
     const email = String(formData.get("fields[email]") ?? "").trim();
@@ -69,7 +70,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
       if (response.ok && payload.success !== false) {
         setError(null);
         setSuccess(true);
-        event.currentTarget.reset();
+        form.reset();
         return;
       }
 
