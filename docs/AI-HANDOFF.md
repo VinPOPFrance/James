@@ -71,11 +71,19 @@ Dutch mirror:
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`
 - Mounted in `src/app/layout.tsx`
+- Must be wrapped in `Suspense` in layout because it uses `useSearchParams`.
 - Enabled only when env vars are set:
   - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
   - `NEXT_PUBLIC_CLARITY_PROJECT_ID`
 
-## 8) Collaboration workflow (required)
+## 8) Deployment target
+- Hosting platform: Vercel
+- Domain registrar/DNS: Namecheap
+- Primary domain: `jamesdaime.com`
+- Canonical host rule: redirect `www.jamesdaime.com` to `jamesdaime.com` (see `vercel.json`)
+- Deployment runbook: `docs/DEPLOY-VERCEL.md`
+
+## 9) Collaboration workflow (required)
 Before any implementation task:
 1. `git branch --show-current`
 2. `git status --short`
@@ -83,7 +91,7 @@ Before any implementation task:
    - clean workspace: `git pull --rebase origin <current-branch>`
    - dirty workspace: ask user first
 
-## 9) Definition of done for AI changes
+## 10) Definition of done for AI changes
 1. Feature/code updated
 2. `npm run lint` passes
 3. `docs/AI-HANDOFF.md` updated if architecture/flow changed

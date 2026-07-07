@@ -35,6 +35,45 @@ Actions required:
 
 Date: 2026-07-07
 Author: AI
+Scope: build | analytics
+Files:
+- src/app/layout.tsx
+- docs/AI-HANDOFF.md
+Change summary:
+- Fixed production build failure by wrapping `TrackingScripts` in `Suspense`.
+- Documented the `useSearchParams` + Suspense requirement in AI handoff docs.
+Impact:
+- Runtime impact: none on user flows.
+- Deployment/migration impact: unblocks Vercel production builds.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
+Scope: infra | build | docs
+Files:
+- vercel.json
+- docs/DEPLOY-VERCEL.md
+- docs/AI-HANDOFF.md
+- README.md
+Change summary:
+- Added Vercel deployment runbook and explicit Namecheap DNS cutover instructions.
+- Added canonical host redirect from `www.jamesdaime.com` to `jamesdaime.com` via `vercel.json`.
+- Declared Vercel as deployment target in AI handoff docs.
+Impact:
+- Runtime impact: canonical host normalization with 301 redirect.
+- Deployment/migration impact: clearer, repeatable migration flow from WordPress to Vercel.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
 Scope: docs | workflow
 Files:
 - AGENTS.md

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Fraunces, Inter } from "next/font/google";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
@@ -48,7 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${voice.variable} ${sans.variable}`}>
       <body className="font-sans">
         {children}
-        <TrackingScripts />
+        <Suspense fallback={null}>
+          <TrackingScripts />
+        </Suspense>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

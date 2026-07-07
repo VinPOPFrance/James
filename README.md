@@ -61,6 +61,11 @@ npx eslint src --ext .ts,.tsx
 
 Tracking is automatically enabled only when the IDs are present.
 
+## Deployment
+
+- Vercel deployment runbook: `docs/DEPLOY-VERCEL.md`
+- Primary production domain: `jamesdaime.com`
+
 ---
 
 ## 4. Recommended tree
