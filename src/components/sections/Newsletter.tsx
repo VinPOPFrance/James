@@ -6,9 +6,6 @@ import type { DeepLoosen } from "@/types/content";
 
 type NewsletterContent = DeepLoosen<typeof home.newsletter>;
 
-const MAILERLITE_ACTION =
-  "https://assets.mailerlite.com/jsonp/521975/forms/185267044275455894/subscribe";
-
 export function Newsletter({ content }: { content?: NewsletterContent }) {
   const t = content ?? home.newsletter;
   const [submitting, setSubmitting] = useState(false);
@@ -29,22 +26,32 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
     setError(null);
 
     const formData = new FormData(event.currentTarget);
-    const params = new URLSearchParams();
-
-    for (const [key, value] of formData.entries()) {
-      params.append(key, String(value));
-    }
+    const firstName = String(formData.get("fields[name]") ?? "").trim();
+    const lastName = String(formData.get("fields[last_name]") ?? "").trim();
+    const email = String(formData.get("fields[email]") ?? "").trim();
 
     try {
-      const response = await fetch(`${MAILERLITE_ACTION}?${params.toString()}`);
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+        }),
+      });
+
       const payload = (await response.json()) as {
         success?: boolean;
+        message?: string;
         errors?: {
           fields?: Record<string, string[]>;
         };
       };
 
-      if (payload.success) {
+      if (response.ok && payload.success) {
         setError(null);
         setSuccess(true);
         event.currentTarget.reset();
@@ -55,7 +62,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
         ? Object.values(payload.errors.fields)[0]?.[0]
         : null;
       setSuccess(false);
-      setError(firstFieldError ?? "Subscription failed. Please try again.");
+      setError(payload.message ?? firstFieldError ?? "Subscription failed. Please try again.");
     } catch {
       setSuccess(false);
       setError("Subscription failed. Please try again.");
@@ -77,9 +84,6 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
         <p className="mb-8 text-[15.5px] leading-relaxed text-inkSoft">{t.description}</p>
 
         <form className="space-y-3" onSubmit={handleSubmit}>
-          {/* Hidden MailerLite fields */}
-          <input type="hidden" name="ml-submit" value="1" />
-          <input type="hidden" name="anticsrf" value="true" />
 
           <div className="grid gap-3 sm:grid-cols-2">
             <div>

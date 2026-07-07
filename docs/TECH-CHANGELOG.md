@@ -37,6 +37,25 @@ Date: 2026-07-07
 Author: AI
 Scope: data | build
 Files:
+- src/app/api/newsletter/route.ts
+- src/components/sections/Newsletter.tsx
+- docs/AI-HANDOFF.md
+Change summary:
+- Switched newsletter submissions to internal API route to avoid browser-side intermittent failures when calling MailerLite directly.
+- Added server-side forwarding to MailerLite with normalized error handling for the UI.
+Impact:
+- Runtime impact: more reliable newsletter signups in production browsers.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
+Scope: data | build
+Files:
 - src/components/sections/Newsletter.tsx
 - docs/AI-HANDOFF.md
 Change summary:

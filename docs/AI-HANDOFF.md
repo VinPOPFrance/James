@@ -67,7 +67,8 @@ Dutch mirror:
 - Global styles: `src/app/globals.css`
 - Header and footer live in section/layout components
 - SEO metadata is set per route where relevant
-- Newsletter section submits to MailerLite JSON endpoint via client-side GET fetch (`src/components/sections/Newsletter.tsx`).
+- Newsletter section submits to internal API route `src/app/api/newsletter/route.ts`.
+- Server route forwards data to MailerLite JSON endpoint and returns normalized success/error messages.
 - Newsletter form includes client-side submit locking to prevent duplicate concurrent requests.
 
 ## 7) Analytics
