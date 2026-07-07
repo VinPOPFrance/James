@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
 import { siteConfig } from "@/config/site-config";
+import { TrackingScripts } from "@/components/analytics/TrackingScripts";
 import "./globals.css";
 
 const voice = Fraunces({ subsets: ["latin"], variable: "--font-voice", display: "swap" });
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${voice.variable} ${sans.variable}`}>
       <body className="font-sans">
         {children}
+        <TrackingScripts />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

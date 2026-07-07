@@ -52,6 +52,15 @@ npm run build        # MUST pass
 npx eslint src --ext .ts,.tsx
 ```
 
+## Analytics (GA4 + Clarity)
+
+1. Copy `.env.example` to `.env.local`
+2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (example: `G-XXXXXXXXXX`)
+3. Set `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+4. Restart dev/build process after env changes
+
+Tracking is automatically enabled only when the IDs are present.
+
 ---
 
 ## 4. Recommended tree
@@ -84,7 +93,16 @@ docs/
   DESIGN-DIRECTION.md   ✅ visual direction (validated)
   CTA-RULES.md          ✅ locked button contrast rule
   COMPONENT-MAP.md      ✅ section order, props, build notes
+  AI-HANDOFF.md         ✅ fast architecture + workflow context for AI agents
 ```
+
+## AI startup instructions
+
+- `AGENTS.md` defines mandatory AI preflight (including git pull workflow).
+- `docs/AI-HANDOFF.md` explains architecture, routing, data flow, and update policy.
+- `docs/TECH-CHANGELOG.md` stores minimal structural change history.
+- When structure or behavior changes, update `docs/AI-HANDOFF.md` in the same task.
+- When structure or behavior changes, also add one entry to `docs/TECH-CHANGELOG.md`.
 
 ---
 
