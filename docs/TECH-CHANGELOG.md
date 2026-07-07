@@ -35,6 +35,24 @@ Actions required:
 
 Date: 2026-07-07
 Author: AI
+Scope: data
+Files:
+- src/config/business-info.ts
+- docs/AI-HANDOFF.md
+Change summary:
+- Updated shared `businessInfo.bookingUrl` to the specific SimplyBook discovery-call URL (`/category/1/service/6/count/1/`).
+- Ensures all "Book a free discovery call" CTAs now resolve to the same target.
+Impact:
+- Runtime impact: all CTA buttons wired to `businessInfo.bookingUrl` now land on the requested booking flow.
+- Deployment/migration impact: none.
+Actions required:
+- [x] none
+- [ ] run npm run lint
+- [ ] set/update env vars
+- [ ] manual verification needed
+
+Date: 2026-07-07
+Author: AI
 Scope: data | build
 Files:
 - src/components/sections/Newsletter.tsx

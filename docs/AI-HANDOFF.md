@@ -72,6 +72,7 @@ Dutch mirror:
 - Newsletter form includes client-side submit locking to prevent duplicate concurrent requests.
 - Newsletter client treats HTTP 2xx from `/api/newsletter` as success, with non-fatal JSON parsing for resilience.
 - In async submit handlers, capture `event.currentTarget` before `await` and reuse a stable form reference.
+- Discovery call CTAs consume `businessInfo.bookingUrl` from `src/config/business-info.ts` across EN/NL pages and shared sections.
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`
