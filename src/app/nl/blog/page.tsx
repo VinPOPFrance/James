@@ -38,7 +38,7 @@ export default async function BlogNlPage() {
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-6 py-10 md:px-8 md:py-12">
           {posts.length === 0 ? (
-            <p className="text-center text-[15px] text-muted">Er zijn geen artikelen gevonden via de WordPress API.</p>
+            <p className="text-center text-[15px] text-muted">Geen lokale blogartikelen gevonden. Run npm run sync:blog om posts te importeren.</p>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (

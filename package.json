@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --ext .ts,.tsx"
+    "lint": "eslint src --ext .ts,.tsx",
+    "sync:blog": "node scripts/export-wordpress-posts.mjs"
   },
   "dependencies": {
     "next": "^14.2.0",
