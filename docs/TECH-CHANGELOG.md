@@ -37,6 +37,24 @@ Date: 2026-07-07
 Author: AI
 Scope: data | build
 Files:
+- src/components/sections/Newsletter.tsx
+- docs/AI-HANDOFF.md
+Change summary:
+- Hardened newsletter client logic: treat 2xx API response as success and make JSON parsing non-fatal.
+- This addresses intermittent cases where API returns success but UI still shows an error.
+Impact:
+- Runtime impact: more reliable success feedback in production browsers.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
+Scope: data | build
+Files:
 - src/app/api/newsletter/route.ts
 - src/components/sections/Newsletter.tsx
 - docs/AI-HANDOFF.md

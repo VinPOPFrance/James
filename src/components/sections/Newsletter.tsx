@@ -43,15 +43,30 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
         }),
       });
 
-      const payload = (await response.json()) as {
+      const raw = await response.text();
+      let payload: {
         success?: boolean;
         message?: string;
         errors?: {
           fields?: Record<string, string[]>;
         };
-      };
+      } = {};
 
-      if (response.ok && payload.success) {
+      try {
+        payload = raw
+          ? (JSON.parse(raw) as {
+              success?: boolean;
+              message?: string;
+              errors?: {
+                fields?: Record<string, string[]>;
+              };
+            })
+          : {};
+      } catch {
+        payload = {};
+      }
+
+      if (response.ok && payload.success !== false) {
         setError(null);
         setSuccess(true);
         event.currentTarget.reset();

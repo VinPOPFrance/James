@@ -70,6 +70,7 @@ Dutch mirror:
 - Newsletter section submits to internal API route `src/app/api/newsletter/route.ts`.
 - Server route forwards data to MailerLite JSON endpoint and returns normalized success/error messages.
 - Newsletter form includes client-side submit locking to prevent duplicate concurrent requests.
+- Newsletter client treats HTTP 2xx from `/api/newsletter` as success, with non-fatal JSON parsing for resilience.
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`
