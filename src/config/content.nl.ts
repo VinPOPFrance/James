@@ -15,6 +15,7 @@ export const homeNl = {
       { label: "Programma", href: "/nl/12-week-body-reset-program" },
       { label: "Fascia reset", href: "/nl/fascia-reset-session" },
       { label: "Over James", href: "/nl/about" },
+      { label: "Blog", href: "/nl/blog" },
       { label: "FAQ", href: "/nl/faq" },
     ],
     cta: "Gratis kennismaken",

@@ -15,6 +15,7 @@ export const home = {
       { label: "Program", href: "/12-week-body-reset-program" },
       { label: "Fascia reset", href: "/fascia-reset-session" },
       { label: "About", href: "/about" },
+      { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
     ],
     cta: "Book a free call",
