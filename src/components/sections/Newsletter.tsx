@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { home } from "@/config/content.en";
 import type { DeepLoosen } from "@/types/content";
 
@@ -14,9 +14,16 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const isSubmittingRef = useRef(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (isSubmittingRef.current) {
+      return;
+    }
+
+    isSubmittingRef.current = true;
     setSubmitting(true);
     setSuccess(false);
     setError(null);
@@ -38,6 +45,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
       };
 
       if (payload.success) {
+        setError(null);
         setSuccess(true);
         event.currentTarget.reset();
         return;
@@ -46,10 +54,13 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
       const firstFieldError = payload.errors?.fields
         ? Object.values(payload.errors.fields)[0]?.[0]
         : null;
+      setSuccess(false);
       setError(firstFieldError ?? "Subscription failed. Please try again.");
     } catch {
+      setSuccess(false);
       setError("Subscription failed. Please try again.");
     } finally {
+      isSubmittingRef.current = false;
       setSubmitting(false);
     }
   }
@@ -65,7 +76,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
         </h2>
         <p className="mb-8 text-[15.5px] leading-relaxed text-inkSoft">{t.description}</p>
 
-        <form method="get" action={MAILERLITE_ACTION} className="space-y-3" onSubmit={handleSubmit}>
+        <form className="space-y-3" onSubmit={handleSubmit}>
           {/* Hidden MailerLite fields */}
           <input type="hidden" name="ml-submit" value="1" />
           <input type="hidden" name="anticsrf" value="true" />
@@ -117,7 +128,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
           <button
             type="submit"
             disabled={submitting}
-            className="inline-flex w-full items-center justify-center rounded-full border border-sage bg-sage px-6 py-3 text-[14.5px] font-medium text-white transition-colors hover:bg-sage/90 sm:w-auto"
+            className="inline-flex w-full items-center justify-center rounded-full border border-sage bg-sage px-6 py-3 text-[14.5px] font-medium text-white transition-colors hover:bg-sage/90 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
           >
             {submitting ? "Loading..." : t.buttonLabel}
           </button>

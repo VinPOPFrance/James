@@ -68,6 +68,7 @@ Dutch mirror:
 - Header and footer live in section/layout components
 - SEO metadata is set per route where relevant
 - Newsletter section submits to MailerLite JSON endpoint via client-side GET fetch (`src/components/sections/Newsletter.tsx`).
+- Newsletter form includes client-side submit locking to prevent duplicate concurrent requests.
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`

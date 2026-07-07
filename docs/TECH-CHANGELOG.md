@@ -40,6 +40,24 @@ Files:
 - src/components/sections/Newsletter.tsx
 - docs/AI-HANDOFF.md
 Change summary:
+- Fixed newsletter race condition causing simultaneous success and error messages under duplicate submissions.
+- Added submit lock and enforced mutually exclusive success/error state updates.
+Impact:
+- Runtime impact: stable newsletter feedback with no conflicting UI state.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
+Scope: data | build
+Files:
+- src/components/sections/Newsletter.tsx
+- docs/AI-HANDOFF.md
+Change summary:
 - Fixed newsletter signup flow by replacing failing direct POST form submit with MailerLite JSON GET submission.
 - Added in-page success/error feedback and loading state to the newsletter form.
 Impact:
