@@ -67,6 +67,7 @@ Dutch mirror:
 - Global styles: `src/app/globals.css`
 - Header and footer live in section/layout components
 - SEO metadata is set per route where relevant
+- Newsletter section submits to MailerLite JSON endpoint via client-side GET fetch (`src/components/sections/Newsletter.tsx`).
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`

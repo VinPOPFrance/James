@@ -1,5 +1,6 @@
 "use client";
 
+import { FormEvent, useState } from "react";
 import { home } from "@/config/content.en";
 import type { DeepLoosen } from "@/types/content";
 
@@ -10,6 +11,48 @@ const MAILERLITE_ACTION =
 
 export function Newsletter({ content }: { content?: NewsletterContent }) {
   const t = content ?? home.newsletter;
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setSubmitting(true);
+    setSuccess(false);
+    setError(null);
+
+    const formData = new FormData(event.currentTarget);
+    const params = new URLSearchParams();
+
+    for (const [key, value] of formData.entries()) {
+      params.append(key, String(value));
+    }
+
+    try {
+      const response = await fetch(`${MAILERLITE_ACTION}?${params.toString()}`);
+      const payload = (await response.json()) as {
+        success?: boolean;
+        errors?: {
+          fields?: Record<string, string[]>;
+        };
+      };
+
+      if (payload.success) {
+        setSuccess(true);
+        event.currentTarget.reset();
+        return;
+      }
+
+      const firstFieldError = payload.errors?.fields
+        ? Object.values(payload.errors.fields)[0]?.[0]
+        : null;
+      setError(firstFieldError ?? "Subscription failed. Please try again.");
+    } catch {
+      setError("Subscription failed. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <section className="rounded-section bg-[#F4F6F2] px-6 py-14 md:px-12">
@@ -22,12 +65,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
         </h2>
         <p className="mb-8 text-[15.5px] leading-relaxed text-inkSoft">{t.description}</p>
 
-        <form
-          method="post"
-          action={MAILERLITE_ACTION}
-          target="_blank"
-          className="space-y-3"
-        >
+        <form method="get" action={MAILERLITE_ACTION} className="space-y-3" onSubmit={handleSubmit}>
           {/* Hidden MailerLite fields */}
           <input type="hidden" name="ml-submit" value="1" />
           <input type="hidden" name="anticsrf" value="true" />
@@ -78,10 +116,23 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
 
           <button
             type="submit"
+            disabled={submitting}
             className="inline-flex w-full items-center justify-center rounded-full border border-sage bg-sage px-6 py-3 text-[14.5px] font-medium text-white transition-colors hover:bg-sage/90 sm:w-auto"
           >
-            {t.buttonLabel}
+            {submitting ? "Loading..." : t.buttonLabel}
           </button>
+
+          {success ? (
+            <p className="text-[13px] text-sage" role="status" aria-live="polite">
+              <strong>{t.successTitle}</strong> {t.successText}
+            </p>
+          ) : null}
+
+          {error ? (
+            <p className="text-[13px] text-copper" role="alert" aria-live="assertive">
+              {error}
+            </p>
+          ) : null}
         </form>
 
         <p className="mt-5 text-[12.5px] text-muted">{t.privacyText}</p>

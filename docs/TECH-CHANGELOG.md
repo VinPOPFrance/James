@@ -35,6 +35,24 @@ Actions required:
 
 Date: 2026-07-07
 Author: AI
+Scope: data | build
+Files:
+- src/components/sections/Newsletter.tsx
+- docs/AI-HANDOFF.md
+Change summary:
+- Fixed newsletter signup flow by replacing failing direct POST form submit with MailerLite JSON GET submission.
+- Added in-page success/error feedback and loading state to the newsletter form.
+Impact:
+- Runtime impact: newsletter subscription now works from site without opening a broken target tab.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-07-07
+Author: AI
 Scope: build | analytics
 Files:
 - src/app/layout.tsx
