@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"/Users/adriencoutant/Library/CloudStorage/GoogleDrive-info@vinpop.fr/My Drive/Perso/James site/crystal-clear/.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git merge *)",
+      "Bash(git branch *)"
+    ]
+  }
+}
