@@ -63,7 +63,7 @@ export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { 
           {/* Anchor for sticky mobile CTA: appears once this point scrolls out of view */}
           <div id="hero-cta-anchor" aria-hidden />
 
-          <p className="flex items-center gap-3 text-[13px] text-muted">
+          <p className="flex items-center gap-3 text-[14px] text-muted">
             <span className="tracking-wide text-copper">★★★★★</span>
             {t.proof}
           </p>
