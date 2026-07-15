@@ -54,10 +54,12 @@ npx eslint src --ext .ts,.tsx
 
 ## Analytics (GA4 + Clarity)
 
-1. Copy `.env.example` to `.env.local`
+1. Edit `.env.local` in the project root
 2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (example: `G-XXXXXXXXXX`)
-3. Set `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+3. Set `NEXT_PUBLIC_CLARITY_PROJECT_ID` to your Clarity Project ID
 4. Restart dev/build process after env changes
+
+If you only want Clarity, you can leave the GA4 variable unset.
 
 Tracking is automatically enabled only when the IDs are present.
 

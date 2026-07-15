@@ -33,6 +33,24 @@ Actions required:
 
 ## Entries
 
+Date: 2026-07-15
+Author: AI
+Scope: analytics | infra | docs
+Files:
+- .env.local
+- README.md
+Change summary:
+- Added the Clarity Project ID to local environment configuration for this workspace.
+- Updated analytics setup instructions to point directly at `.env.local` instead of a missing `.env.example`.
+Impact:
+- Runtime impact: local and Vercel builds can enable Clarity when `NEXT_PUBLIC_CLARITY_PROJECT_ID` is present.
+- Deployment/migration impact: none.
+Actions required:
+- [ ] none
+- [ ] run npm run lint
+- [x] set/update env vars
+- [ ] manual verification needed
+
 Date: 2026-07-07
 Author: AI
 Scope: data
