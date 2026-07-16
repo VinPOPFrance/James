@@ -117,47 +117,6 @@ export default function FasciaPage() {
         </section>
       </Reveal>
 
-      {/* What is it */}
-      <Reveal>
-        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-4xl">
-            <div className="grid items-start gap-10 md:grid-cols-2">
-              <div>
-                <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.whatIsIt.eyebrow}</p>
-                <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.whatIsIt.title}</h2>
-                <p className="mb-6 text-[15.5px] leading-relaxed text-inkSoft">{t.whatIsIt.body}</p>
-              </div>
-              <ul className="space-y-3 pt-8 md:pt-0">
-                {t.whatIsIt.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
-                    <span className="text-[15px] text-inkSoft">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-      </Reveal>
-
-      {/* For whom */}
-      <Reveal>
-        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-2xl">
-            <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.for.eyebrow}</p>
-            <h2 className="mb-7 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.for.title}</h2>
-            <ul className="space-y-4">
-              {t.for.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
-                  <span className="text-[15.5px] text-inkSoft">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      </Reveal>
-
     </PageLayout>
   );
 }
