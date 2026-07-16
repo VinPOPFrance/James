@@ -27,7 +27,6 @@ import { Fit } from "@/components/sections/Fit";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Fascia } from "@/components/sections/Fascia";
 import { Promise } from "@/components/sections/Promise";
-import { About } from "@/components/sections/About";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
@@ -96,10 +95,6 @@ export default function HomePage() {
 
         <Reveal>
           <Promise />
-        </Reveal>
-
-        <Reveal>
-          <About />
         </Reveal>
 
         <Reveal>
