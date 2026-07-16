@@ -112,21 +112,6 @@ export default function ProgramNlPage() {
       </Reveal>
 
       <Reveal>
-        <section className="rounded-section border border-hairline bg-ivory px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-3xl">
-            <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.pricing.eyebrow}</p>
-            <h2 className="mb-6 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.pricing.title}</h2>
-            <div className="mb-5 inline-flex flex-col rounded-card border border-hairline bg-white p-7">
-              <span className="mb-1 text-[13px] text-muted">{t.pricing.priceLabel}</span>
-              <span className="font-voice text-[2.4rem] font-medium text-navy">{t.pricing.price}</span>
-              <span className="text-[13px] text-muted">{t.pricing.priceSub}</span>
-            </div>
-            <p className="text-[13.5px] leading-relaxed text-muted">{t.pricing.note}</p>
-          </div>
-        </section>
-      </Reveal>
-
-      <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
             <div className="rounded-card border border-sage/40 bg-ivory p-7">
