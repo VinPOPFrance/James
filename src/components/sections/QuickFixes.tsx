@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { icons } from "@/lib/icons";
 import { home } from "@/config/content.en";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
@@ -17,7 +18,16 @@ export function QuickFixes({ content }: { content?: QuickFixesContent }) {
         <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
           {t.title}
         </h2>
-        <p className="mb-10 text-[15.5px] leading-relaxed text-inkSoft">{t.body}</p>
+        <div className="mb-10 overflow-hidden rounded-[14px]">
+          <Image
+            src="/media/eva-1.jpg"
+            alt="Eva"
+            width={1200}
+            height={800}
+            className="h-auto w-full object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
+        </div>
 
         <RevealGroup className="grid gap-4 md:grid-cols-2">
           {/* Quick-fix loop */}
