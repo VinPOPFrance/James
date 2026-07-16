@@ -25,7 +25,7 @@ export const home = {
     h1: "Rebuild trust in your body and move beyond chronic back pain.",
     sub: "A clear 12-week body reset program for women who feel stuck after physio, osteopathy, or chiropractic care, and want to understand trigger points, achieve deep myofascial release, and rebuild their body without pushing through pain.",
     ctaPrimary: "Book a free discovery call",
-    ctaSecondary: "Start with a fascia reset session",
+    ctaSecondary: "Fascia treatment session",
     proof: "119+ five-star reviews · 10+ years of practice",
     overlay: "No pushing through pain",
   },

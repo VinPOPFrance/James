@@ -39,7 +39,7 @@ export default function HomePage() {
 
       <main className="mx-auto max-w-6xl space-y-4 px-4 py-4 pb-24 md:pb-4">
         <Reveal>
-          <Hero />
+          <Hero ctaSecondaryHref="/fascia-reset-session" />
         </Reveal>
 
         {/* Sentinel: sticky mobile CTA appears once this leaves the viewport */}

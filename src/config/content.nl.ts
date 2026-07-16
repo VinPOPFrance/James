@@ -25,7 +25,7 @@ export const homeNl = {
     h1: "Leer je lichaam opnieuw vertrouwen en beweeg voorbij chronische rugpijn.",
     sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie, en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
     ctaPrimary: "Gratis kennismakingsgesprek",
-    ctaSecondary: "Begin met een fascia reset sessie",
+    ctaSecondary: "Fascia treatment session",
     proof: "119+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
     overlay: "Geen “no pain, no gain”",
   },
