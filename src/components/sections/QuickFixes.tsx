@@ -19,13 +19,13 @@ export function QuickFixes({ content }: { content?: QuickFixesContent }) {
           {t.title}
         </h2>
         <div className="mb-10 grid gap-4 md:grid-cols-2 md:items-center md:gap-8">
-          <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-[14px] md:mx-0 md:max-w-none">
+          <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-[14px] md:mx-0 md:h-[clamp(280px,30vw,360px)] md:max-w-none">
             <Image
               src="/media/eva-1.jpg"
               alt="Eva"
               width={1200}
               height={800}
-              className="h-auto w-full object-cover"
+              className="h-auto w-full object-cover md:h-full"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 55vw, 50vw"
             />
           </div>
