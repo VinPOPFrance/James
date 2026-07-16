@@ -10,6 +10,31 @@ export const fasciaNl = {
     body: "Een gerichte sessie om spanning los te laten, te begrijpen wat jouw pijn veroorzaakt, en een helder beeld te krijgen van wat je lichaam nodig heeft — zonder verplichtingen.",
     ctaPrimary: "Fascia reset sessie boeken",
     ctaSecondary: "Of gratis kennismakingsgesprek",
+    programCard: {
+      title: "Geïnteresseerd in een 12-weken programma?",
+      body: "Lees meer over onze uitgebreide body reset.",
+      cta: "Meer lezen",
+      href: "/12-week-body-reset-program",
+    },
+  },
+  details: {
+    eyebrow: "Wat je van een sessie kunt verwachten",
+    title: "Wat je krijgt in één sessie",
+    subtitle: "Ervaar directe verlichting en begrijp de grenzen van je lichaam.",
+    items: [
+      {
+        title: "Trigger Point & Myofasciale Release",
+        body: "Hands-on werk gericht op hardnekkige spanning en het losmaken van vastzittend weefsel.",
+      },
+      {
+        title: "Posturale analyse & beperkingen",
+        body: "Ontdek precies welke bewegingspatronen en houdingsgewoonten jouw pijn aansturen.",
+      },
+      {
+        title: "Directe verlichting",
+        body: "Ga naar huis met een lichter, losser en meer verbonden gevoel in je lichaam.",
+      },
+    ],
   },
   whatIsIt: {
     eyebrow: "Wat er in de sessie gebeurt",
@@ -57,6 +82,12 @@ export const fasciaNl = {
   promise: {
     badge: "Wat je meeneemt",
     body: "Een heldere uitleg over je lichaam, een mini-plan om mee te starten, en volledige eerlijkheid over of het volledige programma de juiste volgende stap voor jou is. Geen druk, geen upsell.",
+  },
+  longTermCta: {
+    eyebrow: "Op zoek naar blijvende verandering?",
+    body: "Een enkele sessie is geweldig voor directe verlichting, maar als je blijvende, langdurige resultaten wilt en echt aan jezelf wilt werken, dan is ons volledige programma voor jou.",
+    cta: "Ontdek het 12-weken Body Reset Programma",
+    href: "/12-week-body-reset-program",
   },
   finalCta: {
     title: "Begin met één sessie.",

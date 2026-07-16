@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageLayout } from "@/components/layout/PageLayout";
-import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
@@ -27,13 +26,95 @@ export default function FasciaNlPage() {
   return (
     <PageLayout locale="nl">
       <Reveal>
-        <PageHero
-          eyebrow={t.hero.eyebrow}
-          title={t.hero.title}
-          body={t.hero.body}
-          ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
-          ctaSecondary={{ label: t.hero.ctaSecondary, href: businessInfo.bookingUrl, external: true }}
-        />
+        <section className="relative overflow-hidden rounded-section border border-hairline bg-ivory px-8 py-16 md:px-14 md:py-20">
+          <div className="pointer-events-none absolute -left-16 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-sage/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-copper/10 blur-3xl" />
+          <div className="relative mx-auto max-w-5xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-4 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.hero.eyebrow}</p>
+              <h1 className="mb-5 font-voice text-[clamp(2rem,4vw,2.6rem)] font-medium leading-[1.11] text-navy">
+                {t.hero.title}
+              </h1>
+              <p className="mb-8 text-[16px] leading-relaxed text-inkSoft">{t.hero.body}</p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              <div className="card-lift flex h-full flex-col rounded-card border border-hairline bg-white p-7">
+                <p className="mb-1 text-[12px] font-medium uppercase tracking-wider text-muted">Snelle spanningsrelease</p>
+                <p className="mb-1 text-[1.1rem] font-semibold text-navy">30 minuten</p>
+                <p className="mb-3 font-voice text-[2rem] font-medium text-navy">€49</p>
+                <p className="mb-6 flex-1 text-[14px] leading-relaxed text-inkSoft">
+                  Een gerichte release sessie voor één gebied. Goed als je nieuwsgierig bent en een laagdrempelige eerste stap wilt zetten.
+                </p>
+                <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external fullWidth>
+                  Boek 30 min sessie
+                </Button>
+              </div>
+
+              <div className="card-lift flex h-full flex-col rounded-card border border-navy bg-navy p-7 text-ivory shadow-[0_20px_50px_-24px_rgba(31,42,60,0.35)]">
+                <p className="mb-1 text-[12px] font-medium uppercase tracking-wider text-copper">Volledige eerste ervaring</p>
+                <p className="mb-1 text-[1.1rem] font-semibold text-ivory">60 minuten</p>
+                <p className="mb-3 font-voice text-[2rem] font-medium text-copper">€90</p>
+                <p className="mb-6 flex-1 text-[14px] leading-relaxed text-ivory/75">
+                  Een complete analyse, release werk en mini-plan. De beste manier om je lichaam te leren kennen voordat je beslist over het volledige programma.
+                </p>
+                <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external fullWidth>
+                  Boek 60 min sessie
+                </Button>
+              </div>
+
+              <div className="card-lift flex h-full flex-col rounded-card border border-sage/30 bg-[#F7F8F4] p-7">
+                <p className="mb-1 text-[12px] font-medium uppercase tracking-wider text-sage">12-weken body reset</p>
+                <p className="mb-1 text-[1.1rem] font-semibold text-navy">Geïnteresseerd in een 12-weken programma?</p>
+                <p className="mb-3 font-voice text-[1.75rem] font-medium text-navy">Meer lezen</p>
+                <p className="mb-6 flex-1 text-[14px] leading-relaxed text-inkSoft">
+                  Lees meer over onze uitgebreide body reset.
+                </p>
+                <Button href={t.hero.programCard.href} surface="light" variant="secondary" fullWidth>
+                  {t.hero.programCard.cta}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.details.eyebrow}</p>
+              <h2 className="mb-4 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.details.title}</h2>
+              <p className="text-[15.5px] leading-relaxed text-inkSoft">{t.details.subtitle}</p>
+            </div>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {t.details.items.map((item, i) => (
+                <div key={i} className="card-lift rounded-card border border-hairline bg-ivory p-6">
+                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-sage/15 text-[13px] font-semibold text-sage">
+                    0{i + 1}
+                  </div>
+                  <h3 className="mb-3 text-[1rem] font-semibold text-navy">{item.title}</h3>
+                  <p className="text-[14px] leading-relaxed text-inkSoft">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="relative overflow-hidden rounded-section bg-[#F1F3F6] px-8 py-14 md:px-12">
+          <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
+          <div className="relative mx-auto max-w-3xl text-center">
+            <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.longTermCta.eyebrow}</p>
+            <p className="mb-6 text-[16px] leading-relaxed text-inkSoft">{t.longTermCta.body}</p>
+            <Button href={t.longTermCta.href} surface="light" variant="primary">
+              {t.longTermCta.cta}
+            </Button>
+          </div>
+        </section>
       </Reveal>
 
       <Reveal>
@@ -54,26 +135,6 @@ export default function FasciaNlPage() {
                 ))}
               </ul>
             </div>
-          </div>
-        </section>
-      </Reveal>
-
-      <Reveal>
-        <section className="rounded-section bg-[#F1F3F6] px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-3xl">
-            <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.tiers.eyebrow}</p>
-            <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.tiers.title}</h2>
-            <div className="mb-6 grid gap-4 md:grid-cols-2">
-              {t.tiers.items.map((tier, i) => (
-                <div key={i} className={`rounded-card p-7 ${tier.dark ? "bg-navy text-ivory" : "border border-hairline bg-white"}`}>
-                  <p className={`mb-1 text-[12px] font-medium uppercase tracking-wider ${tier.dark ? "text-copper" : "text-muted"}`}>{tier.sub}</p>
-                  <p className={`mb-1 text-[1.1rem] font-semibold ${tier.dark ? "text-ivory" : "text-navy"}`}>{tier.dur}</p>
-                  <p className={`mb-3 font-voice text-[2rem] font-medium ${tier.dark ? "text-copper" : "text-navy"}`}>{tier.price}</p>
-                  <p className={`text-[14px] leading-relaxed ${tier.dark ? "text-ivory/70" : "text-inkSoft"}`}>{tier.body}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-[13px] leading-relaxed text-muted">{t.tiers.note}</p>
           </div>
         </section>
       </Reveal>

@@ -10,6 +10,31 @@ export const fascia = {
     body: "A focused session to release tension, understand what’s driving your pain, and leave with a clear picture of what your body needs — with no commitment to the full program.",
     ctaPrimary: "Book a fascia reset session",
     ctaSecondary: "Or book a free discovery call",
+    programCard: {
+      title: "Are you interested in a 12-week program?",
+      body: "Learn more about our comprehensive body reset.",
+      cta: "Learn More",
+      href: "/12-week-body-reset-program",
+    },
+  },
+  details: {
+    eyebrow: "What to expect from a session",
+    title: "What you get in a single session",
+    subtitle: "Experience instant relief and understand your body's limits.",
+    items: [
+      {
+        title: "Trigger Point & Myofascial Release",
+        body: "Hands-on work targeting stubborn tension and releasing restricted tissue.",
+      },
+      {
+        title: "Postural & Limitation Assessment",
+        body: "Discover exactly which movement patterns and postural habits are driving your pain.",
+      },
+      {
+        title: "Instant Relief",
+        body: "Walk out feeling lighter, looser, and more connected to your body.",
+      },
+    ],
   },
   whatIsIt: {
     eyebrow: "What happens in the session",
@@ -57,6 +82,12 @@ export const fascia = {
   promise: {
     badge: "What you’ll leave with",
     body: "A clear explanation of your body, a mini plan to start with, and complete honesty about whether the full program is the right next step for you. No pressure, no upsell.",
+  },
+  longTermCta: {
+    eyebrow: "Looking for a permanent change?",
+    body: "A single session is great for instant relief, but if you want permanent, long-term results and are ready to truly work on yourself, our full program is for you.",
+    cta: "Explore the 12-Week Body Reset Program",
+    href: "/12-week-body-reset-program",
   },
   finalCta: {
     title: "Start with one session.",
