@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 
 export default function FasciaPage() {
   const t = fascia;
+  const sixtyMinuteBookingUrl = "https://motionline.simplybook.it/v2/?_gl=1*1nlw5gn*_gcl_au*OTYzMDEzOTUwLjE3ODEwMTYzNTM.*_ga*MTczNDczODYwNi4xNzczMjE4MzMw*_ga_MP20K2TZ75*czE3ODQyMTUxNDEkbzgyJGcxJHQxNzg0MjE4MTA1JGo1OCRsMCRoMA..#book/category/1/service/2/count/1/";
 
   return (
     <PageLayout>
@@ -58,7 +59,7 @@ export default function FasciaPage() {
                 <p className="mb-6 flex-1 text-[14px] leading-relaxed text-ivory/75">
                   A complete assessment, release work and mini plan. The best way to understand your body before deciding on the full program.
                 </p>
-                <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external fullWidth>
+                <Button href={sixtyMinuteBookingUrl} surface="dark" variant="primary" external fullWidth>
                   Book 60 Min Session
                 </Button>
               </div>
