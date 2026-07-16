@@ -14,7 +14,7 @@ export const program = {
   intro: {
     eyebrow: "What this program is",
     title: "A clear path, not another technique",
-    body: "Most programs give you exercises. This one gives you understanding. Over 12 private sessions, you’ll learn what drives your pain, release the patterns that keep it going, and rebuild movement that lasts — without pushing through pain.",
+    body: "Most programs give you exercises. This one gives you understanding. Over 12 private sessions, you’ll learn what drives your pain, release the patterns that keep it going, and rebuild movement that lasts, without pushing through pain.",
   },
   phases: {
     eyebrow: "How the 12 weeks unfold",
