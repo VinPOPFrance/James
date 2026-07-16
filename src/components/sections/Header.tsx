@@ -26,8 +26,8 @@ export function Header({ locale = "en" }: HeaderProps) {
     <header className="sticky top-0 z-50 border-b border-hairline bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Link href={locale === "nl" ? "/nl" : "/"} className="flex flex-col leading-tight">
-          <span className="font-voice text-[1.15rem] font-medium text-navy">Inner Strength Compass</span>
-          <span className="text-[10.5px] font-medium tracking-wide text-muted">by James Daime</span>
+          <span className="font-voice text-[1.15rem] font-medium text-navy">with James Daime.</span>
+          <span className="text-[10.5px] font-medium tracking-wide text-muted">Biomechanics and fascia specialist</span>
         </Link>
 
         {/* Desktop nav */}
