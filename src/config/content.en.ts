@@ -23,7 +23,7 @@ export const home = {
   hero: {
     badge: "For women 40+ · Netherlands",
     h1: "Rebuild trust in your body and move beyond chronic back pain.",
-    sub: "A clear 12-week body reset program for women who feel stuck after physio, osteopathy or chiropractic care, and want to understand, release and rebuild their body without pushing through pain.",
+    sub: "A clear 12-week body reset program for women who feel stuck after physio, osteopathy, or chiropractic care, and want to understand trigger points, achieve deep myofascial release, and rebuild their body without pushing through pain.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Start with a fascia reset session",
     proof: "119+ five-star reviews · 10+ years of practice",
