@@ -42,7 +42,7 @@ export const fascia = {
         dark: true,
       },
     ],
-    note: "This is a movement and body-awareness session, not a medical treatment. It complements the care of your doctor or specialist.",
+    note: "",
   },
   for: {
     eyebrow: "Is this session for you?",
