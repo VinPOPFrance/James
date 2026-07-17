@@ -176,8 +176,8 @@ export default function ProgramPage() {
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.included.eyebrow}</p>
             <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.included.title}</h2>
 
-            <div className="mb-8 grid items-start gap-6 md:grid-cols-[1.15fr_0.85fr] md:gap-8">
-              <div className="grid gap-3 sm:grid-cols-2">
+            <div className="mb-8 grid items-center gap-6 md:grid-cols-[1.15fr_0.85fr] md:gap-8">
+              <div className="space-y-3">
                 {t.included.items.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
