@@ -4,7 +4,7 @@ import { FaqClient } from "./FaqClient";
 
 export const metadata: Metadata = {
   title: "FAQ | Inner Strength Compass · Rotterdam",
-  description: "Answers to the most common questions before you book — about the programme, sessions, approach, and what to expect.",
+  description: "Answers to the most common questions before you book, about the programme, sessions, approach, and what to expect.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/faq`,
     languages: {
