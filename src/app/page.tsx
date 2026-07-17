@@ -21,7 +21,6 @@ import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Fit } from "@/components/sections/Fit";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { Fascia } from "@/components/sections/Fascia";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -71,10 +70,6 @@ export default function HomePage() {
 
         <Reveal>
           <Fit />
-        </Reveal>
-
-        <Reveal>
-          <Testimonials />
         </Reveal>
 
         <Reveal>
