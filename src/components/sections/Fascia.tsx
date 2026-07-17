@@ -8,7 +8,7 @@ export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content
   const t = content ?? home.fascia;
 
   return (
-    <section className="rounded-section bg-[#F1F3F6] px-6 py-14 md:px-12">
+    <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">
       <div className="mx-auto max-w-3xl text-center">
         <span className="mb-4 inline-block rounded-full border border-hairline bg-white px-4 py-1.5 text-[13px] text-muted">
           {t.badge}

@@ -62,6 +62,10 @@ export default function HomePage() {
         </Reveal>
 
         <Reveal>
+          <Fascia />
+        </Reveal>
+
+        <Reveal>
           <Newsletter />
         </Reveal>
 
@@ -71,10 +75,6 @@ export default function HomePage() {
 
         <Reveal>
           <Testimonials />
-        </Reveal>
-
-        <Reveal>
-          <Fascia />
         </Reveal>
 
         <Reveal>
