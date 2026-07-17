@@ -30,7 +30,7 @@ export function ProofBar({ content }: { content?: ProofBarContent }) {
               </a>
             ) : (
               <>
-                <span className="font-voice text-[1.6rem] font-medium text-copper">{s.value}</span>
+                <span className="font-voice text-[1.6rem] font-medium text-[#ffee8c]">{s.value}</span>
                 <span className="mt-1 text-[13px] text-ivory/90">{s.label}</span>
               </>
             )}

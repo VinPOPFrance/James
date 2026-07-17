@@ -30,7 +30,7 @@ export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content
             >
               <p
                 className={`mb-1 text-[12px] font-medium uppercase tracking-wider ${
-                  tier.dark ? "text-copper" : "text-muted"
+                  tier.dark ? "text-[#ffee8c]" : "text-muted"
                 }`}
               >
                 {tier.sub}
@@ -44,7 +44,7 @@ export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content
               </p>
               <p
                 className={`font-voice text-[2rem] font-medium ${
-                  tier.dark ? "text-copper" : "text-navy"
+                  tier.dark ? "text-[#ffee8c]" : "text-navy"
                 }`}
               >
                 {tier.price}
