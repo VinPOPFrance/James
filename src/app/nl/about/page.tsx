@@ -79,7 +79,6 @@ export default function AboutNlPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-[13px] text-muted">{t.credentials.note}</p>
           </div>
         </section>
       </Reveal>

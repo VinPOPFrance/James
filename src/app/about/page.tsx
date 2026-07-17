@@ -83,7 +83,6 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-[13px] text-muted">{t.credentials.note}</p>
           </div>
         </section>
       </Reveal>
