@@ -7,13 +7,13 @@ export const aboutNl = {
   hero: {
     eyebrow: "Je gids",
     title: "Maak kennis met James",
-    body: "Meer dan 6 jaar mensen helpen hun lichaam te begrijpen, zonder angst te bewegen en routines op te bouwen die blijven.",
+    body: "Meer dan 10 jaar mensen helpen hun lichaam te begrijpen, zonder angst te bewegen en routines op te bouwen die blijven.",
   },
   story: {
     eyebrow: "De aanpak",
     title: "Waarom Inner Strength Compass",
     paragraphs: [
-      "James helpt al meer dan 6 jaar mensen met meer zelfvertrouwen te bewegen. Hij luistert eerst, legt helder uit en jaagt je nooit door pijn heen. Zijn aanpak is rustig, menselijk en gebaseerd op hoe het lichaam echt werkt, zonder je te overladen met jargon.",
+      "James helpt al meer dan 10 jaar mensen met meer zelfvertrouwen te bewegen. Hij luistert eerst, legt helder uit en jaagt je nooit door pijn heen. Zijn aanpak is rustig, menselijk en gebaseerd op hoe het lichaam echt werkt, zonder je te overladen met jargon.",
       "Inner Strength Compass is ontstaan vanuit een eenvoudige observatie: de meeste mensen met pijn hebben geen nieuwe techniek nodig. Ze hebben iemand nodig die eerlijk en helder uitlegt wat er daadwerkelijk in hun lichaam gebeurt.",
       "Het doel is dat je elke sessie verlaat met meer inzicht in je lichaam dan bij aankomst, en er iets meer op kunt vertrouwen.",
     ],
