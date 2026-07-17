@@ -54,7 +54,6 @@ export default function ProgramPage() {
           title={t.hero.title}
           body={t.hero.body}
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
-          ctaSecondary={{ label: t.hero.ctaSecondary, href: "/fascia-reset-session" }}
         />
       </Reveal>
 
