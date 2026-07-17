@@ -172,17 +172,32 @@ export default function ProgramPage() {
       {/* Included */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-5xl">
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.included.eyebrow}</p>
             <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.included.title}</h2>
-            <div className="mb-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-              {t.included.items.map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
-                  <span className="text-[15px] text-inkSoft">{item}</span>
-                </div>
-              ))}
+
+            <div className="mb-8 grid items-start gap-6 md:grid-cols-[1.15fr_0.85fr] md:gap-8">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {t.included.items.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <icons.check size={16} className="mt-0.5 shrink-0 text-sage" />
+                    <span className="text-[15px] text-inkSoft">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="overflow-hidden rounded-[16px] border border-hairline bg-ivory/60">
+                <Image
+                  src="/media/posture-stick.jpg"
+                  alt="Posture stick exercise"
+                  width={1200}
+                  height={900}
+                  className="h-[240px] w-full object-cover md:h-[300px]"
+                  sizes="(max-width: 768px) 100vw, 38vw"
+                />
+              </div>
             </div>
+
             <div className="flex items-start gap-3 rounded-card border border-sage/30 bg-[#F4F6F2] p-5">
               <icons.leaf size={18} className="mt-0.5 shrink-0 text-sage" />
               <p className="text-[14.5px] leading-relaxed text-inkSoft">{t.included.effort}</p>
