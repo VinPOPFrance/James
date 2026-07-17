@@ -13,7 +13,6 @@ import { Newsletter } from "@/components/sections/Newsletter";
 import { Fit } from "@/components/sections/Fit";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Fascia } from "@/components/sections/Fascia";
-import { Promise } from "@/components/sections/Promise";
 import { About } from "@/components/sections/About";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -79,10 +78,6 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Fascia content={homeNl.fascia} ctaHref="/nl/fascia-reset-session" />
-        </Reveal>
-
-        <Reveal>
-          <Promise content={homeNl.promise} />
         </Reveal>
 
         <Reveal>
