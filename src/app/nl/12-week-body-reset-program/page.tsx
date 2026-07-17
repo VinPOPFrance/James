@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
@@ -59,10 +60,22 @@ export default function ProgramNlPage() {
 
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-3xl">
-            <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.intro.eyebrow}</p>
-            <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.intro.title}</h2>
-            <p className="text-[15.5px] leading-relaxed text-inkSoft">{t.intro.body}</p>
+          <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 md:gap-10">
+            <div className="overflow-hidden rounded-[20px]">
+              <Image
+                src="/media/annemarie-doggie.jpg"
+                alt="Annemarie met hond"
+                width={1200}
+                height={900}
+                className="h-full min-h-[230px] w-full object-cover md:min-h-[320px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.intro.eyebrow}</p>
+              <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.intro.title}</h2>
+              <p className="text-[15.5px] leading-relaxed text-inkSoft">{t.intro.body}</p>
+            </div>
           </div>
         </section>
       </Reveal>
