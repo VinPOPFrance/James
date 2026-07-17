@@ -10,7 +10,7 @@ export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content
   return (
     <section className="rounded-section border border-hairline bg-white px-6 py-14 md:px-12">
       <div className="mx-auto max-w-3xl text-center">
-        <span className="mb-4 inline-block rounded-full border border-hairline bg-white px-6 py-2.5 text-[clamp(1.4rem,2.6vw,1.7rem)] font-bold leading-none text-muted">
+        <span className="mb-4 inline-block rounded-full border border-hairline bg-white px-6 py-2.5 text-[clamp(1.3rem,2.3vw,1.55rem)] leading-none text-muted">
           {t.badge}
         </span>
         <h2 className="mb-4 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
