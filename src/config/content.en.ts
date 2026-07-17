@@ -69,7 +69,7 @@ export const home = {
   },
   plan: {
     eyebrow: "A clear path forward",
-    title: "Three steps from stuck to confident",
+    title: "3 steps to your Program from stuck to confident",
     steps: [
       { n: 1, title: "Book a free call", text: "Tell us what\u2019s going on. No pressure, no jargon." },
       { n: 2, title: "Face to face session", text: "Assessment of your problem and mini plan." },
