@@ -23,6 +23,8 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { content?: HeroContent; ctaSecondaryHref?: string }) {
   const t = content ?? home.hero;
   const reduce = useReducedMotion();
+  const highlightTerms = ["trigger points", "myofascial release"];
+  const highlightedSubParts = t.sub.split(new RegExp(`(${highlightTerms.join("|")})`, "gi"));
 
   const fromLeft = reduce
     ? {}
@@ -50,7 +52,11 @@ export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { 
             {t.h1}
           </h1>
 
-          <p className="mb-7 max-w-prose text-[15.5px] leading-relaxed text-muted">{t.sub}</p>
+          <p className="mb-7 max-w-prose text-[15.5px] leading-relaxed text-muted">
+            {highlightedSubParts.map((part, i) =>
+              highlightTerms.includes(part.toLowerCase()) ? <strong key={i}>{part}</strong> : part
+            )}
+          </p>
 
           <div className="mb-5 flex flex-wrap gap-3">
             <Button
