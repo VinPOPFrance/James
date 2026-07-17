@@ -19,7 +19,6 @@ import { Problem } from "@/components/sections/Problem";
 import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
-import { Program } from "@/components/sections/Program";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Phases } from "@/components/sections/Phases";
 import { Included } from "@/components/sections/Included";
@@ -63,10 +62,6 @@ export default function HomePage() {
 
         <Reveal>
           <Plan />
-        </Reveal>
-
-        <Reveal>
-          <Program />
         </Reveal>
 
         <Reveal>

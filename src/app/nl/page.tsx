@@ -9,7 +9,6 @@ import { Problem } from "@/components/sections/Problem";
 import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
-import { Program } from "@/components/sections/Program";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Phases } from "@/components/sections/Phases";
 import { Included } from "@/components/sections/Included";
@@ -66,10 +65,6 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Plan content={homeNl.plan} ctaLabel={homeNl.finalCta.primary} />
-        </Reveal>
-
-        <Reveal>
-          <Program content={homeNl.program} />
         </Reveal>
 
         <Reveal>
