@@ -5,6 +5,7 @@ import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
 import { siteConfig } from "@/config/site-config";
 import { TrackingScripts } from "@/components/analytics/TrackingScripts";
+import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import "./globals.css";
 
 const voice = Fraunces({ subsets: ["latin"], variable: "--font-voice", display: "swap" });
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${voice.variable} ${sans.variable}`}>
       <body className="font-sans">
         {children}
+        <FloatingWhatsApp />
         <Suspense fallback={null}>
           <TrackingScripts />
         </Suspense>
