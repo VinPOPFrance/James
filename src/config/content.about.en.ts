@@ -33,9 +33,7 @@ export const about = {
       "10+ years of studio practice in the Netherlands",
       "119+ five-star client reviews",
       "Specialist in fascia, breathing and movement re-education",
-      "Works alongside medical care, never as a replacement",
     ],
-    note: "This is a movement and body-awareness practice, not a medical treatment.",
   },
   finalCta: {
     title: "Ready to understand your body?",

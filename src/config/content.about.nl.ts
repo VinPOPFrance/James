@@ -33,9 +33,7 @@ export const aboutNl = {
       "6+ jaar praktijkervaring in Nederland",
       "119+ vijfsterren beoordelingen van cliënten",
       "Specialist in fascia, ademhaling en bewegingsre-educatie",
-      "Werkt naast medische zorg, nooit als vervanging",
     ],
-    note: "Dit is een bewegings- en lichaamsbesef praktijk, geen medische behandeling.",
   },
   finalCta: {
     title: "Klaar om je lichaam te begrijpen?",
