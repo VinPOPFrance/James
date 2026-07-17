@@ -115,6 +115,60 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
+      {/* Pillars */}
+      <Reveal>
+        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
+          <div className="mx-auto max-w-5xl">
+            <h2 className="mb-10 text-center font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
+              3 pillars one direction.
+            </h2>
+            <div className="grid gap-6 md:grid-cols-3">
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/lungs.svg"
+                    alt="Breathing pillar illustration"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">BREATHING</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PILLAR : 1</span>
+              </article>
+
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/movement.svg"
+                    alt="Movement pillar illustration"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">MOVEMENTS</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PILLAR : 2</span>
+              </article>
+
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/fascia.svg"
+                    alt="Myofascial release pillar illustration"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">MYOFASCIAL RELEASE</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PILLAR : 3</span>
+              </article>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
       {/* Included */}
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
