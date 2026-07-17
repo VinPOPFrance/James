@@ -2,12 +2,12 @@ export const program = {
   meta: {
     title: "The 12-Week Body Reset Program | Inner Strength Compass",
     description:
-      "A structured 12-week movement programme based in Rotterdam. For women with chronic back pain who want to understand, release and rebuild their body — step by step, without pushing through pain.",
+      "A structured 12-week movement programme based in Rotterdam. For women with chronic back pain who want to understand, release and rebuild their body, step by step, without pushing through pain.",
   },
   hero: {
     eyebrow: "The 12-week body reset program",
     title: "You don’t have to live with constant stiffness or feel like your body is 10 to 15 years older than you actually are.",
-    body: "You leave with a body map, a clear routine and the confidence to know what to do when pain or tension comes back — for good.",
+    body: "You leave with a body map, a clear routine and the confidence to know what to do when pain or tension comes back, for good.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Start with a fascia reset session",
   },
@@ -22,7 +22,7 @@ export const program = {
     items: [
       { n: 1, weeks: "Weeks 1–4", title: "Understand & release", text: "Calm the system, reduce tension, learn what keeps the pain going.", color: "sage" },
       { n: 2, weeks: "Weeks 5–8", title: "Rebuild movement", text: "Relearn how to move without fear and rebuild strength gradually.", color: "copper" },
-      { n: 3, weeks: "Weeks 9–12", title: "Trust your body again", text: "A clear routine you own — so you know what to do when tension returns.", color: "navy" },
+      { n: 3, weeks: "Weeks 9–12", title: "Trust your body again", text: "A clear routine you own, so you know what to do when tension returns.", color: "navy" },
     ],
   },
   included: {
@@ -71,8 +71,8 @@ export const program = {
   },
   promise: {
     badge: "Progress promise",
-    body: "If after the first 6 weeks you’ve followed the plan and feel no meaningful improvement, we’ll review it together and agree on the fairest next step — including a partial refund if appropriate.",
-    sub: "A fair promise, based on a clear review — for clients who attend, practise and communicate.",
+    body: "If after the first 6 weeks you’ve followed the plan and feel no meaningful improvement, we’ll review it together and agree on the fairest next step, including a partial refund if appropriate.",
+    sub: "A fair promise, based on a clear review, for clients who attend, practise and communicate.",
   },
   testimonials: {
     eyebrow: "Real client stories",
