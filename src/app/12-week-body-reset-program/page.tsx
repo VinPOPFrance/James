@@ -50,9 +50,18 @@ export default function ProgramPage() {
   return (
     <PageLayout>
       <Reveal>
+        <section className="rounded-section border border-hairline bg-white px-8 py-12 md:px-14 md:py-14">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="font-voice text-[clamp(1.55rem,2.9vw,2rem)] font-medium leading-[1.2] text-navy">
+              "{t.hero.title}"
+            </p>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
         <PageHero
-          eyebrow={t.hero.eyebrow}
-          title={t.hero.title}
+          title={t.hero.eyebrow}
           body={t.hero.body}
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
         />
