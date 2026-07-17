@@ -13,7 +13,7 @@ export const home = {
   nav: {
     links: [
       { label: "Program", href: "/12-week-body-reset-program" },
-      { label: "Fascia reset", href: "/fascia-reset-session" },
+      { label: "Services", href: "/fascia-reset-session" },
       { label: "About", href: "/about" },
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
