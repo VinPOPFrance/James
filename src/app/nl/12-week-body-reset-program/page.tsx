@@ -50,11 +50,13 @@ export default function ProgramNlPage() {
   return (
     <PageLayout locale="nl">
       <Reveal>
-        <section className="rounded-section border border-hairline bg-white px-8 py-12 md:px-14 md:py-14">
+        <section className="rounded-section border border-copper/30 bg-ivory px-7 py-10 md:px-14 md:py-14">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="font-voice text-[clamp(1.55rem,2.9vw,2rem)] font-medium leading-[1.2] text-navy">
-              "{t.hero.title}"
+            <p className="mb-2 text-[26px] leading-none text-copper/80 md:text-[34px]">“</p>
+            <p className="mx-auto max-w-3xl font-voice text-[clamp(1.65rem,3.1vw,2.15rem)] font-medium leading-[1.18] text-navy">
+              {t.hero.title}
             </p>
+            <p className="mt-2 text-[26px] leading-none text-copper/80 md:text-[34px]">”</p>
           </div>
         </section>
       </Reveal>
