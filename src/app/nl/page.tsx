@@ -10,8 +10,6 @@ import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
 import { Newsletter } from "@/components/sections/Newsletter";
-import { Phases } from "@/components/sections/Phases";
-import { Included } from "@/components/sections/Included";
 import { Fit } from "@/components/sections/Fit";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Fascia } from "@/components/sections/Fascia";
@@ -69,14 +67,6 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Newsletter content={homeNl.newsletter} />
-        </Reveal>
-
-        <Reveal>
-          <Phases content={homeNl.phases} />
-        </Reveal>
-
-        <Reveal>
-          <Included content={homeNl.included} />
         </Reveal>
 
         <Reveal>
