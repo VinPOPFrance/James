@@ -53,10 +53,21 @@ export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { 
           <p className="mb-7 max-w-prose text-[15.5px] leading-relaxed text-muted">{t.sub}</p>
 
           <div className="mb-5 flex flex-wrap gap-3">
-            <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
+            <Button
+              href={businessInfo.bookingUrl}
+              surface="light"
+              variant="primary"
+              external
+              className="border-[#87986A] bg-[#87986A] text-ivory hover:bg-[#738258]"
+            >
               {t.ctaPrimary}
             </Button>
-            <Button href={ctaSecondaryHref} surface="light" variant="secondary">
+            <Button
+              href={ctaSecondaryHref}
+              surface="light"
+              variant="secondary"
+              className="border-[#87986A] text-[#5f6d4b] hover:bg-[#87986A] hover:text-ivory"
+            >
               {t.ctaSecondary}
             </Button>
           </div>

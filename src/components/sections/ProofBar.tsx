@@ -8,7 +8,7 @@ export function ProofBar({ content }: { content?: ProofBarContent }) {
   const stats = content ?? home.proofBar;
 
   return (
-    <section className="rounded-section bg-navy px-6 py-8">
+    <section className="rounded-section bg-[#87986A] px-6 py-8">
       <div className="mx-auto grid max-w-4xl grid-cols-2 gap-y-6 md:grid-cols-4 md:divide-x md:divide-ivory/15">
         {stats.map((s, i) => (
           <div key={i} className="flex flex-col items-center text-center">
@@ -26,12 +26,12 @@ export function ProofBar({ content }: { content?: ProofBarContent }) {
                   <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
                   <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
                 </svg>
-                <span className="mt-1 text-[13px] text-ivory/70 group-hover:text-ivory">Google reviews</span>
+                <span className="mt-1 text-[13px] text-ivory/90 group-hover:text-ivory">Google reviews</span>
               </a>
             ) : (
               <>
                 <span className="font-voice text-[1.6rem] font-medium text-copper">{s.value}</span>
-                <span className="mt-1 text-[13px] text-ivory/70">{s.label}</span>
+                <span className="mt-1 text-[13px] text-ivory/90">{s.label}</span>
               </>
             )}
           </div>

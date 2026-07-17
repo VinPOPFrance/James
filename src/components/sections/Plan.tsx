@@ -33,7 +33,13 @@ export function Plan({ content, ctaLabel }: { content?: PlanContent; ctaLabel?: 
           ))}
         </div>
 
-        <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external>
+        <Button
+          href={businessInfo.bookingUrl}
+          surface="light"
+          variant="primary"
+          external
+          className="border-[#87986A] bg-[#87986A] text-ivory hover:bg-[#738258]"
+        >
           {ctaLabel ?? home.finalCta.primary}
         </Button>
       </div>

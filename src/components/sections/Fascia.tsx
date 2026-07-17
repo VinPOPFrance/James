@@ -24,7 +24,7 @@ export function Fascia({ content, ctaHref = "/fascia-reset-session" }: { content
               key={i}
               className={`rounded-card p-7 text-left ${
                 tier.dark
-                  ? "bg-navy text-ivory"
+                  ? "bg-[#87986A] text-ivory"
                   : "border border-hairline bg-white"
               }`}
             >
