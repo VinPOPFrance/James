@@ -3,6 +3,9 @@ import { home } from "@/config/content.en";
 import { homeNl } from "@/config/content.nl";
 import { businessInfo } from "@/config/business-info";
 
+const brandTitleClassName = "font-voice text-[21.5px] font-medium text-navy";
+const brandSubtitleClassName = "text-[13.5px] font-medium tracking-wide text-muted";
+
 const exploreLinksEn = [
   { label: "12-Week Program", href: "/12-week-body-reset-program" },
   { label: "Fascia Reset Session", href: "/fascia-reset-session" },
@@ -64,8 +67,8 @@ export function Footer({ locale = "en" }: FooterProps) {
 
           {/* Brand + tagline */}
           <div>
-            <p className="mb-1 font-voice text-[1.1rem] font-medium text-navy">{businessInfo.brandName}</p>
-            <p className="mb-4 text-[11px] font-medium tracking-wide text-muted">by {businessInfo.founderName}</p>
+            <p className={`mb-1 ${brandTitleClassName}`}>James Daime.</p>
+            <p className={`mb-4 ${brandSubtitleClassName}`}>Biomechanics and fascia specialist</p>
             <p className="mb-5 max-w-xs text-[14px] leading-relaxed text-muted">{t.tagline}</p>
             {/* Social links */}
             <div className="flex gap-2">
