@@ -73,11 +73,11 @@ export default function HomePage() {
         </Reveal>
 
         <Reveal>
-          <Faq />
+          <FinalCta />
         </Reveal>
 
         <Reveal>
-          <FinalCta />
+          <Faq />
         </Reveal>
 
         <Footer locale="en" />
