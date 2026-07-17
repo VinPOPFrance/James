@@ -209,8 +209,8 @@ export const home = {
     successText: "You’ll hear from us soon.",
   },
   finalCta: {
-    title: "Stop feeling broken. Start feeling like yourself again.",
-    body: "One free call is all it takes to see if this is right for you.",
+    title: "If you’re tired of feeling stiff and 10 years older than you actually are",
+    body: "Booking a free call is the absolute best next step.",
     primary: "Book a free discovery call",
     secondary: "Start with a fascia reset",
   },

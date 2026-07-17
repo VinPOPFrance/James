@@ -36,9 +36,6 @@ export function FinalCta({ content }: { content?: FinalCtaContent }) {
             <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>
               {t.primary}
             </Button>
-            <Button href={businessInfo.bookingUrl} surface="dark" variant="secondary" external>
-              {t.secondary}
-            </Button>
           </div>
         </div>
       </div>
