@@ -59,6 +59,7 @@ interface FooterProps {
 export function Footer({ locale = "en" }: FooterProps) {
   const t = locale === "nl" ? homeNl.footer : home.footer;
   const exploreLinks = locale === "nl" ? exploreLinksNl : exploreLinksEn;
+  const openingHours = businessInfo.openingHours;
 
   return (
     <footer className="rounded-section border border-hairline bg-white px-6 py-12 md:px-12">
@@ -121,16 +122,30 @@ export function Footer({ locale = "en" }: FooterProps) {
                   {businessInfo.email}
                 </a>
               </li>
-              <li className="text-[14px] text-inkSoft">{businessInfo.address.short}</li>
-              <li className="pt-1">
+              <li className="pt-0.5">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-muted">
+                  {locale === "nl" ? "Adres" : "Address"}
+                </p>
                 <a
-                  href={businessInfo.bookingUrl}
+                  href={businessInfo.address.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex rounded-md border border-navy px-3 py-1.5 text-[13px] font-medium text-navy transition-colors hover:bg-navy hover:text-ivory"
+                  className="mt-1 block text-[14px] text-inkSoft hover:text-navy"
                 >
-                  {locale === "nl" ? "Sessie boeken →" : "Book a session →"}
+                  {businessInfo.address.display}
                 </a>
+              </li>
+              <li className="pt-0.5">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-muted">
+                  {locale === "nl" ? "Openingstijden" : "Opening hours"}
+                </p>
+                <p className="mt-1 text-[14px] text-inkSoft">
+                  Tue - Fri: {openingHours.tuesday}
+                </p>
+                <p className="text-[14px] text-inkSoft">Sat: {openingHours.saturday}</p>
+                <p className="text-[14px] text-inkSoft">
+                  Sun - Mon: {openingHours.sunday}
+                </p>
               </li>
             </ul>
           </div>
