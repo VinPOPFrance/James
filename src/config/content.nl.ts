@@ -132,7 +132,7 @@ export const homeNl = {
   testimonials: {
     eyebrow: "Echte ervaringen",
     title: "Van “kapot” naar weer in controle",
-    badge: "118 beoordelingen op Google · 5.0 ★",
+    badge: "119 beoordelingen op Google · 5.0 ★",
     note: "",
     items: [
       {
