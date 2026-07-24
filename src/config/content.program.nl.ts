@@ -2,19 +2,19 @@ export const programNl = {
   meta: {
     title: "Het 12-Weken Lichaamsreset Programma | Inner Strength Compass · Rotterdam",
     description:
-      "Een gestructureerd 12-weken bewegingsprogramma in Rotterdam. Voor vrouwen met chronische rugpijn die hun lichaam willen begrijpen, loslaten en opbouwen — stap voor stap, zonder door pijn heen te duwen.",
+      "Een gestructureerd 12-weken bewegingsprogramma in Rotterdam. Voor vrouwen met chronische rugpijn die hun lichaam willen begrijpen, loslaten en opbouwen, stap voor stap, zonder door pijn heen te duwen.",
   },
   hero: {
     eyebrow: "Het 12-weken lichaamsreset programma",
      title: "Je hoeft niet te leven met constante stijfheid of het gevoel te hebben dat je lichaam 10 tot 15 jaar ouder is dan je werkelijk bent.",
-    body: "Je vertrekt met een lichaamskaart, een helder dagritme en het vertrouwen om te weten wat je moet doen als pijn of spanning terugkomt — voor altijd.",
+    body: "Je vertrekt met een lichaamskaart, een helder dagritme en het vertrouwen om te weten wat je moet doen als pijn of spanning terugkomt, voor altijd.",
     ctaPrimary: "Gratis kennismakingsgesprek",
     ctaSecondary: "Begin met een fascia reset sessie",
   },
   intro: {
     eyebrow: "Wat dit programma is",
     title: "Een helder pad, geen nieuwe techniek",
-    body: "De meeste programma's geven je oefeningen. Dit programma geeft je inzicht. In 12 privésessies leer je wat jouw pijn veroorzaakt, laat je de patronen los die het in stand houden, en bouw je beweging op die beklijft — zonder door pijn heen te duwen.",
+    body: "De meeste programma's geven je oefeningen. Dit programma geeft je inzicht. In 12 privésessies leer je wat jouw pijn veroorzaakt, laat je de patronen los die het in stand houden, en bouw je beweging op die beklijft, zonder door pijn heen te duwen.",
   },
   phases: {
     eyebrow: "Hoe de 12 weken verlopen",
@@ -22,7 +22,7 @@ export const programNl = {
     items: [
       { n: 1, weeks: "Weken 1–4", title: "Begrijpen & loslaten", text: "Het systeem kalmeren, spanning verminderen, leren wat de pijn in stand houdt.", color: "sage" },
       { n: 2, weeks: "Weken 5–8", title: "Beweging opbouwen", text: "Herontdekken hoe je zonder angst kunt bewegen en geleidelijk kracht opbouwen.", color: "copper" },
-      { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is — zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
+      { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is, zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
     ],
   },
   included: {
@@ -71,8 +71,8 @@ export const programNl = {
   },
   promise: {
     badge: "Voortgangsbelofte",
-    body: "Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap — inclusief een gedeeltelijke terugbetaling indien van toepassing.",
-    sub: "Een eerlijke belofte, gebaseerd op een duidelijke evaluatie — voor cliënten die aanwezig zijn, oefenen en communiceren.",
+    body: "Als je na de eerste 6 weken het plan hebt gevolgd en geen merkbare verbetering ervaart, bespreken we het samen en zoeken we naar de eerlijkste volgende stap, inclusief een gedeeltelijke terugbetaling indien van toepassing.",
+    sub: "Een eerlijke belofte, gebaseerd op een duidelijke evaluatie, voor cliënten die aanwezig zijn, oefenen en communiceren.",
   },
   testimonials: {
     eyebrow: "Echte ervaringen",
