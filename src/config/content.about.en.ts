@@ -11,7 +11,7 @@ export const about = {
   },
   story: {
     eyebrow: "The approach",
-    title: "Why Inner Strength Compass",
+    title: "Why Biomechanics and Fascia",
     paragraphs: [
       "James has spent 10+ years helping people move with more confidence. He listens first, explains clearly, and never rushes you through pain. His approach is calm, human and grounded in how the body actually works, without burying you in jargon.",
       "Inner Strength Compass was born from a simple observation: most people in pain don't need another technique. They need someone who will explain what's actually happening in their body, clearly, honestly, without blame.",

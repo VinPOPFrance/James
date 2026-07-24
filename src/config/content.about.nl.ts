@@ -30,7 +30,7 @@ export const aboutNl = {
   credentials: {
     eyebrow: "Achtergrond",
     items: [
-      "6+ jaar praktijkervaring in Nederland",
+      "10+ jaar praktijkervaring in Nederland",
       "119+ vijfsterren beoordelingen van cliënten",
       "Specialist in fascia, ademhaling en bewegingsre-educatie",
     ],
