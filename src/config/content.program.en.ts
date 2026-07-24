@@ -6,7 +6,7 @@ export const program = {
   },
   hero: {
     eyebrow: "The 12-week body reset program",
-    title: "You don’t have to live with constant stiffness or feel like your body is 10 to 15 years older than you actually are.",
+    title: "Make aging just a number",
     body: "You leave with a body map, a clear routine and the confidence to know what to do when pain or tension comes back, for good.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Start with a fascia reset session",

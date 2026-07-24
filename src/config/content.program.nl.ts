@@ -6,7 +6,7 @@ export const programNl = {
   },
   hero: {
     eyebrow: "Het 12-weken lichaamsreset programma",
-     title: "Je hoeft niet te leven met constante stijfheid of het gevoel te hebben dat je lichaam 10 tot 15 jaar ouder is dan je werkelijk bent.",
+    title: "Maak van ouder worden gewoon een getal",
     body: "Je vertrekt met een lichaamskaart, een helder dagritme en het vertrouwen om te weten wat je moet doen als pijn of spanning terugkomt, voor altijd.",
     ctaPrimary: "Gratis kennismakingsgesprek",
     ctaSecondary: "Begin met een fascia reset sessie",
