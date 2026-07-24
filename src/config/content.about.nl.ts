@@ -2,7 +2,7 @@ export const aboutNl = {
   meta: {
     title: "Over James | Inner Strength Compass · Rotterdam",
     description:
-      "James Daime, bewegingstherapeut gevestigd in Rotterdam. 6+ jaar mensen helpen hun lichaam te begrijpen en met meer vertrouwen te bewegen, via een rustige en eerlijke aanpak.",
+      "James Daime, bewegingstherapeut gevestigd in Rotterdam. 10+ jaar mensen helpen hun lichaam te begrijpen en met meer vertrouwen te bewegen, via een rustige en eerlijke aanpak.",
   },
   hero: {
     eyebrow: "Je gids",
