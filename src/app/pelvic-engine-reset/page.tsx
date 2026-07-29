@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     follow: false,
   },
   alternates: {
-    canonical: `${siteConfig.siteUrl}/subscriber-pelvic-engine-reset-x9k2`,
+    canonical: `${siteConfig.siteUrl}/pelvic-engine-reset`,
   },
 };
 

@@ -28,7 +28,7 @@ Main language:
 - `/12-week-body-reset-program`
 - `/blog`
 - `/blog/[slug]`
-- `/subscriber-pelvic-engine-reset-x9k2` (hidden, direct-URL-only landing page)
+- `/pelvic-engine-reset` (hidden, direct-URL-only landing page)
 
 Dutch mirror:
 - `/nl`
