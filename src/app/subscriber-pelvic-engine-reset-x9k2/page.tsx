@@ -93,7 +93,7 @@ export default function SubscriberPelvicEngineResetPage() {
               Why traditional treatments keep letting you down.
             </h2>
             <p className="text-[15.8px] leading-relaxed text-inkSoft">
-              You don&apos;t have a "bad back." You have a pelvic and biomechanical
+              You don&apos;t have a &quot;bad back.&quot; You have a pelvic and biomechanical
               system that has forgotten how to communicate. Passive treatments
               like cracking or massaging provide temporary relief because they
               ignore how you actually move, breathe, and carry tension daily.
