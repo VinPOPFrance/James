@@ -33,6 +33,25 @@ Actions required:
 
 ## Entries
 
+Date: 2026-07-29
+Author: AI
+Scope: routing | seo | docs
+Files:
+- src/app/subscriber-pelvic-engine-reset-x9k2/page.tsx
+- docs/AI-HANDOFF.md
+- docs/TECH-CHANGELOG.md
+Change summary:
+- Added a hidden direct-URL landing page for the Pelvic Engine Reset application flow.
+- Marked the page noindex/nofollow and kept it out of site navigation.
+Impact:
+- Runtime impact: new private landing route available at `/subscriber-pelvic-engine-reset-x9k2`.
+- Deployment/migration impact: requires a redeploy to surface the new route on Vercel.
+Actions required:
+- [x] none
+- [ ] run npm run lint
+- [ ] set/update env vars
+- [ ] manual verification needed
+
 Date: 2026-07-15
 Author: AI
 Scope: analytics | infra | docs

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { Reveal } from "@/components/ui/Reveal";
-import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
@@ -74,9 +73,12 @@ export default function SubscriberPelvicEngineResetPage() {
                 A high-accountability, 2-week movement sprint for women 40+
                 ready to move past chronic lower back stiffness.
               </p>
-              <Button href="#apply" surface="light" variant="primary">
+              <a
+                href="#apply"
+                className="inline-flex items-center justify-center rounded-[11px] border border-navy bg-navy px-6 py-3.5 text-[15px] font-medium text-ivory transition-all duration-200 hover:-translate-y-0.5 hover:bg-navy-light"
+              >
                 Apply for One of the 4 Spots
-              </Button>
+              </a>
             </div>
 
             <div className="relative min-h-[320px] md:min-h-full">
@@ -85,6 +87,7 @@ export default function SubscriberPelvicEngineResetPage() {
                 alt="James coaching at the studio"
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

@@ -28,6 +28,7 @@ Main language:
 - `/12-week-body-reset-program`
 - `/blog`
 - `/blog/[slug]`
+- `/subscriber-pelvic-engine-reset-x9k2` (hidden, direct-URL-only landing page)
 
 Dutch mirror:
 - `/nl`
@@ -73,6 +74,7 @@ Dutch mirror:
 - Newsletter client treats HTTP 2xx from `/api/newsletter` as success, with non-fatal JSON parsing for resilience.
 - In async submit handlers, capture `event.currentTarget` before `await` and reuse a stable form reference.
 - Discovery call CTAs consume `businessInfo.bookingUrl` from `src/config/business-info.ts` across EN/NL pages and shared sections.
+- Hidden landing pages can be added as direct-URL routes, but they are only private by obscurity unless a separate access control layer is added.
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`
