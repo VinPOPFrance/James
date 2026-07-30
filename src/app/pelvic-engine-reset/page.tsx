@@ -165,7 +165,9 @@ export default function SubscriberPelvicEngineResetPage() {
           <div className="relative mx-auto max-w-5xl">
             <h2 className="mb-8 text-center font-voice text-[clamp(1.52rem,2.9vw,2.02rem)] font-medium text-ivory">
               <span className="block">Here&apos;s Exactly How We Reset Your Engine -</span>
-              <span className="mt-1 block text-[#ffee8c]">2 workshops one accountability week</span>
+              <span className="mt-1 block text-[1.08em] text-[#ffee8c]">
+                2 workshops <span className="text-navy">1</span> accountability week
+              </span>
             </h2>
             <div className="grid gap-5 md:grid-cols-3">
               {sprintBlocks.map((block, index) => (
