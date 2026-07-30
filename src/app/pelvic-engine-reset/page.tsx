@@ -87,30 +87,38 @@ export default function SubscriberPelvicEngineResetPage() {
       </Reveal>
 
       <Reveal>
-        <section className="rounded-section border border-hairline bg-ivory px-8 py-14 md:px-12">
+        <section className="rounded-section border border-sage/35 bg-white px-8 py-14 shadow-[0_24px_48px_-34px_rgba(15,23,42,0.45)] md:px-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-navy">
               You&apos;ve tried everything. Why does the stiffness keep coming back?
             </h2>
-            <div className="space-y-4 text-[15.8px] leading-relaxed text-inkSoft">
-              <p>
+            <div className="grid gap-4 md:grid-cols-3">
+              <article className="rounded-card border border-sage/35 bg-ivory p-5">
+                <p className="text-[15.6px] leading-relaxed text-inkSoft">
                 You visit a physiotherapist, a chiropractor, or an osteopath.
                 They click, crack, or massage your lower back. It feels
-                fantastic for a couple of days, maybe even a week, and then
-                that familiar, frustrating stiffness creeps right back.
-              </p>
-              <p>
+                <strong className="font-semibold text-navy"> fantastic for a couple of days</strong>, maybe even a week, and then
+                that <strong className="font-semibold text-navy">familiar, frustrating stiffness</strong> creeps right back.
+                </p>
+              </article>
+
+              <article className="rounded-card border border-copper/35 bg-ivory p-5">
+                <p className="text-[15.6px] leading-relaxed text-inkSoft">
                 It leaves you feeling exhausted, moody, and physically broken.
-                Worse, it makes you afraid of your own body. You start skipping
-                walks, moving cautiously, and constantly worrying that one wrong
-                twist will lock your back up entirely.
-              </p>
-              <p>
+                Worse, it makes you <strong className="font-semibold text-navy">afraid of your own body</strong>. You start skipping
+                walks, moving cautiously, and constantly worrying that
+                <strong className="font-semibold text-navy"> one wrong twist</strong> will lock your back up entirely.
+                </p>
+              </article>
+
+              <article className="rounded-card border border-sage/35 bg-ivory p-5">
+                <p className="text-[15.6px] leading-relaxed text-inkSoft">
                 You don&apos;t need another temporary, passive fix where someone
                 pokes your back and sends you on your way. You need to
                 understand your body, rebuild your movement, and get back to
-                feeling like your vibrant, active self again.
-              </p>
+                feeling like your <strong className="font-semibold text-navy">vibrant, active self again</strong>.
+                </p>
+              </article>
             </div>
           </div>
         </section>
