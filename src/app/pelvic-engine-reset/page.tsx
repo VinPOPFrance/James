@@ -171,12 +171,12 @@ export default function SubscriberPelvicEngineResetPage() {
               {sprintBlocks.map((block, index) => (
                 <article
                   key={block.title}
-                  className={`card-lift rounded-card border bg-ivory p-6 shadow-[0_16px_32px_-22px_rgba(15,23,42,0.6)] ${
+                  className={`card-lift h-full rounded-card border bg-ivory p-6 shadow-[0_16px_32px_-22px_rgba(15,23,42,0.6)] ${
                     index === 1 ? "border-copper/45" : "border-sage/45"
                   }`}
                 >
                   {"subtitle" in block ? (
-                    <div className="space-y-4">
+                    <div className="grid h-full gap-4 md:grid-rows-[1fr_auto]">
                       <div className="rounded-card border border-sage/25 bg-white p-4">
                         <p className="mb-2 text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage">
                           {block.title}
