@@ -56,7 +56,7 @@ const sprintBlocks: SprintBlock[] = [
       "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
   },
   {
-    title: "Saturday [Date] - 2 Hours In-Studio",
+    title: "Saturday 19/07/2026 - 2 Hours In-Studio",
     subtitle: "The Progression & Autonomy Phase",
     intro:
       "We review your week, celebrate what shifted, and then we safely level up.",
@@ -181,6 +181,8 @@ export default function SubscriberPelvicEngineResetPage() {
                         <p
                           className={`mb-2 ${
                             block.subtitle === "The Re-Education Phase"
+                              ||
+                            block.subtitle === "The Progression & Autonomy Phase"
                               ? "text-[1.1rem] font-semibold leading-snug text-navy"
                               : "text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage"
                           }`}
