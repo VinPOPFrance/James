@@ -90,16 +90,28 @@ export default function SubscriberPelvicEngineResetPage() {
         <section className="rounded-section border border-hairline bg-ivory px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-navy">
-              Why traditional treatments keep letting you down.
+              You&apos;ve tried everything. Why does the stiffness keep coming back?
             </h2>
-            <p className="text-[15.8px] leading-relaxed text-inkSoft">
-              You don&apos;t have a &quot;bad back.&quot; You have a pelvic and biomechanical
-              system that has forgotten how to communicate. Passive treatments
-              like cracking or massaging provide temporary relief because they
-              ignore how you actually move, breathe, and carry tension daily.
-              To find lasting relief, you have to stop being a passive patient
-              and learn to understand your own body.
-            </p>
+            <div className="space-y-4 text-[15.8px] leading-relaxed text-inkSoft">
+              <p>
+                You visit a physiotherapist, a chiropractor, or an osteopath.
+                They click, crack, or massage your lower back. It feels
+                fantastic for a couple of days, maybe even a week, and then
+                that familiar, frustrating stiffness creeps right back.
+              </p>
+              <p>
+                It leaves you feeling exhausted, moody, and physically broken.
+                Worse, it makes you afraid of your own body. You start skipping
+                walks, moving cautiously, and constantly worrying that one wrong
+                twist will lock your back up entirely.
+              </p>
+              <p>
+                You don&apos;t need another temporary, passive fix where someone
+                pokes your back and sends you on your way. You need to
+                understand your body, rebuild your movement, and get back to
+                feeling like your vibrant, active self again.
+              </p>
+            </div>
           </div>
         </section>
       </Reveal>
