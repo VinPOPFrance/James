@@ -382,7 +382,7 @@ export default function SubscriberPelvicEngineResetPage() {
                   </h3>
                   <p className="text-[14px] leading-relaxed text-inkSoft">{step.detail}</p>
                   {index < applySteps.length - 1 ? (
-                    <p className="mt-3 text-[13px] font-medium text-sage md:text-copper">Next step -></p>
+                    <p className="mt-3 text-[13px] font-medium text-sage md:text-copper">Next step -&gt;</p>
                   ) : null}
                 </article>
               ))}
