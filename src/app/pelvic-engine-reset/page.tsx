@@ -19,9 +19,15 @@ export const metadata: Metadata = {
 
 const sprintBlocks = [
   {
-    title: "Saturday [Date] (2 Hours In-Studio) - The Re-Education",
-    body:
-      "We map your posture to pinpoint what is overworking, and what isn't doing enough work in your body. You will learn how your pelvis is actually designed to move, how your breathing directly dictates pelvic alignment, and the massive impact this connection has on your daily pain levels. You’ll leave with a clear understanding of your unique body mechanics and the releases needed to unlock your hips and decompress your lower back.",
+    title: "PART A: Saturday [Date] - 2 Hours In-Studio",
+    subtitle: "The Re-Education Phase",
+    bullets: [
+      "What's overworking (usually your lower back, doing all the heavy lifting)",
+      "What's not doing enough work (your deep core and pelvic floor-the engines supposed to be running)",
+      "How your breathing is either locking you up or releasing you",
+    ],
+    outcome:
+      "A crystal-clear understanding of YOUR specific mechanics, exactly which releases will unlock your hips, and the first simple exercises to decompress your lower back immediately.",
   },
   {
     title: "The Accountability Week (7 Days on WhatsApp) - The Integration",
@@ -139,12 +145,44 @@ export default function SubscriberPelvicEngineResetPage() {
                     index === 1 ? "border-copper/45" : "border-sage/45"
                   }`}
                 >
-                  <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
-                    {block.title}
-                  </h3>
-                  <p className="text-[14.5px] leading-relaxed text-inkSoft">
-                    {block.body}
-                  </p>
+                  {"subtitle" in block ? (
+                    <div className="space-y-4">
+                      <div className="rounded-card border border-sage/25 bg-white p-4">
+                        <p className="mb-2 text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage">
+                          {block.title}
+                        </p>
+                        <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
+                          {block.subtitle}
+                        </h3>
+                        <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
+                          What happens:
+                        </p>
+                        <ul className="space-y-3 text-[14.5px] leading-relaxed text-inkSoft">
+                          {block.bullets.map((item) => (
+                            <li key={item}>- {item}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="rounded-card border border-copper/30 bg-white p-4">
+                        <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
+                          What you leave with:
+                        </p>
+                        <p className="text-[14.5px] leading-relaxed text-inkSoft">
+                          {block.outcome}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
+                        {block.title}
+                      </h3>
+                      <p className="text-[14.5px] leading-relaxed text-inkSoft">
+                        {block.body}
+                      </p>
+                    </>
+                  )}
                 </article>
               ))}
             </div>
