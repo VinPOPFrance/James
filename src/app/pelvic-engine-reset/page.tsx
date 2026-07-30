@@ -104,11 +104,6 @@ const applySteps = [
     title: "SECURE YOUR SPOT (EUR 220)",
     detail: "Pay via Stripe/PayPal/Bank",
   },
-  {
-    number: "5",
-    title: "SHOW UP & RESET",
-    detail: "Saturday 10.30 - 12.30",
-  },
 ];
 
 export default function SubscriberPelvicEngineResetPage() {
@@ -368,11 +363,11 @@ export default function SubscriberPelvicEngineResetPage() {
               Ready to Reset? Here&apos;s How
             </h2>
 
-            <div className="grid gap-4 md:grid-cols-5">
-              {applySteps.map((step, index) => (
+            <div className="grid gap-4 md:grid-cols-4">
+              {applySteps.map((step) => (
                 <article
                   key={step.number}
-                  className="rounded-card border border-hairline bg-white p-5 shadow-[0_14px_28px_-22px_rgba(15,23,42,0.55)]"
+                  className="flex h-full flex-col rounded-card border border-hairline bg-white p-5 shadow-[0_14px_28px_-22px_rgba(15,23,42,0.55)]"
                 >
                   <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-navy text-[13px] font-semibold text-ivory">
                     {step.number}
@@ -381,9 +376,7 @@ export default function SubscriberPelvicEngineResetPage() {
                     {step.title}
                   </h3>
                   <p className="text-[14px] leading-relaxed text-inkSoft">{step.detail}</p>
-                  {index < applySteps.length - 1 ? (
-                    <p className="mt-3 text-[13px] font-medium text-sage md:text-copper">Next step -&gt;</p>
-                  ) : null}
+                  <p className="mt-auto pt-3 text-[13px] font-medium text-sage md:text-copper">Next step -&gt;</p>
                 </article>
               ))}
             </div>
