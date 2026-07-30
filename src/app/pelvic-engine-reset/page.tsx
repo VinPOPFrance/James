@@ -105,21 +105,23 @@ export default function SubscriberPelvicEngineResetPage() {
       </Reveal>
 
       <Reveal>
-        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-navy">
+        <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-[#87986A] to-[#728153] px-6 py-20 md:px-14">
+          <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
+          <div className="relative mx-auto max-w-5xl">
+            <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-ivory">
               How The Pelvic Engine Reset Works
             </h2>
             <div className="grid gap-5 md:grid-cols-3">
               {sprintBlocks.map((block) => (
                 <article
                   key={block.title}
-                  className="card-lift rounded-card border border-hairline bg-ivory p-6"
+                  className="card-lift rounded-card border border-ivory/25 bg-ivory/10 p-6"
                 >
-                  <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
+                  <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-ivory">
                     {block.title}
                   </h3>
-                  <p className="text-[14.5px] leading-relaxed text-inkSoft">
+                  <p className="text-[14.5px] leading-relaxed text-ivory/90">
                     {block.body}
                   </p>
                 </article>
