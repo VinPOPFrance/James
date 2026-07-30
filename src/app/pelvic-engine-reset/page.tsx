@@ -83,6 +83,34 @@ const notRightForYou = [
   "You aren't willing to check in on WhatsApp",
 ];
 
+const applySteps = [
+  {
+    number: "1",
+    title: "APPLY (5 minutes)",
+    detail: "Answer 3 questions",
+  },
+  {
+    number: "2",
+    title: "I REVIEW (24 hours)",
+    detail: "Confirm you're a good fit",
+  },
+  {
+    number: "3",
+    title: "CONFIRMATION EMAIL (Same day)",
+    detail: "Get payment link + details",
+  },
+  {
+    number: "4",
+    title: "SECURE YOUR SPOT (EUR 220)",
+    detail: "Pay via Stripe/PayPal/Bank",
+  },
+  {
+    number: "5",
+    title: "SHOW UP & RESET",
+    detail: "Saturday 10.30 - 12.30",
+  },
+];
+
 export default function SubscriberPelvicEngineResetPage() {
   return (
     <PageLayout>
@@ -328,6 +356,36 @@ export default function SubscriberPelvicEngineResetPage() {
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="h-[260px] w-[136%] max-w-none -translate-x-[18%] object-cover md:h-[340px] md:w-[124%] md:-translate-x-[12%]"
               />
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="rounded-section border border-sage/35 bg-ivory px-8 py-14 md:px-12">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="mb-8 text-center font-voice text-[clamp(1.45rem,2.8vw,2rem)] font-medium text-navy">
+              Ready to Reset? Here&apos;s How
+            </h2>
+
+            <div className="grid gap-4 md:grid-cols-5">
+              {applySteps.map((step, index) => (
+                <article
+                  key={step.number}
+                  className="rounded-card border border-hairline bg-white p-5 shadow-[0_14px_28px_-22px_rgba(15,23,42,0.55)]"
+                >
+                  <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-navy text-[13px] font-semibold text-ivory">
+                    {step.number}
+                  </div>
+                  <h3 className="mb-2 text-[0.95rem] font-semibold leading-snug text-navy">
+                    {step.title}
+                  </h3>
+                  <p className="text-[14px] leading-relaxed text-inkSoft">{step.detail}</p>
+                  {index < applySteps.length - 1 ? (
+                    <p className="mt-3 text-[13px] font-medium text-sage md:text-copper">Next step -></p>
+                  ) : null}
+                </article>
+              ))}
             </div>
           </div>
         </section>
