@@ -180,17 +180,19 @@ export default function SubscriberPelvicEngineResetPage() {
                   {"subtitle" in block ? (
                     <div className="grid h-full gap-4 md:grid-rows-[1fr_auto]">
                       <div className="rounded-card border border-sage/25 bg-white p-4">
-                        <p
-                          className={`mb-2 ${
-                            block.subtitle === "The Re-Education Phase"
-                              ||
-                            block.subtitle === "The Progression & Autonomy Phase"
-                              ? "text-[1.1rem] font-semibold leading-snug text-copper"
-                              : "text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage"
-                          }`}
-                        >
-                          {block.title}
-                        </p>
+                        {block.subtitle === "The Re-Education Phase"
+                          ||
+                        block.subtitle === "The Progression & Autonomy Phase" ? (
+                          <div className="mb-3 rounded-[10px] border border-copper/40 bg-copper/10 px-3 py-2">
+                            <p className="text-[1.1rem] font-semibold leading-snug text-copper">
+                              {block.title}
+                            </p>
+                          </div>
+                        ) : (
+                          <p className="mb-2 text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage">
+                            {block.title}
+                          </p>
+                        )}
                         <h3
                           className={`mb-3 text-[1.03rem] font-semibold leading-snug ${
                             block.subtitle === "The Re-Education Phase"
