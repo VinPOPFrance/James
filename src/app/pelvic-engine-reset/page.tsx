@@ -129,7 +129,7 @@ export default function SubscriberPelvicEngineResetPage() {
           <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
           <div className="relative mx-auto max-w-5xl">
             <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-ivory">
-              How The Pelvic Engine Reset Works
+              Here&apos;s Exactly How We Reset Your Engine - 2 workshops one accountability week
             </h2>
             <div className="grid gap-5 md:grid-cols-3">
               {sprintBlocks.map((block, index) => (
