@@ -183,13 +183,21 @@ export default function SubscriberPelvicEngineResetPage() {
                             block.subtitle === "The Re-Education Phase"
                               ||
                             block.subtitle === "The Progression & Autonomy Phase"
-                              ? "text-[1.1rem] font-semibold leading-snug text-navy"
+                              ? "text-[1.1rem] font-semibold leading-snug text-copper"
                               : "text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage"
                           }`}
                         >
                           {block.title}
                         </p>
-                        <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
+                        <h3
+                          className={`mb-3 text-[1.03rem] font-semibold leading-snug ${
+                            block.subtitle === "The Re-Education Phase"
+                              ||
+                            block.subtitle === "The Progression & Autonomy Phase"
+                              ? "text-sage"
+                              : "text-navy"
+                          }`}
+                        >
                           {block.subtitle}
                         </h3>
                         <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
