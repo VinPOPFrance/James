@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site-config";
 type SprintIntroBlock = {
   title: string;
   subtitle: string;
+  intro?: string;
   bullets: string[];
   outcome: string;
 };
@@ -55,9 +56,17 @@ const sprintBlocks: SprintBlock[] = [
       "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
   },
   {
-    title: "Saturday [Date] (2 Hours In-Studio) - The Progression & Autonomy",
-    body:
-      "We review your first week of practice and safely step up the game. You will learn how to stack new, targeted movements and advanced breathing techniques onto your routine, locking in the progress you made. You won't just leave with basic exercises-you'll leave with an upgraded, independent roadmap to protect your lower back and keep stiffness away for good.",
+    title: "Saturday [Date] - 2 Hours In-Studio",
+    subtitle: "The Progression & Autonomy Phase",
+    intro:
+      "We review your week, celebrate what shifted, and then we safely level up.",
+    bullets: [
+      "How to stack new, targeted movements onto what you've already mastered",
+      "Advanced breathing techniques that lock in deep stability",
+      "How to recognize when your body needs more and when it needs rest",
+    ],
+    outcome:
+      "An upgraded, independent roadmap. Not just exercises. A complete system to protect your lower back, maintain mobility, and move through life without constant management.",
   },
 ];
 
@@ -179,6 +188,11 @@ export default function SubscriberPelvicEngineResetPage() {
                             ? "What you do:"
                             : "What happens:"}
                         </p>
+                        {block.intro ? (
+                          <p className="mb-3 text-[14.5px] leading-relaxed text-inkSoft">
+                            {block.intro}
+                          </p>
+                        ) : null}
                         <ul className="space-y-3 text-[14.5px] leading-relaxed text-inkSoft">
                           {block.bullets.map((item) => (
                             <li key={item}>- {item}</li>
