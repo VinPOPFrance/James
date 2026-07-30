@@ -38,7 +38,7 @@ const sprintBlocks = [
 const rightForYou = [
   "You've tried physio/chiro but still feel stuck",
   "You want to understand the root cause of your pain",
-  "You are ready to commit 20 minutes a day to practice",
+  "You are ready to commit to 20 minutes of practice, 3 to 4 days a week.",
 ];
 
 const notRightForYou = [
