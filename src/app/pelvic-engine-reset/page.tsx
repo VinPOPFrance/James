@@ -291,14 +291,31 @@ export default function SubscriberPelvicEngineResetPage() {
                 Strict Limit: 4 Participants.
               </h2>
               <p className="mb-4 text-[clamp(1.9rem,4vw,2.6rem)] font-semibold text-copper">
-                EUR 195
+                EUR 220
               </p>
-              <p className="max-w-3xl text-[15.5px] leading-relaxed text-ivory/80">
-                Because this sprint includes individual posture mapping and
-                daily, direct WhatsApp coaching from me during the week, I
-                cannot take a large group. Public registration is closed.
-                Admission is by short application only.
-              </p>
+              <div className="max-w-3xl rounded-card border border-ivory/20 bg-ivory/10 p-5">
+                <h3 className="mb-3 text-[1.06rem] font-semibold text-[#ffee8c]">
+                  Why EUR 220?
+                </h3>
+                <p className="mb-4 text-[15.3px] leading-relaxed text-ivory/90">
+                  This isn&apos;t a group fitness class where you&apos;re 1 of 30.
+                  It&apos;s not an online course where you watch videos alone.
+                </p>
+                <ul className="space-y-2.5 text-[15px] leading-relaxed text-ivory/90">
+                  <li>
+                    - <strong className="font-semibold text-ivory">My hands-on attention for 4 hours</strong>
+                  </li>
+                  <li>
+                    - <strong className="font-semibold text-ivory">Daily video feedback during accountability week</strong> (private coaching, not group chats)
+                  </li>
+                  <li>
+                    - <strong className="font-semibold text-ivory">Lifetime access to your personalized movement roadmap</strong> (you own this forever)
+                  </li>
+                  <li>
+                    - <strong className="font-semibold text-ivory">Direct access to me if you get stuck</strong> (I&apos;m not disappearing after week 1)
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="overflow-hidden rounded-[18px] border border-ivory/25 bg-ivory/10 shadow-[0_20px_40px_-28px_rgba(0,0,0,0.55)]">
