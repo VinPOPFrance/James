@@ -174,19 +174,32 @@ export default function SubscriberPelvicEngineResetPage() {
         <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-8 py-14 md:px-12">
           <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
           <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
-          <div className="relative mx-auto max-w-4xl">
-            <h2 className="mb-3 font-voice text-[clamp(1.4rem,2.9vw,2rem)] font-medium text-ivory">
-              Strict Limit: 4 Participants.
-            </h2>
-            <p className="mb-4 text-[clamp(1.9rem,4vw,2.6rem)] font-semibold text-copper">
-              EUR 195
-            </p>
-            <p className="max-w-3xl text-[15.5px] leading-relaxed text-ivory/80">
-              Because this sprint includes individual posture mapping and daily,
-              direct WhatsApp coaching from me during the week, I cannot take a
-              large group. Public registration is closed. Admission is by short
-              application only.
-            </p>
+          <div className="relative mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-[1fr_0.95fr] md:gap-10">
+            <div>
+              <h2 className="mb-3 font-voice text-[clamp(1.4rem,2.9vw,2rem)] font-medium text-ivory">
+                Strict Limit: 4 Participants.
+              </h2>
+              <p className="mb-4 text-[clamp(1.9rem,4vw,2.6rem)] font-semibold text-copper">
+                EUR 195
+              </p>
+              <p className="max-w-3xl text-[15.5px] leading-relaxed text-ivory/80">
+                Because this sprint includes individual posture mapping and
+                daily, direct WhatsApp coaching from me during the week, I
+                cannot take a large group. Public registration is closed.
+                Admission is by short application only.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[18px] border border-ivory/25 bg-ivory/10 shadow-[0_20px_40px_-28px_rgba(0,0,0,0.55)]">
+              <Image
+                src="/media/group-1.jpg"
+                alt="Group training session"
+                width={1200}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className="h-[260px] w-full object-cover md:h-[340px]"
+              />
+            </div>
           </div>
         </section>
       </Reveal>
