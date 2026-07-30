@@ -148,6 +148,12 @@ export default function SubscriberPelvicEngineResetPage() {
                 </article>
               ))}
             </div>
+
+            <div className="mt-8 rounded-card border border-copper/35 bg-ivory px-6 py-5 shadow-[0_18px_36px_-26px_rgba(15,23,42,0.5)] md:px-7">
+              <p className="text-[15.5px] leading-relaxed text-inkSoft md:text-[16px]">
+                The Pelvic Engine Reset is <strong className="font-semibold text-navy">NOT</strong> another course. It&apos;s not watching videos alone. It&apos;s a <strong className="font-semibold text-navy">guided, hands-on experience</strong> where you learn what&apos;s actually happening in your body to start taking <strong className="font-semibold text-navy">the right actions</strong>.
+              </p>
+            </div>
           </div>
         </section>
       </Reveal>
