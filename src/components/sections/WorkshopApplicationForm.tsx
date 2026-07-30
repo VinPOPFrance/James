@@ -43,7 +43,7 @@ export function WorkshopApplicationForm() {
       }
 
       setStatus("success");
-      setMessage("Application sent successfully. You will receive a reply by email.");
+      setMessage("Application sent successfully.");
       form.reset();
     } catch {
       setStatus("error");
@@ -130,13 +130,23 @@ export function WorkshopApplicationForm() {
         >
           {status === "loading" ? "Sending..." : "Send Application"}
         </button>
-
-        {message ? (
-          <p className={`text-[14px] ${status === "success" ? "text-sage" : "text-copper"}`}>
-            {message}
-          </p>
-        ) : null}
       </div>
+
+      {status === "success" ? (
+        <div className="rounded-[10px] border border-sage/40 bg-sage/10 px-4 py-3">
+          <p className="text-[14.5px] font-semibold text-navy">{message}</p>
+          <p className="mt-1 text-[14px] leading-relaxed text-inkSoft">
+            Thank you. I received your answers and will review them personally.
+            You should also receive a confirmation email shortly.
+          </p>
+        </div>
+      ) : null}
+
+      {status === "error" && message ? (
+        <div className="rounded-[10px] border border-copper/40 bg-copper/10 px-4 py-3">
+          <p className="text-[14px] font-medium text-copper">{message}</p>
+        </div>
+      ) : null}
     </form>
   );
 }
