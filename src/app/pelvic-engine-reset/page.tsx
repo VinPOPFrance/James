@@ -21,7 +21,7 @@ const sprintBlocks = [
   {
     title: "Saturday [Date] (2 Hours In-Studio) - The Re-Education",
     body:
-      "We map your posture, unlock your hips and pelvis, and teach you the exact breathing mechanics needed to decompress your lower back.",
+      "We map your posture to pinpoint what is overworking, and what isn't doing enough work in your body. You will learn how your pelvis is actually designed to move, how your breathing directly dictates pelvic alignment, and the massive impact this connection has on your daily pain levels. You’ll leave with a clear understanding of your unique body mechanics and the releases needed to unlock your hips and decompress your lower back.",
   },
   {
     title: "The Accountability Week (7 Days on WhatsApp) - The Integration",
