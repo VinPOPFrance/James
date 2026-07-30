@@ -129,28 +129,19 @@ export default function SubscriberPelvicEngineResetPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <article className="rounded-card border border-sage/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                You visit a physiotherapist, a chiropractor, or an osteopath.
-                They click, crack, or massage your lower back. It feels
-                <strong className="font-semibold text-navy"> fantastic for a couple of days</strong>, maybe even a week, and then
-                that <strong className="font-semibold text-navy">familiar, frustrating stiffness</strong> creeps right back.
+                You try <strong className="font-semibold text-navy">physio, chiro, or osteo</strong>. They crack or massage your back, it feels good for a few days, and then the <strong className="font-semibold text-navy">frustrating stiffness creeps right back</strong>.
                 </p>
               </article>
 
               <article className="rounded-card border border-copper/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                It leaves you feeling exhausted, moody, and physically broken.
-                Worse, it makes you <strong className="font-semibold text-navy">afraid of your own body</strong>. You start skipping
-                walks, moving cautiously, and constantly worrying that
-                <strong className="font-semibold text-navy"> one wrong twist</strong> will lock your back up entirely.
+                It leaves you feeling <strong className="font-semibold text-navy">physically broken and afraid of your own body</strong>-constantly worrying that <strong className="font-semibold text-navy">one wrong twist will lock your back up entirely</strong>.
                 </p>
               </article>
 
               <article className="rounded-card border border-sage/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                You don&apos;t need another temporary, passive fix where someone
-                pokes your back and sends you on your way. You need to
-                understand your body, rebuild your movement, and get back to
-                feeling like your <strong className="font-semibold text-navy">vibrant, active self again</strong>.
+                You don&apos;t need another <strong className="font-semibold text-navy">temporary, passive fix</strong>. You need to <strong className="font-semibold text-navy">understand your body</strong>, rebuild your movement, and get back to feeling like your <strong className="font-semibold text-navy">vibrant, active self again</strong>.
                 </p>
               </article>
             </div>
