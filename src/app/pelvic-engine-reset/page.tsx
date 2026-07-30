@@ -113,15 +113,17 @@ export default function SubscriberPelvicEngineResetPage() {
               How The Pelvic Engine Reset Works
             </h2>
             <div className="grid gap-5 md:grid-cols-3">
-              {sprintBlocks.map((block) => (
+              {sprintBlocks.map((block, index) => (
                 <article
                   key={block.title}
-                  className="card-lift rounded-card border border-ivory/25 bg-ivory/10 p-6"
+                  className={`card-lift rounded-card border bg-ivory p-6 shadow-[0_16px_32px_-22px_rgba(15,23,42,0.6)] ${
+                    index === 1 ? "border-copper/45" : "border-sage/45"
+                  }`}
                 >
-                  <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-ivory">
+                  <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
                     {block.title}
                   </h3>
-                  <p className="text-[14.5px] leading-relaxed text-ivory/90">
+                  <p className="text-[14.5px] leading-relaxed text-inkSoft">
                     {block.body}
                   </p>
                 </article>
