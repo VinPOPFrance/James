@@ -84,6 +84,12 @@ Route used by the embedded form:
 
 - `POST /api/workshop-application`
 
+Notes:
+
+- The route includes a hidden honeypot field to reduce bot spam.
+- The route applies lightweight per-IP rate limiting (5 submissions per 10 minutes).
+- Applicants receive an automatic confirmation email after successful submission.
+
 ---
 
 ## 4. Recommended tree

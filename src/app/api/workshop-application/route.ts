@@ -7,7 +7,65 @@ type WorkshopApplicationPayload = {
   q1?: string;
   q2?: string;
   q3?: string;
+  website?: string;
 };
+
+type RateState = {
+  count: number;
+  resetAt: number;
+};
+
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX = 5;
+const rateStore = new Map<string, RateState>();
+
+function getClientKey(request: Request) {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    const first = forwarded.split(",")[0]?.trim();
+    if (first) {
+      return first;
+    }
+  }
+
+  const realIp = request.headers.get("x-real-ip")?.trim();
+  if (realIp) {
+    return realIp;
+  }
+
+  return "unknown";
+}
+
+function isRateLimited(clientKey: string) {
+  const now = Date.now();
+
+  // Keep in-memory map from growing forever in long-lived runtimes.
+  if (rateStore.size > 1000) {
+    for (const [key, state] of rateStore) {
+      if (state.resetAt <= now) {
+        rateStore.delete(key);
+      }
+    }
+  }
+
+  const current = rateStore.get(clientKey);
+
+  if (!current || current.resetAt <= now) {
+    rateStore.set(clientKey, {
+      count: 1,
+      resetAt: now + RATE_WINDOW_MS,
+    });
+    return false;
+  }
+
+  if (current.count >= RATE_LIMIT_MAX) {
+    return true;
+  }
+
+  current.count += 1;
+  rateStore.set(clientKey, current);
+  return false;
+}
 
 function escapeHtml(value: string) {
   return value
@@ -27,6 +85,23 @@ export async function POST(request: Request) {
     const q1 = body.q1?.trim() ?? "";
     const q2 = body.q2?.trim() ?? "";
     const q3 = body.q3?.trim() ?? "";
+    const website = body.website?.trim() ?? "";
+
+    // Honeypot trap for basic bots: pretend success to avoid retries.
+    if (website) {
+      return NextResponse.json({ success: true });
+    }
+
+    const clientKey = getClientKey(request);
+    if (isRateLimited(clientKey)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Too many submissions. Please wait a few minutes and try again.",
+        },
+        { status: 429 },
+      );
+    }
 
     if (!name || !email || !q1 || !q2 || !q3) {
       return NextResponse.json(
@@ -104,6 +179,34 @@ export async function POST(request: Request) {
       subject,
       text,
       html,
+    });
+
+    const applicantSubject = "Application received - Pelvic Engine Reset";
+    const applicantText = [
+      `Hi ${name},`,
+      "",
+      "Thanks for your application for the Pelvic Engine Reset.",
+      "I received your answers and will review them personally.",
+      "",
+      "I will get back to you by email as soon as possible.",
+      "",
+      "James",
+    ].join("\n");
+
+    const applicantHtml = `
+      <p>Hi ${escapeHtml(name)},</p>
+      <p>Thanks for your application for the Pelvic Engine Reset.</p>
+      <p>I received your answers and will review them personally.</p>
+      <p>I will get back to you by email as soon as possible.</p>
+      <p>James</p>
+    `;
+
+    await transporter.sendMail({
+      from: smtpFrom,
+      to: email,
+      subject: applicantSubject,
+      text: applicantText,
+      html: applicantHtml,
     });
 
     return NextResponse.json({ success: true });

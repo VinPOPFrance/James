@@ -22,6 +22,7 @@ export function WorkshopApplicationForm() {
       q1: String(formData.get("q1") ?? "").trim(),
       q2: String(formData.get("q2") ?? "").trim(),
       q3: String(formData.get("q3") ?? "").trim(),
+      website: String(formData.get("website") ?? "").trim(),
     };
 
     try {
@@ -52,6 +53,15 @@ export function WorkshopApplicationForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <input
+        name="website"
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
+
       <div className="grid gap-4 md:grid-cols-2">
         <label className="block">
           <span className="mb-1.5 block text-[13px] font-medium text-navy">Your name</span>
