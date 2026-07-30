@@ -4,6 +4,20 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteConfig } from "@/config/site-config";
 
+type SprintIntroBlock = {
+  title: string;
+  subtitle: string;
+  bullets: string[];
+  outcome: string;
+};
+
+type SprintStandardBlock = {
+  title: string;
+  body: string;
+};
+
+type SprintBlock = SprintIntroBlock | SprintStandardBlock;
+
 export const metadata: Metadata = {
   title: "Pelvic Engine Reset | Private Application",
   description:
@@ -17,7 +31,7 @@ export const metadata: Metadata = {
   },
 };
 
-const sprintBlocks = [
+const sprintBlocks: SprintBlock[] = [
   {
     title: "PART A: Saturday [Date] - 2 Hours In-Studio",
     subtitle: "The Re-Education Phase",
