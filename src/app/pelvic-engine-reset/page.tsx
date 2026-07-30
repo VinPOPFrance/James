@@ -58,7 +58,7 @@ const sprintBlocks: SprintBlock[] = [
     bullets: [
       "Practice 3 simple, progressive movements at home (20 minutes, 3x per week-that's it)",
       "Send me quick practice videos showing your form (not mandatory)",
-      "Get direct feedback from me within 24 hours",
+      "get support within 24 hrs .",
     ],
     outcome:
       "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
