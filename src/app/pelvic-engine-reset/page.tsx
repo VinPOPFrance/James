@@ -44,9 +44,15 @@ const sprintBlocks: SprintBlock[] = [
       "A crystal-clear understanding of YOUR specific mechanics, exactly which releases will unlock your hips, and the first simple exercises to decompress your lower back immediately.",
   },
   {
-    title: "The Accountability Week (7 Days on WhatsApp) - The Integration",
-    body:
-      "No complex workouts. You practice simple, progressive movements at home for 20 minutes, 3 times a week. You check in via WhatsApp, send quick practice videos, and get direct feedback from me to ensure perfect form.",
+    title: "7 Days Integration",
+    subtitle: "The WhatsApp Accountability Week",
+    bullets: [
+      "Practice 3 simple, progressive movements at home (20 minutes, 3x per week-that's it)",
+      "Send me quick practice videos showing your form (not mandatory)",
+      "Get direct feedback from me within 24 hours",
+    ],
+    outcome:
+      "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
   },
   {
     title: "Saturday [Date] (2 Hours In-Studio) - The Progression & Autonomy",
@@ -169,7 +175,9 @@ export default function SubscriberPelvicEngineResetPage() {
                           {block.subtitle}
                         </h3>
                         <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
-                          What happens:
+                          {block.title === "7 Days Integration"
+                            ? "What you do:"
+                            : "What happens:"}
                         </p>
                         <ul className="space-y-3 text-[14.5px] leading-relaxed text-inkSoft">
                           {block.bullets.map((item) => (
