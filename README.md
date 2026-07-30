@@ -68,6 +68,22 @@ Tracking is automatically enabled only when the IDs are present.
 - Vercel deployment runbook: `docs/DEPLOY-VERCEL.md`
 - Primary production domain: `jamesdaime.com`
 
+## Workshop application email setup
+
+To deliver Pelvic Engine Reset applications by email, configure these env vars
+in Vercel (Project Settings -> Environment Variables):
+
+- `SMTP_HOST` (example: `smtp.gmail.com`)
+- `SMTP_PORT` (example: `465`)
+- `SMTP_USER` (your Gmail address)
+- `SMTP_PASS` (Gmail App Password)
+- `SMTP_FROM` (sender address, usually same as `SMTP_USER`)
+- `WORKSHOP_APPLICATION_TO` (recipient inbox, default is `contact@jamesdaime.com`)
+
+Route used by the embedded form:
+
+- `POST /api/workshop-application`
+
 ---
 
 ## 4. Recommended tree

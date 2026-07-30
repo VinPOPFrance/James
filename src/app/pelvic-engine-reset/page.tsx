@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageLayout } from "@/components/layout/PageLayout";
+import { WorkshopApplicationForm } from "@/components/sections/WorkshopApplicationForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteConfig } from "@/config/site-config";
 
@@ -336,19 +337,15 @@ export default function SubscriberPelvicEngineResetPage() {
         <section id="apply" className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-4 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-navy">
-              Submit Your Application
+              Apply For The Workshop
             </h2>
             <p className="mb-6 text-[15px] text-inkSoft">
-              Embed your Google Form or Typeform below by replacing the iframe
-              src URL.
+              Complete these three questions and your application will be sent
+              directly by email.
             </p>
 
-            <div className="overflow-hidden rounded-card border border-hairline">
-              <iframe
-                title="Pelvic Engine Reset Application"
-                src="about:blank"
-                className="h-[760px] w-full bg-ivory"
-              />
+            <div className="rounded-card border border-hairline bg-white p-5 md:p-6">
+              <WorkshopApplicationForm />
             </div>
           </div>
         </section>
