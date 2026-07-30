@@ -74,7 +74,7 @@ export default function SubscriberPelvicEngineResetPage() {
 
             <div className="relative min-h-[320px] md:min-h-full">
               <Image
-                src="/media/group-1.jpg"
+                src="/media/group-2.jpg"
                 alt="James coaching at the studio"
                 fill
                 priority
