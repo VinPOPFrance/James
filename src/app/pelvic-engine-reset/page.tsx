@@ -364,7 +364,7 @@ export default function SubscriberPelvicEngineResetPage() {
             </h2>
 
             <div className="grid gap-4 md:grid-cols-4">
-              {applySteps.map((step) => (
+              {applySteps.map((step, index) => (
                 <article
                   key={step.number}
                   className="flex h-full flex-col rounded-card border border-hairline bg-white p-5 shadow-[0_14px_28px_-22px_rgba(15,23,42,0.55)]"
@@ -376,7 +376,9 @@ export default function SubscriberPelvicEngineResetPage() {
                     {step.title}
                   </h3>
                   <p className="text-[14px] leading-relaxed text-inkSoft">{step.detail}</p>
-                  <p className="mt-auto pt-3 text-[13px] font-medium text-sage md:text-copper">Next step -&gt;</p>
+                  {index < applySteps.length - 1 ? (
+                    <p className="mt-auto pt-3 text-[13px] font-medium text-sage md:text-copper">Next step -&gt;</p>
+                  ) : null}
                 </article>
               ))}
             </div>
