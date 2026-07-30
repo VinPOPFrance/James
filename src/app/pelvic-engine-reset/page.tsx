@@ -174,13 +174,13 @@ export default function SubscriberPelvicEngineResetPage() {
       </Reveal>
 
       <Reveal>
-        <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-[#87986A] to-[#728153] px-6 py-20 md:px-14">
+        <section className="relative overflow-hidden rounded-section border border-ivory/25 bg-gradient-to-br from-[#7D8F61] to-[#66764A] px-6 py-20 shadow-[0_28px_48px_-34px_rgba(15,23,42,0.65)] md:px-14">
           <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
           <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
           <div className="relative mx-auto max-w-5xl">
-            <h2 className="mb-8 text-center font-voice text-[clamp(1.52rem,2.9vw,2.02rem)] font-medium text-ivory">
+            <h2 className="mb-8 text-center font-voice text-[clamp(1.64rem,3.1vw,2.14rem)] font-medium text-ivory">
               <span className="block">Here&apos;s Exactly How We Reset Your Engine -</span>
-              <span className="mt-1 block text-[1.08em] text-[#ffee8c]">
+              <span className="mt-1 block text-[1.16em] text-[#ffee8c]">
                 2 workshops <span className="text-navy">1</span> accountability week
               </span>
             </h2>
@@ -188,28 +188,30 @@ export default function SubscriberPelvicEngineResetPage() {
               {sprintBlocks.map((block, index) => (
                 <article
                   key={block.title}
-                  className={`card-lift h-full rounded-card border bg-ivory p-6 shadow-[0_16px_32px_-22px_rgba(15,23,42,0.6)] ${
-                    index === 1 ? "border-copper/45" : "border-sage/45"
+                  className={`card-lift h-full rounded-card border p-6 shadow-[0_18px_34px_-20px_rgba(15,23,42,0.62)] ${
+                    index === 1
+                      ? "border-copper/55 bg-[#fff8ef]"
+                      : "border-sage/55 bg-[#f6fbf1]"
                   }`}
                 >
                   {"subtitle" in block ? (
                     <div className="grid h-full gap-4 md:grid-rows-[1fr_auto]">
-                      <div className="rounded-card border border-sage/25 bg-white p-4">
+                      <div className="rounded-card border border-sage/30 bg-white p-4">
                         {block.subtitle === "The Re-Education Phase"
                           ||
                         block.subtitle === "The Progression & Autonomy Phase" ? (
-                          <div className="mb-3 rounded-[10px] border border-[#ffee8c] bg-navy px-3 py-2 shadow-[0_10px_20px_-12px_rgba(15,23,42,0.75)]">
-                            <p className="text-[1.1rem] font-semibold leading-snug text-[#ffee8c]">
+                          <div className="mb-3 rounded-[10px] border border-[#ffee8c] bg-navy px-3 py-2 shadow-[0_12px_22px_-12px_rgba(15,23,42,0.78)]">
+                            <p className="text-[1.225rem] font-semibold leading-snug text-[#ffee8c]">
                               {block.title}
                             </p>
                           </div>
                         ) : (
-                          <p className="mb-2 text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage">
+                          <p className="mb-2 text-[13.5px] font-semibold uppercase tracking-[0.09em] text-sage">
                             {block.title}
                           </p>
                         )}
                         <h3
-                          className={`mb-3 text-[1.03rem] font-semibold leading-snug ${
+                          className={`mb-3 text-[1.155rem] font-semibold leading-snug ${
                             block.subtitle === "The Re-Education Phase"
                               ||
                             block.subtitle === "The Progression & Autonomy Phase"
@@ -219,17 +221,17 @@ export default function SubscriberPelvicEngineResetPage() {
                         >
                           {block.subtitle}
                         </h3>
-                        <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
+                        <p className="mb-3 text-[15.5px] font-semibold uppercase tracking-[0.06em] text-copper">
                           {block.title === "7 Days Integration"
                             ? "What you do:"
                             : "What happens:"}
                         </p>
                         {block.intro ? (
-                          <p className="mb-3 text-[14.5px] leading-relaxed text-inkSoft">
+                          <p className="mb-3 text-[16.5px] leading-relaxed text-inkSoft">
                             {block.intro}
                           </p>
                         ) : null}
-                        <ul className="space-y-3 text-[14.5px] leading-relaxed text-inkSoft">
+                        <ul className="space-y-3 text-[16.5px] leading-relaxed text-inkSoft">
                           {block.bullets.map((item) => (
                             <li key={item}>- {item}</li>
                           ))}
@@ -237,10 +239,10 @@ export default function SubscriberPelvicEngineResetPage() {
                       </div>
 
                       <div className="rounded-card border border-copper/30 bg-white p-4">
-                        <p className="mb-3 text-[13.5px] font-semibold uppercase tracking-[0.06em] text-copper">
+                        <p className="mb-3 text-[15.5px] font-semibold uppercase tracking-[0.06em] text-copper">
                           What you leave with:
                         </p>
-                        <p className="text-[14.5px] leading-relaxed text-inkSoft">
+                        <p className="text-[16.5px] leading-relaxed text-inkSoft">
                           {block.outcome}
                         </p>
                       </div>
@@ -259,8 +261,8 @@ export default function SubscriberPelvicEngineResetPage() {
               ))}
             </div>
 
-            <div className="mt-8 rounded-card border border-copper/35 bg-ivory px-6 py-5 shadow-[0_18px_36px_-26px_rgba(15,23,42,0.5)] md:px-7">
-              <p className="text-[15.5px] leading-relaxed text-inkSoft md:text-[16px]">
+            <div className="mt-8 rounded-card border border-copper/45 bg-[#fff6ea] px-6 py-5 shadow-[0_20px_38px_-24px_rgba(15,23,42,0.58)] md:px-7">
+              <p className="text-[17.5px] leading-relaxed text-inkSoft md:text-[18px]">
                 The Pelvic Engine Reset is <strong className="font-semibold text-navy">NOT</strong> another course. It&apos;s not watching videos alone. It&apos;s a <strong className="font-semibold text-navy">guided, hands-on experience</strong> where you learn what&apos;s actually happening in your body to start taking <strong className="font-semibold text-navy">the right actions</strong>.
               </p>
             </div>
