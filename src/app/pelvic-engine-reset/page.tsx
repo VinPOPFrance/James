@@ -58,11 +58,10 @@ export default function SubscriberPelvicEngineResetPage() {
                 FOR ACTIVE WOMEN WITH BACK PAIN
               </p>
               <h1 className="mb-4 font-voice text-[clamp(2rem,5.2vw,3.2rem)] font-medium leading-[1.1] text-navy">
-                Stop treating the symptom. Reset the engine.
+                You&apos;ve Been Told Your Back Pain Is &apos;Normal.&apos; It Doesn&apos;t Have to Be.
               </h1>
               <p className="mb-8 max-w-xl text-[16px] leading-relaxed text-inkSoft">
-                A high-accountability, 2-week movement sprint for women 40+
-                ready to move past chronic lower back stiffness.
+                Stop chasing relief. Start resetting your engine.
               </p>
               <a
                 href="#apply"
