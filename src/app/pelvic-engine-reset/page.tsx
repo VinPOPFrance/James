@@ -54,8 +54,8 @@ export default function SubscriberPelvicEngineResetPage() {
         <section className="overflow-hidden rounded-section border border-hairline bg-white">
           <div className="grid gap-0 md:grid-cols-2">
             <div className="px-8 py-12 md:px-12 md:py-16">
-              <p className="mb-4 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">
-                Private Subscriber Offer
+              <p className="mb-4 text-[14px] font-medium uppercase tracking-[0.09em] text-copper">
+                FOR ACTIVE WOMEN WITH BACK PAIN
               </p>
               <h1 className="mb-4 font-voice text-[clamp(2rem,5.2vw,3.2rem)] font-medium leading-[1.1] text-navy">
                 Stop treating the symptom. Reset the engine.
