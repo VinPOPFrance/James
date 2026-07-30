@@ -197,7 +197,7 @@ export default function SubscriberPelvicEngineResetPage() {
                 width={1200}
                 height={900}
                 sizes="(max-width: 768px) 100vw, 45vw"
-                className="h-[260px] w-full object-cover md:h-[340px]"
+                className="h-[260px] w-[112%] max-w-none -translate-x-[6%] object-cover md:h-[340px] md:w-[108%] md:-translate-x-[4%]"
               />
             </div>
           </div>
