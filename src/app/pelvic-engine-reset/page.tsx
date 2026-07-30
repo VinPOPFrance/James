@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const sprintBlocks: SprintBlock[] = [
   {
-    title: "PART A: Saturday [Date] - 2 Hours In-Studio",
+    title: "Saturday 12/09/2026 - 2 Hours In-Studio",
     subtitle: "The Re-Education Phase",
     bullets: [
       "What's overworking (usually your lower back, doing all the heavy lifting)",
@@ -178,7 +178,13 @@ export default function SubscriberPelvicEngineResetPage() {
                   {"subtitle" in block ? (
                     <div className="grid h-full gap-4 md:grid-rows-[1fr_auto]">
                       <div className="rounded-card border border-sage/25 bg-white p-4">
-                        <p className="mb-2 text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage">
+                        <p
+                          className={`mb-2 ${
+                            block.subtitle === "The Re-Education Phase"
+                              ? "text-[1.1rem] font-semibold leading-snug text-navy"
+                              : "text-[11.5px] font-semibold uppercase tracking-[0.09em] text-sage"
+                          }`}
+                        >
                           {block.title}
                         </p>
                         <h3 className="mb-3 text-[1.03rem] font-semibold leading-snug text-navy">
