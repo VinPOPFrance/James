@@ -21,9 +21,16 @@ type SprintStandardBlock = {
 type SprintBlock = SprintIntroBlock | SprintStandardBlock;
 
 export const metadata: Metadata = {
-  title: "Pelvic Engine Reset | Private Application",
+  title: "Lower Back Pain Workshop | Pelvic Engine Reset",
   description:
-    "Private application page for newsletter subscribers.",
+    "Lower back pain workshop application: Pelvic Engine Reset for women ready to move with less stiffness and more confidence.",
+  openGraph: {
+    title: "Lower Back Pain Workshop | Pelvic Engine Reset",
+    description:
+      "Apply for the Pelvic Engine Reset lower back pain workshop and start moving with less stiffness.",
+    url: `${siteConfig.siteUrl}/pelvic-engine-reset`,
+    type: "website",
+  },
   robots: {
     index: false,
     follow: false,
