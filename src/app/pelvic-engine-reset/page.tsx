@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 const sprintBlocks: SprintBlock[] = [
   {
-    title: "Saturday 12/09/2026 - 2 Hours In-Studio",
+    title: "Saturday 12/09/2026 - 10.30 until 12.30",
     subtitle: "The Re-Education Phase",
     bullets: [
       "What's overworking (usually your lower back, doing all the heavy lifting)",
@@ -57,7 +57,7 @@ const sprintBlocks: SprintBlock[] = [
       "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
   },
   {
-    title: "Saturday 19/07/2026 - 2 Hours In-Studio",
+    title: "Saturday 19/07/2026 - 10.30 until 12.30",
     subtitle: "The Progression & Autonomy Phase",
     intro:
       "We review your week, celebrate what shifted, and then we safely level up.",
@@ -175,8 +175,8 @@ export default function SubscriberPelvicEngineResetPage() {
                         {block.subtitle === "The Re-Education Phase"
                           ||
                         block.subtitle === "The Progression & Autonomy Phase" ? (
-                          <div className="mb-3 rounded-[10px] border border-copper/40 bg-copper/10 px-3 py-2">
-                            <p className="text-[1.1rem] font-semibold leading-snug text-copper">
+                          <div className="mb-3 rounded-[10px] border border-[#ffee8c] bg-navy px-3 py-2 shadow-[0_10px_20px_-12px_rgba(15,23,42,0.75)]">
+                            <p className="text-[1.1rem] font-semibold leading-snug text-[#ffee8c]">
                               {block.title}
                             </p>
                           </div>
