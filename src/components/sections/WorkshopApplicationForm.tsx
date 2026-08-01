@@ -88,7 +88,7 @@ export function WorkshopApplicationForm() {
 
       <label className="block">
         <span className="mb-1.5 block text-[13px] font-medium text-navy">
-          What&apos;s the biggest frustration about living with lower back pain right now? What has it stopped you from doing?
+          What has your back pain stopped you from doing?
         </span>
         <textarea
           name="q1"
@@ -100,7 +100,7 @@ export function WorkshopApplicationForm() {
 
       <label className="block">
         <span className="mb-1.5 block text-[13px] font-medium text-navy">
-          What&apos;s your biggest concern about the Pelvic Engine Reset working for you? What would need to be true for you to believe this could actually help?
+          What would need to be true for you to believe this could work for you?
         </span>
         <textarea
           name="q2"
@@ -112,7 +112,7 @@ export function WorkshopApplicationForm() {
 
       <label className="block">
         <span className="mb-1.5 block text-[13px] font-medium text-navy">
-          Are you willing to practice 20 minutes, 3x per week for the next 7 days? What would make this realistic for you?
+          Can you practise 20 minutes, 3x a week for the next 7 days? What would make that realistic?
         </span>
         <textarea
           name="q3"

@@ -42,74 +42,73 @@ export const metadata: Metadata = {
 
 const sprintBlocks: SprintBlock[] = [
   {
-    title: "Saturday 12/09/2026 - 10.30 until 12.30",
+    title: "Workshop 1 - Saturday 12/09/2026, 10:30-12:30",
     subtitle: "The Re-Education Phase",
     bullets: [
-      "What's overworking (usually your lower back, doing all the heavy lifting)",
-      "What's not doing enough work (your deep core and pelvic floor-the engines supposed to be running)",
-      "How your breathing is either locking you up or releasing you",
+      "Which muscles are overworking (usually your lower back, carrying everything)",
+      "Which ones have stopped doing their job (deep core and pelvic floor)",
+      "How your breathing is either locking you up or letting you go",
     ],
     outcome:
-      "A crystal-clear understanding of YOUR specific mechanics, exactly which releases will unlock your hips, and the first simple exercises to decompress your lower back immediately.",
+      "A clear picture of your mechanics, the releases that unlock your hips, and your first exercises to decompress your lower back.",
   },
   {
-    title: "7 Days Integration",
-    subtitle: "The WhatsApp Accountability Week",
+    title: "7 Days",
+    subtitle: "WhatsApp Accountability Week",
     bullets: [
-      "Practice 3 simple, progressive movements at home (20 minutes, 3x per week-that's it)",
-      "Send me quick practice videos showing your form (not mandatory)",
-      "get support within 24 hrs .",
+      "20 minutes of practice, 3x per week. That's it.",
+      "Send me a quick video of your form (optional) - I reply within 24 hours.",
     ],
     outcome:
-      "A solid week of practice, proven form, and the proof that this actually works when you do it consistently.",
+      "A week of real practice, correct form, and proof it works when you do it.",
   },
   {
-    title: "Saturday 19/07/2026 - 10.30 until 12.30",
+    title: "Workshop 2 - Saturday 19/09/2026, 10:30-12:30",
     subtitle: "The Progression & Autonomy Phase",
     intro:
-      "We review your week, celebrate what shifted, and then we safely level up.",
+      "We review your week, then level up safely:",
     bullets: [
-      "How to stack new, targeted movements onto what you've already mastered",
-      "Advanced breathing techniques that lock in deep stability",
-      "How to recognize when your body needs more and when it needs rest",
+      "How to build new movements onto what you've mastered",
+      "Breathing that locks in deep stability",
+      "How to read when your body needs more - and when it needs rest",
     ],
     outcome:
-      "An upgraded, independent roadmap. Not just exercises. A complete system to protect your lower back, maintain mobility, and move through life without constant management.",
+      "Your own roadmap. Not a list of exercises - a way to decide for yourself what to do next.",
   },
 ];
 
 const rightForYou = [
-  "You've tried physio/chiro but still feel stuck",
-  "You want to understand the root cause of your pain",
-  "You are ready to commit to 20 minutes of practice, 3 to 4 days a week.",
+  "You've done physio or chiro and still feel stuck",
+  "You want to know why it hurts, not just what to stretch",
+  "You're ready to practise 20 minutes, 3-4 days a week",
 ];
 
 const notRightForYou = [
-  "You only want a passive massage where someone else does the work",
-  "You want an overnight miracle without making an effort",
-  "You aren't willing to check in on WhatsApp",
+  "You want someone else to do the work for you",
+  "You're expecting an overnight fix",
+  "You'd rather not check in over WhatsApp",
 ];
 
 const applySteps = [
   {
     number: "1",
-    title: "APPLY (5 minutes)",
-    detail: "Answer 3 questions",
+    title: "APPLY - 3 questions, 5 minutes",
+    detail: "Quick application",
   },
   {
     number: "2",
-    title: "I REVIEW (24 hours)",
-    detail: "Confirm you're a good fit",
+    title: "I REVIEW - within 24 hours",
+    detail: "I confirm you're a good fit",
   },
   {
     number: "3",
-    title: "CONFIRMATION EMAIL (Same day)",
-    detail: "Get payment link + details",
+    title: "CONFIRMATION EMAIL - same day",
+    detail: "You get your payment link",
   },
   {
     number: "4",
-    title: "SECURE YOUR SPOT (EUR 220)",
-    detail: "Pay via Stripe/PayPal/Bank",
+    title: "SECURE YOUR SPOT - EUR 220",
+    detail: "Pay via Stripe, PayPal or bank",
   },
 ];
 
@@ -124,10 +123,10 @@ export default function SubscriberPelvicEngineResetPage() {
                 FOR ACTIVE WOMEN WITH BACK PAIN
               </p>
               <h1 className="mb-4 font-voice text-[clamp(2rem,5.2vw,3.2rem)] font-medium leading-[1.1] text-navy">
-                You&apos;ve Been Told Your Back Pain Is &apos;Normal.&apos; It Doesn&apos;t Have to Be.
+                Not Sure What Movement Is Safe for Your Back Anymore?
               </h1>
               <p className="mb-8 max-w-xl text-[16px] leading-relaxed text-inkSoft">
-                Stop chasing relief. Start resetting your engine.
+                In two workshops, learn exactly how your body works - so you can train, move and be active again without second-guessing every exercise.
               </p>
               <a
                 href="#apply"
@@ -155,24 +154,24 @@ export default function SubscriberPelvicEngineResetPage() {
         <section className="rounded-section border border-sage/35 bg-white px-8 py-14 shadow-[0_24px_48px_-34px_rgba(15,23,42,0.45)] md:px-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.7vw,1.9rem)] font-medium text-navy">
-              You&apos;ve tried everything. Why does the stiffness keep coming back?
+              You want to move again. You just don&apos;t know what&apos;s safe.
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
               <article className="rounded-card border border-sage/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                You try <strong className="font-semibold text-navy">physio, chiro, or osteo</strong>. They crack or massage your back, it feels good for a few days, and then the <strong className="font-semibold text-navy">frustrating stiffness creeps right back</strong>.
+                You&apos;ve been told to stay active - but nobody told you which movements help and which ones set you back. So you hold back, skip the workout, and stay careful.
                 </p>
               </article>
 
               <article className="rounded-card border border-copper/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                It leaves you feeling <strong className="font-semibold text-navy">physically broken and afraid of your own body</strong>-constantly worrying that <strong className="font-semibold text-navy">one wrong twist will lock your back up entirely</strong>.
+                Physio, chiro or osteo gives you a few good days. Then the stiffness creeps back, and you&apos;re guessing again.
                 </p>
               </article>
 
               <article className="rounded-card border border-sage/35 bg-ivory p-5">
                 <p className="text-[15.6px] leading-relaxed text-inkSoft">
-                You don&apos;t need another <strong className="font-semibold text-navy">temporary, passive fix</strong>. You need to <strong className="font-semibold text-navy">understand your body</strong>, rebuild your movement, and get back to feeling like your <strong className="font-semibold text-navy">vibrant, active self again</strong>.
+                You don&apos;t need another passive fix. You need to understand your own body well enough to move with confidence.
                 </p>
               </article>
             </div>
@@ -186,9 +185,9 @@ export default function SubscriberPelvicEngineResetPage() {
           <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
           <div className="relative mx-auto max-w-5xl">
             <h2 className="mb-8 text-center font-voice text-[clamp(1.64rem,3.1vw,2.14rem)] font-medium text-ivory">
-              <span className="block">Here&apos;s Exactly How We Reset Your Engine -</span>
+              <span className="block">How We Reset Your Engine -</span>
               <span className="mt-1 block text-[1.16em] text-[#ffee8c]">
-                2 workshops <span className="text-navy">1</span> accountability week
+                2 workshops, 1 week of practice
               </span>
             </h2>
             <div className="grid gap-5 md:grid-cols-3">
@@ -270,7 +269,7 @@ export default function SubscriberPelvicEngineResetPage() {
 
             <div className="mt-8 rounded-card border border-copper/45 bg-[#fff6ea] px-6 py-5 shadow-[0_20px_38px_-24px_rgba(15,23,42,0.58)] md:px-7">
               <p className="text-[17.5px] leading-relaxed text-inkSoft md:text-[18px]">
-                The Pelvic Engine Reset is <strong className="font-semibold text-navy">NOT</strong> another course. It&apos;s not watching videos alone. It&apos;s a <strong className="font-semibold text-navy">guided, hands-on experience</strong> where you learn what&apos;s actually happening in your body to start taking <strong className="font-semibold text-navy">the right actions</strong>.
+                This isn&apos;t a course you watch alone. It&apos;s hands-on, in the room, learning what your body is actually doing.
               </p>
             </div>
           </div>
@@ -321,31 +320,24 @@ export default function SubscriberPelvicEngineResetPage() {
           <div className="relative mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-[1fr_0.95fr] md:gap-10">
             <div>
               <h2 className="mb-3 font-voice text-[clamp(1.4rem,2.9vw,2rem)] font-medium text-ivory">
-                Strict Limit: 4 Participants.
+                Strict Limit: 4 Participants - EUR 220
               </h2>
-              <p className="mb-4 text-[clamp(1.9rem,4vw,2.6rem)] font-semibold text-copper">
-                EUR 220
-              </p>
               <div className="max-w-3xl rounded-card border border-ivory/20 bg-ivory/10 p-5">
                 <h3 className="mb-3 text-[1.06rem] font-semibold text-[#ffee8c]">
-                  Why EUR 220?
+                  Included:
                 </h3>
-                <p className="mb-4 text-[15.3px] leading-relaxed text-ivory/90">
-                  This isn&apos;t a group fitness class where you&apos;re 1 of 30.
-                  It&apos;s not an online course where you watch videos alone.
-                </p>
                 <ul className="space-y-2.5 text-[15px] leading-relaxed text-ivory/90">
                   <li>
-                    - <strong className="font-semibold text-ivory">My hands-on attention for 4 hours</strong>
+                    - <strong className="font-semibold text-ivory">4 hours of hands-on attention, in a group of four</strong>
                   </li>
                   <li>
-                    - <strong className="font-semibold text-ivory">Daily video feedback during accountability week</strong> (private coaching, not group chats)
+                    - <strong className="font-semibold text-ivory">Video feedback from me during your practice week</strong>
                   </li>
                   <li>
-                    - <strong className="font-semibold text-ivory">Lifetime access to your personalized movement roadmap</strong> (you own this forever)
+                    - <strong className="font-semibold text-ivory">Your personalised movement roadmap, yours to keep</strong>
                   </li>
                   <li>
-                    - <strong className="font-semibold text-ivory">Direct access to me if you get stuck</strong> (I&apos;m not disappearing after week 1)
+                    - <strong className="font-semibold text-ivory">Direct access to me when you get stuck</strong>
                   </li>
                 </ul>
               </div>
