@@ -22,6 +22,7 @@ import { Plan } from "@/components/sections/Plan";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Fit } from "@/components/sections/Fit";
 import { Fascia } from "@/components/sections/Fascia";
+import { WorkshopPromoCard } from "@/components/sections/WorkshopPromoCard";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
@@ -46,6 +47,10 @@ export default function HomePage() {
 
         <Reveal>
           <Problem />
+        </Reveal>
+
+        <Reveal>
+          <WorkshopPromoCard />
         </Reveal>
 
         <Reveal>

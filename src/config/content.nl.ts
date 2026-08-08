@@ -44,6 +44,20 @@ export const homeNl = {
       { icon: "help", text: "Niemand heeft je ooit echt uitgelegd waarom de pijn steeds terugkomt." },
     ],
   },
+  workshopPromo: {
+    bar: {
+      label: "Nieuw",
+      text: "Pelvic Engine Reset Workshop — 12 & 19 sept, Rotterdam. Nog maar 4 plekken.",
+      cta: "Nu aanmelden",
+    },
+    card: {
+      badge: "Nieuw",
+      title: "De Pelvic Engine Reset Workshop",
+      body: "Je hebt gehoord dat je rugpijn “normaal” is. Dat hoeft niet zo te zijn.",
+      detail: "Twee praktijksessies plus een begeleide 7-daagse week. Strikt 4 deelnemers — 12 & 19 sept, Rotterdam.",
+      cta: "Bekijk workshopdetails",
+    },
+  },
   video: {
     eyebrow: "Ontmoet de aanpak",
     title: "Zie hoe een sessie aanvoelt",

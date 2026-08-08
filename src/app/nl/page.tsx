@@ -14,6 +14,7 @@ import { Fit } from "@/components/sections/Fit";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Fascia } from "@/components/sections/Fascia";
 import { About } from "@/components/sections/About";
+import { WorkshopPromoCard } from "@/components/sections/WorkshopPromoCard";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Footer } from "@/components/sections/Footer";
@@ -50,6 +51,10 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Problem content={homeNl.problem} />
+        </Reveal>
+
+        <Reveal>
+          <WorkshopPromoCard content={homeNl.workshopPromo.card} href="/nl/pelvic-engine-reset" />
         </Reveal>
 
         <Reveal>

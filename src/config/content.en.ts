@@ -44,6 +44,20 @@ export const home = {
       { icon: "help", text: "Nobody has explained why the pain keeps coming back." },
     ],
   },
+  workshopPromo: {
+    bar: {
+      label: "New",
+      text: "Pelvic Engine Reset Workshop — Sept 12 & 19, Rotterdam. Just 4 spots.",
+      cta: "Apply now",
+    },
+    card: {
+      badge: "New",
+      title: "The Pelvic Engine Reset Workshop",
+      body: "You’ve been told your back pain is “normal.” It doesn’t have to be.",
+      detail: "Two hands-on sessions plus a guided 7-day accountability week. Strictly 4 participants — Sept 12 & 19, Rotterdam.",
+      cta: "See workshop details",
+    },
+  },
   video: {
     eyebrow: "Meet the approach",
     title: "See how a session feels",
