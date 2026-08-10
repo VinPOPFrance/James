@@ -26,11 +26,11 @@ export const home = {
     sub: "A clear 12-week body reset program for women who feel stuck after physio, osteopathy, or chiropractic care, and want to understand trigger points, achieve deep myofascial release, and rebuild their body without pushing through pain.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Fascia treatment session",
-    proof: "119+ five-star reviews · 10+ years of practice",
+    proof: "121+ five-star reviews · 10+ years of practice",
     overlay: "No pushing through pain",
   },
   proofBar: [
-    { value: "119+", label: "five-star reviews" },
+    { value: "121+", label: "five-star reviews" },
     { value: "10+ yrs", label: "studio practice" },
     { value: "★★★★★", label: "avg. client rating" },
     { value: "20–30m", label: "home practice, 3×/wk" },
@@ -146,7 +146,7 @@ export const home = {
   testimonials: {
     eyebrow: "Real client stories",
     title: "From \u201Cbroken\u201D to back in control",
-    badge: "118 reviews on Google \u00b7 5.0 \u2605",
+    badge: "121 reviews on Google \u00b7 5.0 \u2605",
     note: "",
     items: [
       {

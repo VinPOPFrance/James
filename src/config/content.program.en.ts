@@ -74,7 +74,7 @@ export const program = {
   testimonials: {
     eyebrow: "Real client stories",
     title: "From \u201Cbroken\u201D to back in control",
-    badge: "118 reviews on Google \u00b7 5.0 \u2605",
+    badge: "121 reviews on Google \u00b7 5.0 \u2605",
     note: "",
     items: [
       {

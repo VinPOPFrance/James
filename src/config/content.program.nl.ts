@@ -77,7 +77,7 @@ export const programNl = {
   testimonials: {
     eyebrow: "Echte ervaringen",
     title: "Van “kapot” naar weer in controle",
-    badge: "119 beoordelingen op Google · 5.0 ★",
+    badge: "121 beoordelingen op Google · 5.0 ★",
     note: "",
     items: [
       {

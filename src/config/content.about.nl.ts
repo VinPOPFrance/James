@@ -31,7 +31,7 @@ export const aboutNl = {
     eyebrow: "Achtergrond",
     items: [
       "10+ jaar praktijkervaring in Nederland",
-      "119+ vijfsterren beoordelingen van cliënten",
+      "121+ vijfsterren beoordelingen van cliënten",
       "Specialist in fascia, ademhaling en bewegingsre-educatie",
     ],
   },

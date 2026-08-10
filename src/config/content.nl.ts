@@ -26,11 +26,11 @@ export const homeNl = {
     sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie, en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
     ctaPrimary: "Gratis kennismakingsgesprek",
     ctaSecondary: "Fascia treatment session",
-    proof: "119+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
+    proof: "121+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
     overlay: "Geen “no pain, no gain”",
   },
   proofBar: [
-    { value: "119+", label: "vijfsterren reviews" },
+    { value: "121+", label: "vijfsterren reviews" },
     { value: "10+ jr", label: "praktijkervaring" },
     { value: "★★★★★", label: "gem. beoordeling" },
     { value: "20–30m", label: "thuisoefeningen, 3×/week" },
@@ -146,7 +146,7 @@ export const homeNl = {
   testimonials: {
     eyebrow: "Echte ervaringen",
     title: "Van “kapot” naar weer in controle",
-    badge: "119 beoordelingen op Google · 5.0 ★",
+    badge: "121 beoordelingen op Google · 5.0 ★",
     note: "",
     items: [
       {

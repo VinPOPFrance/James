@@ -31,7 +31,7 @@ export const about = {
     eyebrow: "Background",
     items: [
       "10+ years of studio practice in the Netherlands",
-      "119+ five-star client reviews",
+      "121+ five-star client reviews",
       "Specialist in fascia, breathing and movement re-education",
     ],
   },
