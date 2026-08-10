@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
 import type { DeepLoosen } from "@/types/content";
@@ -20,7 +21,7 @@ export function WorkshopPromoCard({ content, href = "/pelvic-engine-reset" }: Wo
 
       <div className="relative mx-auto flex max-w-4xl flex-col items-start gap-5 rounded-[18px] border border-ivory/20 bg-ivory/10 p-6 backdrop-blur-[1px] md:flex-row md:items-center md:justify-between md:p-7">
         <div>
-          <span className="mb-3 inline-block rounded-full bg-copper px-2.5 py-1 text-[10.5px] font-semibold uppercase tracking-[0.08em] text-navy shadow-[0_10px_20px_-12px_rgba(15,23,42,0.8)]">
+          <span className="mb-3 inline-block rounded-full bg-copper px-3 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.08em] text-navy shadow-[0_10px_20px_-12px_rgba(15,23,42,0.8)]">
             {t.badge}
           </span>
           <h2 className="mb-2 font-voice text-[clamp(1.25rem,2.4vw,1.6rem)] font-medium leading-snug text-ivory">
@@ -30,7 +31,17 @@ export function WorkshopPromoCard({ content, href = "/pelvic-engine-reset" }: Wo
           <p className="text-[14.5px] leading-relaxed text-ivory/85">{t.detail}</p>
         </div>
 
-        <div className="inline-flex shrink-0">
+        <div className="inline-flex w-full shrink-0 flex-col gap-3 md:w-auto md:items-end">
+          <div className="overflow-hidden rounded-[14px] border border-ivory/30 bg-ivory/10 shadow-[0_16px_32px_-22px_rgba(0,0,0,0.65)]">
+            <Image
+              src="/media/group-1.jpg"
+              alt="Group training session"
+              width={320}
+              height={220}
+              className="h-[180px] w-full object-cover md:h-[150px] md:w-[230px]"
+              sizes="(max-width: 768px) 100vw, 230px"
+            />
+          </div>
           <Button
             href={href}
             surface="dark"
