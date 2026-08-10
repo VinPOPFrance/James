@@ -21,20 +21,19 @@ export function WorkshopPromoCard({ content, href = "/pelvic-engine-reset" }: Wo
 
       <div className="relative mx-auto flex max-w-4xl flex-col items-start gap-5 rounded-[18px] border border-ivory/20 bg-ivory/10 p-6 backdrop-blur-[1px] md:flex-row md:items-center md:justify-between md:p-7">
         <div>
-          <span className="mb-3 inline-block rounded-full bg-copper px-3 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.08em] text-navy shadow-[0_10px_20px_-12px_rgba(15,23,42,0.8)]">
+          <span className="mb-3 inline-block rounded-full bg-copper px-6 py-3 text-[23px] font-semibold uppercase tracking-[0.08em] text-navy shadow-[0_10px_20px_-12px_rgba(15,23,42,0.8)]">
             {t.badge}
           </span>
           <h2 className="mb-2 font-voice text-[clamp(1.25rem,2.4vw,1.6rem)] font-medium leading-snug text-ivory">
             {t.title}
           </h2>
-          <p className="mb-1.5 text-[15.5px] leading-relaxed text-ivory/95">{t.body}</p>
-          <p className="text-[14.5px] leading-relaxed text-ivory/85">{t.detail}</p>
+          <p className="text-[15.5px] leading-relaxed text-ivory/95">{t.body}</p>
         </div>
 
         <div className="inline-flex w-full shrink-0 flex-col gap-3 md:w-auto md:items-end">
           <div className="overflow-hidden rounded-[14px] border border-ivory/30 bg-ivory/10 shadow-[0_16px_32px_-22px_rgba(0,0,0,0.65)]">
             <Image
-              src="/media/group-1.jpg"
+              src="/media/group-1.png"
               alt="Group training session"
               width={320}
               height={220}
