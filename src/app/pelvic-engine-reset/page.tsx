@@ -132,7 +132,7 @@ export default function SubscriberPelvicEngineResetPage() {
                 href="#apply"
                 className="inline-flex items-center justify-center rounded-[11px] border border-navy bg-navy px-6 py-3.5 text-[15px] font-medium text-ivory transition-all duration-200 hover:-translate-y-0.5 hover:bg-navy-light"
               >
-                Apply for One of the 4 Spots
+                Apply Now — Only 2 of 4 Spots Left
               </a>
             </div>
 
@@ -320,7 +320,7 @@ export default function SubscriberPelvicEngineResetPage() {
           <div className="relative mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-[1fr_0.95fr] md:gap-10">
             <div>
               <h2 className="mb-3 font-voice text-[clamp(1.4rem,2.9vw,2rem)] font-medium text-ivory">
-                Strict Limit: 4 Participants - EUR 220
+                Only 2 of 4 Spots Left - EUR 220
               </h2>
               <div className="max-w-3xl rounded-card border border-ivory/20 bg-ivory/10 p-5">
                 <h3 className="mb-3 text-[1.06rem] font-semibold text-[#ffee8c]">

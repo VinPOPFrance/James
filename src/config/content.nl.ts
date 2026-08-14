@@ -46,15 +46,15 @@ export const homeNl = {
   },
   workshopPromo: {
     bar: {
-      label: "Nieuw",
-      text: "Pelvic Engine Reset Workshop — 12 & 19 sept, Rotterdam. Nog maar 4 plekken.",
+      label: "Bijna vol",
+      text: "Pelvic Engine Reset Workshop — 12 & 19 sept, Rotterdam. Nog maar 2 van de 4 plekken over.",
       cta: "Nu aanmelden",
     },
     card: {
-      badge: "Nieuw",
+      badge: "Nog 2 plekken over",
       title: "De Pelvic Engine Reset Workshop",
       body: "Je hebt gehoord dat je rugpijn “normaal” is. Dat hoeft niet zo te zijn.",
-      detail: "Twee praktijksessies plus een begeleide 7-daagse week. Strikt 4 deelnemers — 12 & 19 sept, Rotterdam.",
+      detail: "Twee praktijksessies plus een begeleide 7-daagse week. Nog maar 2 van de 4 plekken over — 12 & 19 sept, Rotterdam.",
       cta: "Bekijk workshopdetails",
     },
   },
