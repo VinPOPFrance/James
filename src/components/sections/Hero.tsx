@@ -48,6 +48,10 @@ export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { 
         </motion.span>
 
         <motion.div {...fromLeft}>
+          <p className="mb-2 text-[13px] font-medium uppercase tracking-[0.08em] text-copper">
+            {t.tagline}
+          </p>
+
           <h1 className="mb-4 font-voice text-[clamp(2rem,4vw,2.6rem)] font-medium leading-[1.11] text-navy">
             {t.h1}
           </h1>
