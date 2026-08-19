@@ -84,7 +84,7 @@ export const home = {
   },
   plan: {
     eyebrow: "A clear path forward",
-    title: "3 steps to your Program from stuck to confident",
+    title: "3 steps from stuck to confident",
     steps: [
       { n: 1, title: "Book a free call", text: "Tell us what\u2019s going on. No pressure, no jargon." },
       { n: 2, title: "Face to face session", text: "Assessment of your problem and mini plan." },
@@ -214,7 +214,7 @@ export const home = {
   newsletter: {
     eyebrow: "Free guidance",
     title: "Not ready to book yet? Start with one small step.",
-    description: "You are not a machine, discover a new way to look at your body. Download the e-book by joining the bi-weekly newsletter.",
+    description: "You are not a machine. Discover a new way to look at your body and download the e-book by joining the bi-weekly newsletter.",
     emailPlaceholder: "Email",
     firstNamePlaceholder: "First name",
     lastNamePlaceholder: "Last name",
