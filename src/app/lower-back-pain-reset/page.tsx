@@ -21,14 +21,14 @@ type SprintStandardBlock = {
 type SprintBlock = SprintIntroBlock | SprintStandardBlock;
 
 export const metadata: Metadata = {
-  title: "Lower Back Pain Workshop | Pelvic Engine Reset",
+  title: "Lower Back Pain Reset Workshop",
   description:
-    "Lower back pain workshop application: Pelvic Engine Reset for women ready to move with less stiffness and more confidence.",
+    "Lower back pain workshop application: the Lower Back Pain Reset for women ready to move with less stiffness and more confidence.",
   openGraph: {
-    title: "Lower Back Pain Workshop | Pelvic Engine Reset",
+    title: "Lower Back Pain Reset Workshop",
     description:
-      "Apply for the Pelvic Engine Reset lower back pain workshop and start moving with less stiffness.",
-    url: `${siteConfig.siteUrl}/pelvic-engine-reset`,
+      "Apply for the Lower Back Pain Reset workshop and start moving with less stiffness.",
+    url: `${siteConfig.siteUrl}/lower-back-pain-reset`,
     type: "website",
   },
   robots: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     follow: false,
   },
   alternates: {
-    canonical: `${siteConfig.siteUrl}/pelvic-engine-reset`,
+    canonical: `${siteConfig.siteUrl}/lower-back-pain-reset`,
   },
 };
 
@@ -112,7 +112,7 @@ const applySteps = [
   },
 ];
 
-export default function SubscriberPelvicEngineResetPage() {
+export default function SubscriberLowerBackPainResetPage() {
   return (
     <PageLayout>
       <Reveal>

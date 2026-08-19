@@ -15,7 +15,7 @@ interface AnnouncementBarProps {
 export function AnnouncementBar({ locale = "en" }: AnnouncementBarProps) {
   const [dismissed, setDismissed] = useState(false);
   const t = locale === "nl" ? homeNl.workshopPromo.bar : home.workshopPromo.bar;
-  const href = locale === "nl" ? "/nl/pelvic-engine-reset" : "/pelvic-engine-reset";
+  const href = locale === "nl" ? "/nl/lower-back-pain-reset" : "/lower-back-pain-reset";
 
   useEffect(() => {
     setDismissed(window.localStorage.getItem(DISMISS_KEY) === "1");

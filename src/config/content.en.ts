@@ -48,12 +48,12 @@ export const home = {
   workshopPromo: {
     bar: {
       label: "Almost full",
-      text: "Pelvic Engine Reset Workshop — Sept 12 & 19, Rotterdam. Only 2 spots left of 4.",
+      text: "Lower Back Pain Reset Workshop — Sept 12 & 19, Rotterdam. Only 2 spots left of 4.",
       cta: "Apply now",
     },
     card: {
       badge: "Only 2 spots left",
-      title: "The Pelvic Engine Reset Workshop",
+      title: "The Lower Back Pain Reset Workshop",
       body: "You’ve been told your back pain is “normal.” It doesn’t have to be.",
       detail: "Two hands-on sessions plus a guided 7-day accountability week. Only 2 spots left of 4 — Sept 12 & 19, Rotterdam.",
       cta: "See workshop details",

@@ -13,4 +13,18 @@ module.exports = {
 			},
 		],
 	},
+	async redirects() {
+		return [
+			{
+				source: "/pelvic-engine-reset",
+				destination: "/lower-back-pain-reset",
+				permanent: true,
+			},
+			{
+				source: "/nl/pelvic-engine-reset",
+				destination: "/nl/lower-back-pain-reset",
+				permanent: true,
+			},
+		];
+	},
 };

@@ -28,7 +28,7 @@ Main language:
 - `/12-week-body-reset-program`
 - `/blog`
 - `/blog/[slug]`
-- `/pelvic-engine-reset` (hidden, direct-URL-only landing page)
+- `/lower-back-pain-reset` (hidden, direct-URL-only landing page; formerly `/pelvic-engine-reset`, now 301-redirected)
 
 Dutch mirror:
 - `/nl`
@@ -40,6 +40,7 @@ Dutch mirror:
 - `/nl/12-week-body-reset-program`
 - `/nl/blog`
 - `/nl/blog/[slug]`
+- `/nl/lower-back-pain-reset` (hidden, direct-URL-only landing page; formerly `/nl/pelvic-engine-reset`, now 301-redirected)
 
 ## 4) Content system
 - Main page copy is centralized in `src/config/content.en.ts` and `src/config/content.nl.ts`.

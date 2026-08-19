@@ -70,7 +70,7 @@ Tracking is automatically enabled only when the IDs are present.
 
 ## Workshop application email setup
 
-To deliver Pelvic Engine Reset applications by email, configure these env vars
+To deliver Lower Back Pain Reset applications by email, configure these env vars
 in Vercel (Project Settings -> Environment Variables):
 
 - `SMTP_HOST` (example: `smtp.gmail.com`)

@@ -16,14 +16,14 @@ type SprintIntroBlock = {
 type SprintBlock = SprintIntroBlock;
 
 export const metadata: Metadata = {
-  title: "Workshop Lage Rugpijn | Pelvic Engine Reset",
+  title: "Workshop Lage Rugpijn Reset",
   description:
-    "Aanmelding voor de lage rugpijn workshop Pelvic Engine Reset voor vrouwen die weer soepel en zeker willen bewegen.",
+    "Aanmelding voor de Lage Rugpijn Reset workshop voor vrouwen die weer soepel en zeker willen bewegen.",
   openGraph: {
-    title: "Workshop Lage Rugpijn | Pelvic Engine Reset",
+    title: "Workshop Lage Rugpijn Reset",
     description:
-      "Meld je aan voor de Pelvic Engine Reset workshop en beweeg weer met minder stijfheid.",
-    url: `${siteConfig.siteUrl}/nl/pelvic-engine-reset`,
+      "Meld je aan voor de Lage Rugpijn Reset workshop en beweeg weer met minder stijfheid.",
+    url: `${siteConfig.siteUrl}/nl/lower-back-pain-reset`,
     type: "website",
   },
   robots: {
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     follow: false,
   },
   alternates: {
-    canonical: `${siteConfig.siteUrl}/nl/pelvic-engine-reset`,
+    canonical: `${siteConfig.siteUrl}/nl/lower-back-pain-reset`,
     languages: {
-      en: `${siteConfig.siteUrl}/pelvic-engine-reset`,
-      nl: `${siteConfig.siteUrl}/nl/pelvic-engine-reset`,
-      "x-default": `${siteConfig.siteUrl}/pelvic-engine-reset`,
+      en: `${siteConfig.siteUrl}/lower-back-pain-reset`,
+      nl: `${siteConfig.siteUrl}/nl/lower-back-pain-reset`,
+      "x-default": `${siteConfig.siteUrl}/lower-back-pain-reset`,
     },
   },
 };
@@ -111,7 +111,7 @@ const applySteps = [
   },
 ];
 
-export default function SubscriberPelvicEngineResetNlPage() {
+export default function SubscriberLowerBackPainResetNlPage() {
   return (
     <PageLayout locale="nl">
       <Reveal>

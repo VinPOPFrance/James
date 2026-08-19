@@ -10,7 +10,7 @@ interface WorkshopPromoCardProps {
   href?: string;
 }
 
-export function WorkshopPromoCard({ content, href = "/pelvic-engine-reset" }: WorkshopPromoCardProps) {
+export function WorkshopPromoCard({ content, href = "/lower-back-pain-reset" }: WorkshopPromoCardProps) {
   const t = content ?? home.workshopPromo.card;
 
   return (

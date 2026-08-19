@@ -33,6 +33,33 @@ Actions required:
 
 ## Entries
 
+Date: 2026-08-19
+Author: AI
+Scope: routing | seo | data | docs
+Files:
+- src/app/lower-back-pain-reset/page.tsx (moved from src/app/pelvic-engine-reset/page.tsx)
+- src/app/nl/lower-back-pain-reset/page.tsx (moved from src/app/nl/pelvic-engine-reset/page.tsx)
+- next.config.js
+- src/config/content.en.ts
+- src/config/content.nl.ts
+- src/components/sections/WorkshopPromoCard.tsx
+- src/components/sections/AnnouncementBar.tsx
+- src/app/nl/page.tsx
+- src/app/api/workshop-application/route.ts
+- README.md
+- docs/AI-HANDOFF.md
+Change summary:
+- Renamed the "Pelvic Engine Reset" workshop landing page and all copy/labels/emails to "Lower Back Pain Reset" (name change requested by site owner, term was confusing).
+- Moved the route from `/pelvic-engine-reset` to `/lower-back-pain-reset` (and the `nl` mirror) and added permanent 301 redirects from the old paths in `next.config.js` so existing links keep working.
+Impact:
+- Runtime impact: old URLs redirect to the new ones; all internal links (announcement bar, promo card, homepage) now point at the new paths.
+- Deployment/migration impact: requires a redeploy to surface the new route and redirects on Vercel.
+Actions required:
+- [ ] none
+- [ ] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
 Date: 2026-07-29
 Author: AI
 Scope: routing | seo | docs

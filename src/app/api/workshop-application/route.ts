@@ -141,10 +141,10 @@ export async function POST(request: Request) {
 
     const recipient = process.env.WORKSHOP_APPLICATION_TO ?? "contact@jamesdaime.com";
 
-    const subject = "New Pelvic Engine Reset application";
+    const subject = "New Lower Back Pain Reset application";
 
     const text = [
-      "New Pelvic Engine Reset application",
+      "New Lower Back Pain Reset application",
       "",
       `Name: ${name}`,
       `Email: ${email}`,
@@ -152,7 +152,7 @@ export async function POST(request: Request) {
       "Q1: What's the biggest frustration about living with lower back pain right now? What has it stopped you from doing?",
       q1,
       "",
-      "Q2: What's your biggest concern about the Pelvic Engine Reset working for you? What would need to be true for you to believe this could actually help?",
+      "Q2: What's your biggest concern about the Lower Back Pain Reset working for you? What would need to be true for you to believe this could actually help?",
       q2,
       "",
       "Q3: Are you willing to practice 20 minutes, 3x per week for the next 7 days? What would make this realistic for you?",
@@ -160,13 +160,13 @@ export async function POST(request: Request) {
     ].join("\n");
 
     const html = `
-      <h2>New Pelvic Engine Reset application</h2>
+      <h2>New Lower Back Pain Reset application</h2>
       <p><strong>Name:</strong> ${escapeHtml(name)}</p>
       <p><strong>Email:</strong> ${escapeHtml(email)}</p>
       <hr />
       <p><strong>Q1:</strong> What's the biggest frustration about living with lower back pain right now? What has it stopped you from doing?</p>
       <p>${escapeHtml(q1).replace(/\n/g, "<br />")}</p>
-      <p><strong>Q2:</strong> What's your biggest concern about the Pelvic Engine Reset working for you? What would need to be true for you to believe this could actually help?</p>
+      <p><strong>Q2:</strong> What's your biggest concern about the Lower Back Pain Reset working for you? What would need to be true for you to believe this could actually help?</p>
       <p>${escapeHtml(q2).replace(/\n/g, "<br />")}</p>
       <p><strong>Q3:</strong> Are you willing to practice 20 minutes, 3x per week for the next 7 days? What would make this realistic for you?</p>
       <p>${escapeHtml(q3).replace(/\n/g, "<br />")}</p>
@@ -181,11 +181,11 @@ export async function POST(request: Request) {
       html,
     });
 
-    const applicantSubject = "Application received - Pelvic Engine Reset";
+    const applicantSubject = "Application received - Lower Back Pain Reset";
     const applicantText = [
       `Hi ${name},`,
       "",
-      "Thanks for your application for the Pelvic Engine Reset.",
+      "Thanks for your application for the Lower Back Pain Reset.",
       "I received your answers and will review them personally.",
       "",
       "I will get back to you by email as soon as possible.",
@@ -195,7 +195,7 @@ export async function POST(request: Request) {
 
     const applicantHtml = `
       <p>Hi ${escapeHtml(name)},</p>
-      <p>Thanks for your application for the Pelvic Engine Reset.</p>
+      <p>Thanks for your application for the Lower Back Pain Reset.</p>
       <p>I received your answers and will review them personally.</p>
       <p>I will get back to you by email as soon as possible.</p>
       <p>James</p>

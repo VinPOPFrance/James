@@ -54,7 +54,7 @@ export default function HomeNlPage() {
         </Reveal>
 
         <Reveal>
-          <WorkshopPromoCard content={homeNl.workshopPromo.card} href="/nl/pelvic-engine-reset" />
+          <WorkshopPromoCard content={homeNl.workshopPromo.card} href="/nl/lower-back-pain-reset" />
         </Reveal>
 
         <Reveal>
