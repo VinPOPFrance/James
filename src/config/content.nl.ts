@@ -22,6 +22,7 @@ export const homeNl = {
   },
   hero: {
     badge: "Voor vrouwen 40+ · Nederland",
+    tagline: "Stop met je tien jaar ouder te voelen dan je bent",
     h1: "Leer je lichaam opnieuw vertrouwen en beweeg voorbij chronische rugpijn.",
     sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie, en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
     ctaPrimary: "Gratis kennismakingsgesprek",
