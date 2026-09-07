@@ -28,6 +28,12 @@ export const program = {
     body: "If you're feeling stuck, feeling like you've tried everything, booking a call is the right step.",
     button: "Book your call with James",
   },
+  guide: {
+    title: "One guide",
+    body: "I've watched too many people give up on their body because no one explained why it hurts. I'm here to change that, with you, every step of the way.",
+    imageAlt: "James on a bridge",
+    cta: "More about James",
+  },
   included: {
     eyebrow: "Everything you get",
     title: "What’s included",

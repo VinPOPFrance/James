@@ -158,6 +158,29 @@ export default function ProgramPage() {
         </section>
       </Reveal>
 
+      {/* Guide */}
+      <Reveal>
+        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
+          <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 md:gap-10">
+            <div>
+              <h2 className="mb-5 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.guide.title}</h2>
+              <p className="mb-6 text-[15.5px] leading-relaxed text-inkSoft">{t.guide.body}</p>
+              <Button href="/about" variant="secondary" className="px-5 py-2.5 text-[13.5px]">{t.guide.cta}</Button>
+            </div>
+            <div className="overflow-hidden rounded-[20px]">
+              <Image
+                src="/media/james-bridge.jpg"
+                alt={t.guide.imageAlt}
+                width={1200}
+                height={800}
+                className="h-full min-h-[230px] w-full object-cover md:min-h-[320px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
       {/* Pillars CTA */}
       <Reveal>
         <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-8 py-20 md:px-14">

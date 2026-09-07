@@ -28,6 +28,12 @@ export const programNl = {
     body: "Als je je vastzit voelt, alsof je alles al hebt geprobeerd, is een gesprek boeken de juiste stap.",
     button: "Boek je gesprek met James",
   },
+  guide: {
+    title: "Eén gids",
+    body: "Ik heb te veel mensen hun lichaam zien opgeven omdat niemand hen uitlegde waarom het pijn deed. Ik ben hier om dat te veranderen, samen met jou, elke stap van de weg.",
+    imageAlt: "James op een brug",
+    cta: "Meer over James",
+  },
   included: {
     eyebrow: "Alles wat je krijgt",
     title: "Wat er is inbegrepen",
