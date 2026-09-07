@@ -19,7 +19,7 @@ export const program = {
     eyebrow: "How the 12 weeks unfold",
     title: "Three phases, one clear direction",
     items: [
-      { n: 1, weeks: "Weeks 1–4", title: "Understand & release", text: "Calm the system, reduce tension, learn what keeps the pain going.", color: "sage" },
+      { n: 1, weeks: "Weeks 1–4", title: "Understand & release", text: "Learn how to release tension and improve your breathing capacity.", color: "sage" },
       { n: 2, weeks: "Weeks 5–8", title: "Rebuild movement", text: "Relearn how to move without fear and rebuild strength gradually.", color: "copper" },
       { n: 3, weeks: "Weeks 9–12", title: "Trust your body again", text: "A clear routine you own, so you know what to do when tension returns.", color: "navy" },
     ],

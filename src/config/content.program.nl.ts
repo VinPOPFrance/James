@@ -19,7 +19,7 @@ export const programNl = {
     eyebrow: "Hoe de 12 weken verlopen",
     title: "Drie fasen, één duidelijke richting",
     items: [
-      { n: 1, weeks: "Weken 1–4", title: "Begrijpen & loslaten", text: "Het systeem kalmeren, spanning verminderen, leren wat de pijn in stand houdt.", color: "sage" },
+      { n: 1, weeks: "Weken 1–4", title: "Begrijpen & loslaten", text: "Leer hoe je spanning loslaat en je ademhalingscapaciteit verbetert.", color: "sage" },
       { n: 2, weeks: "Weken 5–8", title: "Beweging opbouwen", text: "Herontdekken hoe je zonder angst kunt bewegen en geleidelijk kracht opbouwen.", color: "copper" },
       { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is, zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
     ],
