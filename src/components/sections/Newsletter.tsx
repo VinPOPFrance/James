@@ -92,7 +92,7 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
   }
 
   return (
-    <section className="rounded-section bg-[#F4F6F2] px-6 py-14 md:px-12">
+    <section className="rounded-section bg-[#CFE6C1] px-6 py-14 md:px-12">
       <div className="mx-auto max-w-2xl rounded-section border border-hairline bg-white/70 p-8 shadow-[0_20px_50px_-30px_rgba(31,42,60,0.25)] backdrop-blur-sm md:p-10">
         <p className="mb-3 flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.09em] text-sage">
           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage/15 text-sage">

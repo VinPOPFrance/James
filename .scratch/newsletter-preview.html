@@ -1,0 +1,379 @@
+<title>Newsletter Block Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #FBF8F1;
+    --paper: #F1ECE0;
+    --surface: #FFFFFF;
+    --card-bg: #F4F6F2;
+    --card-surface: rgba(255,255,255,0.7);
+    --ink: #1F2A3C;
+    --ink-soft: #444441;
+    --muted: #5F5E5A;
+    --line: #E7E1D6;
+    --sage: #8FA68A;
+    --sage-tint: rgba(143,166,138,0.15);
+    --copper: #B0794F;
+    --chrome-bg: #EFE9DB;
+    --chrome-line: #DED4C2;
+    --shadow: 0 20px 50px -30px rgba(31,42,60,0.25);
+    --frame-shadow: 0 30px 60px -35px rgba(31,42,60,0.35);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181F;
+      --paper: #1A1F29;
+      --surface: #1E2430;
+      --ink: #F2EFE6;
+      --ink-soft: #CBCECF;
+      --muted: #9BA0AC;
+      --line: #2C3242;
+      --sage: #A3BE9E;
+      --sage-tint: rgba(163,190,158,0.18);
+      --copper: #CDA279;
+      --chrome-bg: #1B212C;
+      --chrome-line: #303748;
+      --shadow: 0 20px 50px -30px rgba(0,0,0,0.6);
+      --frame-shadow: 0 30px 60px -35px rgba(0,0,0,0.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181F;
+    --paper: #1A1F29;
+    --surface: #1E2430;
+    --ink: #F2EFE6;
+    --ink-soft: #CBCECF;
+    --muted: #9BA0AC;
+    --line: #2C3242;
+    --sage: #A3BE9E;
+    --sage-tint: rgba(163,190,158,0.18);
+    --copper: #CDA279;
+    --chrome-bg: #1B212C;
+    --chrome-line: #303748;
+    --shadow: 0 20px 50px -30px rgba(0,0,0,0.6);
+    --frame-shadow: 0 30px 60px -35px rgba(0,0,0,0.7);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif;
+    padding: 56px 24px 80px;
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    max-width: 640px;
+    margin: 0 auto 52px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+    line-height: 1.2;
+    margin: 0 0 14px;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .intro p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  @media (min-width: 880px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  .panel { display: flex; flex-direction: column; gap: 14px; }
+
+  .panel-label {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 4px;
+  }
+  .panel-label .lang {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .panel-label .path {
+    font-size: 12.5px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* browser chrome frame */
+  .frame {
+    border-radius: 16px;
+    background: var(--chrome-bg);
+    border: 1px solid var(--chrome-line);
+    box-shadow: var(--frame-shadow);
+    overflow: hidden;
+  }
+  .frame-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--chrome-line);
+  }
+  .frame-bar .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--chrome-line);
+  }
+  .frame-bar .url {
+    margin-left: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--chrome-line);
+    border-radius: 999px;
+    padding: 4px 12px;
+    flex: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* the actual mockup — matches Newsletter.tsx exactly, styled fixed-light like a real screenshot */
+  .mock {
+    background: #CFE6C1;
+    padding: 44px 22px;
+  }
+  .mock-card {
+    max-width: 480px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #E7E1D6;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 50px -30px rgba(31,42,60,0.25);
+  }
+  .mock-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #8FA68A;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: rgba(143,166,138,0.15);
+    color: #8FA68A;
+    flex-shrink: 0;
+  }
+  .badge svg { width: 14px; height: 14px; }
+  .mock-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 1.7rem);
+    line-height: 1.25;
+    color: #1F2A3C;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .mock-desc {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #444441;
+    margin: 0 0 30px;
+  }
+  .mock-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .mock-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #E7E1D6;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #A2A19C;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+  }
+  .mock-email { margin-bottom: 16px; }
+  .mock-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #8FA68A;
+    background: #8FA68A;
+    color: #fff;
+    border-radius: 999px;
+    padding: 13px 24px;
+    font-size: 14.5px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+  .mock-privacy {
+    margin: 18px 0 0;
+    font-size: 12.5px;
+    color: #5F5E5A;
+  }
+
+  .callout {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .callout .pin {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--sage-tint);
+    color: var(--sage);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+  .callout p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+  .callout strong { color: var(--ink); font-weight: 600; }
+
+  .footnote {
+    max-width: 640px;
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--muted);
+    padding: 20px 0 0;
+    border-top: 1px solid var(--line);
+  }
+</style>
+
+<div class="wrap">
+  <div class="intro">
+    <p class="eyebrow">Component preview</p>
+    <h1>The newsletter section, updated</h1>
+    <p>A static render of the live component (no dev server available in this environment) — same markup, colors and fonts as the site, shown for English and Dutch side by side.</p>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="panel-label">
+        <span class="lang">English</span>
+        <span class="path">jamesdaime.com</span>
+      </div>
+      <div class="frame">
+        <div class="frame-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">jamesdaime.com</span>
+        </div>
+        <div class="mock">
+          <div class="mock-card">
+            <p class="mock-eyebrow">
+              <span class="badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              </span>
+              Free e-book, straight to your inbox
+            </p>
+            <h2 class="mock-title">Subscribe and get your free guide to fascia</h2>
+            <p class="mock-desc">You are not a machine. Join the bi-weekly newsletter and get instant access to a free e-book that reveals how fascia shapes the way you move, feel and heal, plus practical guidance you won't find anywhere else.</p>
+            <div class="mock-row">
+              <span class="mock-input">First name</span>
+              <span class="mock-input">Last name</span>
+            </div>
+            <span class="mock-input mock-email">Email</span>
+            <span class="mock-btn">Get my free e-book</span>
+            <p class="mock-privacy">No spam, ever. Just free guidance to help you understand your body better.</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout">
+        <span class="pin">1</span>
+        <p><strong>Gift badge</strong> — new sage-tinted icon marks the eyebrow as a free-gift offer at a glance.</p>
+      </div>
+      <div class="callout">
+        <span class="pin">2</span>
+        <p><strong>Stronger background</strong> — a bolder sage green now, so it clearly stands out against the white/ivory sections around it.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-label">
+        <span class="lang">Nederlands</span>
+        <span class="path">jamesdaime.com/nl</span>
+      </div>
+      <div class="frame">
+        <div class="frame-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">jamesdaime.com/nl</span>
+        </div>
+        <div class="mock">
+          <div class="mock-card">
+            <p class="mock-eyebrow">
+              <span class="badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              </span>
+              Gratis e-book, direct in je inbox
+            </p>
+            <h2 class="mock-title">Schrijf je in en ontvang je gratis gids over fascia</h2>
+            <p class="mock-desc">Je bent geen machine. Schrijf je in voor de tweewekelijkse nieuwsbrief en ontvang direct een gratis e-book dat laat zien hoe fascia bepaalt hoe je beweegt, voelt en herstelt, plus praktische tips die je nergens anders vindt.</p>
+            <div class="mock-row">
+              <span class="mock-input">Voornaam</span>
+              <span class="mock-input">Achternaam</span>
+            </div>
+            <span class="mock-input mock-email">E-mail</span>
+            <span class="mock-btn">Ontvang mijn gratis e-book</span>
+            <p class="mock-privacy">Geen spam, nooit. Alleen gratis tips om je lichaam beter te begrijpen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout">
+        <span class="pin">1</span>
+        <p><strong>Zelfde badge</strong> — identical icon and layout, since both locales share one component.</p>
+      </div>
+      <div class="callout">
+        <span class="pin">2</span>
+        <p><strong>Zelfde achtergrond</strong> — one shared component, so the stronger sage tint applies here too.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="footnote">Rendered from the current source (business copy + Newsletter.tsx) using the site's own Tailwind tokens and fonts — Node.js wasn't available in this sandbox to run the real dev server, so treat this as a high-fidelity mockup rather than a live screenshot.</p>
+</div>
