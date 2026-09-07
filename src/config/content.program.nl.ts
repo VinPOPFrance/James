@@ -5,8 +5,8 @@ export const programNl = {
       "Een gestructureerd 12-weken bewegingsprogramma in Rotterdam. Voor vrouwen met chronische rugpijn die hun lichaam willen begrijpen, loslaten en opbouwen, stap voor stap, zonder door pijn heen te duwen.",
   },
   hero: {
-    eyebrow: "Je hoeft het niet zomaar te accepteren.",
     title: "Bang voor hoe je lichaam er over 10 jaar aan toe is?",
+    body: "Je hoeft het niet zomaar te accepteren.",
     ctaPrimary: "Gratis kennismakingsgesprek",
     ctaSecondary: "Begin met een fascia reset sessie",
   },

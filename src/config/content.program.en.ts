@@ -5,8 +5,8 @@ export const program = {
       "A structured 12-week movement programme based in Rotterdam. For women with chronic back pain who want to understand, release and rebuild their body, step by step, without pushing through pain.",
   },
   hero: {
-    eyebrow: "You don't have to just accept it.",
     title: "Afraid of what your body will feel like in 10 years?",
+    body: "You don't have to just accept it.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Start with a fascia reset session",
   },

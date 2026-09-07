@@ -51,8 +51,8 @@ export default function ProgramNlPage() {
     <PageLayout locale="nl">
       <Reveal>
         <PageHero
-          eyebrow={t.hero.eyebrow}
           title={t.hero.title}
+          body={t.hero.body}
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
         />
       </Reveal>
