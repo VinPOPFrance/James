@@ -24,6 +24,10 @@ export const programNl = {
       { n: 3, weeks: "Weken 9–12", title: "Je lichaam opnieuw vertrouwen", text: "Een helder dagritme dat van jou is, zodat je weet wat je moet doen als spanning terugkomt.", color: "navy" },
     ],
   },
+  pillarsCta: {
+    body: "Als je je vastzit voelt, alsof je alles al hebt geprobeerd, is een gesprek boeken de juiste stap.",
+    button: "Boek je gesprek met James",
+  },
   included: {
     eyebrow: "Alles wat je krijgt",
     title: "Wat er is inbegrepen",

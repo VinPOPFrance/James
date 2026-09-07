@@ -24,6 +24,10 @@ export const program = {
       { n: 3, weeks: "Weeks 9–12", title: "Trust your body again", text: "A clear routine you own, so you know what to do when tension returns.", color: "navy" },
     ],
   },
+  pillarsCta: {
+    body: "If you're feeling stuck, feeling like you've tried everything, booking a call is the right step.",
+    button: "Book your call with James",
+  },
   included: {
     eyebrow: "Everything you get",
     title: "What’s included",
