@@ -53,6 +53,7 @@ export default function ProgramPage() {
         <PageHero
           title={t.hero.title}
           body={t.hero.body}
+          bodyClassName="mb-8 font-voice text-[19px] font-medium leading-relaxed text-copper md:text-[21px]"
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
         />
       </Reveal>

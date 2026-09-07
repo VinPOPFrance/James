@@ -10,6 +10,7 @@ interface PageHeroProps {
   eyebrow?: string;
   title: string;
   body?: string;
+  bodyClassName?: string;
   ctaPrimary?: CtaLink;
   ctaSecondary?: CtaLink;
   surface?: "light" | "dark";
@@ -20,6 +21,7 @@ export function PageHero({
   eyebrow,
   title,
   body,
+  bodyClassName,
   ctaPrimary,
   ctaSecondary,
   dark = false,
@@ -57,9 +59,10 @@ export function PageHero({
         </h1>
         {body && (
           <p
-            className={`mb-8 text-[16px] leading-relaxed ${
-              dark ? "text-ivory/70" : "text-inkSoft"
-            }`}
+            className={
+              bodyClassName ??
+              `mb-8 text-[16px] leading-relaxed ${dark ? "text-ivory/70" : "text-inkSoft"}`
+            }
           >
             {body}
           </p>
