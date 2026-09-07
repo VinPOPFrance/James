@@ -5,8 +5,8 @@ export const program = {
       "A structured 12-week movement programme based in Rotterdam. For women with chronic back pain who want to understand, release and rebuild their body, step by step, without pushing through pain.",
   },
   hero: {
-    eyebrow: "The 12-week body reset program",
-    title: "Make aging just a number",
+    eyebrow: "Afraid of what your body will feel like in 10 years?",
+    title: "You don't have to just accept it.",
     body: "You leave with a body map, a clear routine and the confidence to know what to do when pain or tension comes back, for good.",
     ctaPrimary: "Book a free discovery call",
     ctaSecondary: "Start with a fascia reset session",

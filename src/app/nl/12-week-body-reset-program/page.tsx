@@ -50,20 +50,9 @@ export default function ProgramNlPage() {
   return (
     <PageLayout locale="nl">
       <Reveal>
-        <section className="rounded-section border border-copper/30 bg-white px-7 py-10 md:px-14 md:py-14">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-2 text-[26px] leading-none text-copper/80 md:text-[34px]">“</p>
-            <p className="mx-auto max-w-3xl font-voice text-[clamp(1.65rem,3.1vw,2.15rem)] font-medium leading-[1.18] text-navy">
-              {t.hero.title}
-            </p>
-            <p className="mt-2 text-[26px] leading-none text-copper/80 md:text-[34px]">”</p>
-          </div>
-        </section>
-      </Reveal>
-
-      <Reveal>
         <PageHero
-          title={t.hero.eyebrow}
+          eyebrow={t.hero.eyebrow}
+          title={t.hero.title}
           body={t.hero.body}
           ctaPrimary={{ label: t.hero.ctaPrimary, href: businessInfo.bookingUrl, external: true }}
         />
