@@ -3,6 +3,9 @@
 import { FormEvent, useRef, useState } from "react";
 import { home } from "@/config/content.en";
 import type { DeepLoosen } from "@/types/content";
+import { icons } from "@/lib/icons";
+
+const GiftIcon = icons.gift;
 
 type NewsletterContent = DeepLoosen<typeof home.newsletter>;
 
@@ -91,7 +94,10 @@ export function Newsletter({ content }: { content?: NewsletterContent }) {
   return (
     <section className="rounded-section bg-[#F4F6F2] px-6 py-14 md:px-12">
       <div className="mx-auto max-w-2xl rounded-section border border-hairline bg-white/70 p-8 shadow-[0_20px_50px_-30px_rgba(31,42,60,0.25)] backdrop-blur-sm md:p-10">
-        <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-sage">
+        <p className="mb-3 flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.09em] text-sage">
+          <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage/15 text-sage">
+            <GiftIcon className="h-3.5 w-3.5" strokeWidth={2.25} aria-hidden="true" />
+          </span>
           {t.eyebrow}
         </p>
         <h2 className="mb-3 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
