@@ -101,7 +101,7 @@ export const program = {
   },
   finalCta: {
     title: "Ready to stop guessing and start moving freely?",
-    body: "One free call is all it takes to see if this is right for you.",
+    body: "If you're in pain and want to take control and learn about your body, booking a discovery call is the right step.",
     primary: "Book a free discovery call",
     secondary: "Questions? Read the FAQ",
   },

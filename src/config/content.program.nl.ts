@@ -104,7 +104,7 @@ export const programNl = {
   },
   finalCta: {
     title: "Klaar om te stoppen met gissen en vrij te bewegen?",
-    body: "Één gratis gesprek is genoeg om te weten of dit bij jou past.",
+    body: "Als je pijn hebt en de controle wilt terugpakken en je lichaam beter wilt leren begrijpen, is een kennismakingsgesprek boeken de juiste stap.",
     primary: "Gratis kennismakingsgesprek",
     secondary: "Vragen? Lees de FAQ",
   },
