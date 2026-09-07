@@ -104,6 +104,72 @@ export default function ProgramNlPage() {
 
       <Reveal>
         <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
+          <div className="mx-auto max-w-5xl">
+            <h2 className="mb-10 text-center font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">
+              3 pijlers, één richting.
+            </h2>
+            <div className="grid gap-6 md:grid-cols-3">
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/lungs.svg"
+                    alt="Ademhaling pijler illustratie"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">ADEMHALING</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PIJLER : 1</span>
+              </article>
+
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/movement.svg"
+                    alt="Beweging pijler illustratie"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">BEWEGING</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PIJLER : 2</span>
+              </article>
+
+              <article className="flex flex-col items-center rounded-lg border border-hairline p-8 text-center transition duration-300 hover:-translate-y-1 hover:shadow-sm">
+                <div className="mb-6 h-[120px] w-[120px] text-[#2d2d2d]">
+                  <Image
+                    src="/media/fascia.svg"
+                    alt="Myofasciale release pijler illustratie"
+                    width={120}
+                    height={120}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <h3 className="mb-2 text-[1.25rem] font-semibold tracking-[0.05em] text-[#2d2d2d]">MYOFASCIALE RELEASE</h3>
+                <span className="text-[0.9rem] font-bold tracking-[0.1em] text-copper">PIJLER : 3</span>
+              </article>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-8 py-20 md:px-14">
+          <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/12 blur-3xl" />
+          <div className="relative mx-auto max-w-2xl text-center">
+            <h2 className="mb-8 font-voice text-[clamp(1.6rem,3.5vw,2.2rem)] font-medium leading-snug text-ivory">{t.pillarsCta.body}</h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button href={businessInfo.bookingUrl} surface="dark" variant="primary" external>{t.pillarsCta.button}</Button>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="rounded-section border border-hairline bg-white px-8 py-14 md:px-12">
           <div className="mx-auto max-w-4xl">
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.09em] text-copper">{t.included.eyebrow}</p>
             <h2 className="mb-8 font-voice text-[clamp(1.4rem,2.6vw,1.7rem)] font-medium text-navy">{t.included.title}</h2>
