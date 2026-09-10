@@ -59,8 +59,14 @@ function Placeholder({ children }: { children: React.ReactNode }) {
 export default function WebinarPage() {
   return (
     <main className="min-h-screen bg-[#F7F2E5] text-[#2E2B24]">
-      {/* Minimal identity mark — no nav, nothing to click away to */}
+      {/* Minimal identity mark — the one exit link is intentionally tiny and muted */}
       <div className="mx-auto max-w-2xl px-6 pt-8">
+        <a
+          href="/"
+          className="mb-2 inline-block text-[12px] text-[#2E2B24]/40 transition-colors hover:text-[#2E2B24]/60"
+        >
+          ← Back to jamesdaime.com
+        </a>
         <p className="text-[13px] font-medium uppercase tracking-[0.14em] text-[#25412F]/70">
           James Daime
         </p>
