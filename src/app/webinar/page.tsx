@@ -5,19 +5,23 @@ import { siteConfig } from "@/config/site-config";
 import { businessInfo } from "@/config/business-info";
 
 // ---------------------------------------------------------------------------
-// Fill these in for each new live session, then duplicate this whole folder
-// for the next webinar topic. These three values are the only things that
-// should need to change between editions.
+// jamesdaime.com/webinar is a fixed, reusable URL — every ~6 weeks this same
+// page gets updated in place for a new session rather than a new page being
+// built. Edit these three fields for the new date and topic; the rest of
+// the page (problem, what we'll cover, who it's for, closing objection)
+// is prose written for the current topic and should be rewritten by hand
+// below when the subject changes.
 // ---------------------------------------------------------------------------
 const WEBINAR = {
+  topic:
+    "why the ribs stop moving, what it costs you, and the small changes that give the breath back",
   dayDate: "[DAY, DATE]",
   time: "[TIME]",
 };
 
 export const metadata: Metadata = {
-  title: "Free Live Webinar — The Breath & Rib Reset",
-  description:
-    "A free 45-minute live session on why the ribs stop moving, what it costs you, and the small changes that give the breath back.",
+  title: "Free Live Webinar — James Daime",
+  description: `A free 45-minute live session on ${WEBINAR.topic}.`,
   robots: {
     index: false,
     follow: false,
@@ -86,9 +90,8 @@ export default function WebinarPage() {
         </h1>
 
         <p className="mx-auto mb-9 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
-          A free 45-minute live session — including questions — on why the
-          ribs stop moving, what it costs you, and the small changes that
-          give the breath back. Live on Google Meet,{" "}
+          A free 45-minute live session — including questions — on{" "}
+          {WEBINAR.topic}. Live on Google Meet,{" "}
           <Placeholder>{WEBINAR.dayDate}</Placeholder> at{" "}
           <Placeholder>{WEBINAR.time}</Placeholder> Amsterdam time.
         </p>
