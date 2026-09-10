@@ -39,7 +39,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
       margin: 1px;
       border-radius: 50%;
       border: 4px solid #fff;
-    border-color: #ffffff #ffffff #ffffff transparent;
+    border-color: #F7F2E5 #F7F2E5 #F7F2E5 transparent;
     animation: ml-form-embedSubmitLoad 1.2s linear infinite;
     }
     @keyframes ml-form-embedSubmitLoad {
@@ -65,7 +65,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
         letter-spacing: normal !important;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper {
-        background-color: #f6f6f6;
+        background-color: #F7F2E5;
 
         border-width: 0px;
         border-color: transparent;
@@ -453,13 +453,13 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
         overflow-y: initial;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-        background-color: #8bdc64 !important;
-        border-color: #8bdc64;
+        background-color: #25412F !important;
+        border-color: #25412F;
         border-style: solid;
         border-width: 1px;
         border-radius: 4px;
         box-shadow: none;
-        color: #ffffff !important;
+        color: #F7F2E5 !important;
         cursor: pointer;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: 14px !important;
@@ -471,8 +471,8 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
         height: auto;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-        background-color: #333333 !important;
-        border-color: #333333 !important;
+        background-color: #1B3122 !important;
+        border-color: #1B3122 !important;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
         box-sizing: border-box;
@@ -526,11 +526,11 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
         width: 100%;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-        background-color: #8bdc64 !important;
+        background-color: #25412F !important;
         border: none !important;
         border-radius: 4px !important;
         box-shadow: none !important;
-        color: #ffffff !important;
+        color: #F7F2E5 !important;
         cursor: pointer;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
         font-size: 14px !important;
@@ -545,7 +545,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
         display: none;
       }
       #mlb2-45770766.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-        background-color: #333333 !important;
+        background-color: #1B3122 !important;
       }
       .ml-subscribe-close {
         width: 30px;
