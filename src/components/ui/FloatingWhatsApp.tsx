@@ -7,7 +7,7 @@ const whatsappUrl = `https://wa.me/${businessInfo.phone.replace(/\D/g, "")}`;
 
 // Hidden, single-purpose landing pages that want to keep one CTA and no
 // other route this bubble could tempt visitors toward.
-const HIDDEN_FROM_ROUTES = ["/webinar"];
+const HIDDEN_FROM_ROUTES = ["/webinar", "/interview"];
 
 export function FloatingWhatsApp() {
   const pathname = usePathname();
