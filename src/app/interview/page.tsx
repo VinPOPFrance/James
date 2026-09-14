@@ -5,18 +5,10 @@ import { businessInfo } from "@/config/business-info";
 
 // ---------------------------------------------------------------------------
 // jamesdaime.com/interview — hidden page inviting women to a free 25-minute
-// research interview (not a sale, not a treatment). Two things still need
-// to be wired in before this goes live:
-//
-// 1. videoUrl — once the VSL is filmed, paste its embed URL here (a YouTube
-//    "embed" URL like https://www.youtube.com/embed/XXXXXXXXXXX, or a Vimeo
-//    player URL). Until then the hero shows a poster placeholder.
-// 2. bookingUrl — your scheduling link (Calendly, SimplyBook, Google
-//    Calendar appointments, etc.) for the 25-minute call.
+// research interview (not a sale, not a treatment).
 // ---------------------------------------------------------------------------
 const INTERVIEW = {
-  videoUrl: "",
-  bookingUrl: "#",
+  bookingUrl: "https://calendar.app.google/U4sWHimqpAHusRhd9",
 };
 
 export const metadata: Metadata = {
@@ -43,55 +35,10 @@ const quotes = [
 
 const logistics = [
   "Free. Nothing for sale, now or afterward.",
-  "25 minutes, over video call.",
+  "25 minutes, one on one.",
   "Nothing to prepare. Just show up as you are.",
   "Your real obstacle is probably time, not money. That's exactly why this is short.",
 ];
-
-function Placeholder({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="rounded bg-[#E7DDBE] px-1.5 py-0.5 font-medium text-[#4E3F17]">
-      {children}
-    </span>
-  );
-}
-
-function VslVideo() {
-  if (!INTERVIEW.videoUrl) {
-    return (
-      <div className="relative mx-auto mb-8 aspect-video w-full max-w-md overflow-hidden rounded-[18px] border border-[#25412F]/15 bg-[#EFE7D2]">
-        <Image
-          src="/media/jamesPortrait.png"
-          alt="James Daime"
-          fill
-          className="object-cover opacity-90"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#1B3122]/25">
-          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#F7F2E5] shadow-[0_10px_24px_-10px_rgba(0,0,0,0.5)]">
-            <svg viewBox="0 0 24 24" className="ml-1 h-6 w-6 fill-[#25412F]">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </span>
-          <span className="rounded-full bg-[#F7F2E5] px-3 py-1 text-[12px] font-medium text-[#25412F]">
-            Video coming soon
-          </span>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="relative mx-auto mb-8 aspect-video w-full max-w-md overflow-hidden rounded-[18px] border border-[#25412F]/15">
-      <iframe
-        src={INTERVIEW.videoUrl}
-        title="A message from James Daime"
-        className="h-full w-full"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
-  );
-}
 
 export default function InterviewPage() {
   return (
@@ -111,15 +58,13 @@ export default function InterviewPage() {
 
       {/* 1. HERO */}
       <section className="mx-auto max-w-2xl px-6 pb-14 pt-8 text-center md:pb-20 md:pt-12">
-        <VslVideo />
-
         <h1 className="mb-4 font-voice text-[clamp(1.75rem,5vw,2.5rem)] font-medium leading-[1.2] text-[#1B3122]">
           You&apos;ve started planning your evening by what your back will
           let you do. Not what you want to do.
         </h1>
 
         <p className="mx-auto mb-9 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
-          A free 25-minute conversation with James Daime, over video call. No
+          A free 25-minute conversation with James Daime, one on one. No
           treatment, nothing to buy, just space to tell your story.
         </p>
 
@@ -255,17 +200,12 @@ export default function InterviewPage() {
         <div className="flex flex-col items-center gap-3">
           <a
             href={INTERVIEW.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1B3122]"
           >
             Book your 25 minutes
           </a>
-          {INTERVIEW.bookingUrl === "#" ? (
-            <p className="max-w-sm text-center text-[13px] leading-relaxed text-[#4A4536]/70">
-              Booking link not connected yet — replace{" "}
-              <Placeholder>INTERVIEW.bookingUrl</Placeholder> with your
-              scheduling URL.
-            </p>
-          ) : null}
         </div>
       </section>
 
