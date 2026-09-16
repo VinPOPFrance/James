@@ -18,7 +18,7 @@ export const home = {
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
     ],
-    cta: "Book a free call",
+    cta: "Book a free call (12-week program)",
   },
   hero: {
     badge: "For women 40+ · Netherlands",

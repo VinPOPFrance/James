@@ -18,7 +18,7 @@ export const homeNl = {
       { label: "Blog", href: "/nl/blog" },
       { label: "FAQ", href: "/nl/faq" },
     ],
-    cta: "Gratis kennismaken",
+    cta: "Gratis kennismaken (12-weken programma)",
   },
   hero: {
     badge: "Voor vrouwen 40+ · Nederland",
