@@ -39,7 +39,7 @@ export default function HomeNlPage() {
 
       <main className="mx-auto max-w-6xl space-y-4 px-4 py-4 pb-24 md:pb-4">
         <Reveal>
-          <Hero content={homeNl.hero} ctaSecondaryHref="/nl/fascia-reset-session" />
+          <Hero content={homeNl.hero} />
         </Reveal>
 
         <div id="hero-sentinel" aria-hidden />

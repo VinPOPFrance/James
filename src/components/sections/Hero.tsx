@@ -20,7 +20,7 @@ type HeroContent = DeepLoosen<typeof home.hero>;
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { content?: HeroContent; ctaSecondaryHref?: string }) {
+export function Hero({ content }: { content?: HeroContent }) {
   const t = content ?? home.hero;
   const reduce = useReducedMotion();
   const highlightTerms = ["trigger points", "myofascial release"];
@@ -71,14 +71,6 @@ export function Hero({ content, ctaSecondaryHref = "/fascia-reset-session" }: { 
               className="border-[#87986A] bg-[#87986A] text-ivory hover:bg-[#738258]"
             >
               {t.ctaPrimary}
-            </Button>
-            <Button
-              href={ctaSecondaryHref}
-              surface="light"
-              variant="secondary"
-              className="border-[#87986A] text-[#5f6d4b] hover:bg-[#87986A] hover:text-ivory"
-            >
-              {t.ctaSecondary}
             </Button>
           </div>
           {/* Anchor for sticky mobile CTA: appears once this point scrolls out of view */}
