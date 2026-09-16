@@ -9,7 +9,7 @@ export const fasciaNl = {
     title: "Fascia Reset Sessie",
     body: "Een gerichte sessie om spanning los te laten, te begrijpen wat jouw pijn veroorzaakt, en een helder beeld te krijgen van wat je lichaam nodig heeft — zonder verplichtingen.",
     ctaPrimary: "Fascia reset sessie boeken",
-    ctaSecondary: "Of gratis kennismakingsgesprek",
+    ctaSecondary: "Of gratis kennismakingsgesprek (12-weken programma)",
     programCard: {
       title: "Geïnteresseerd in een 12-weken programma?",
       body: "Lees meer over onze uitgebreide body reset.",
@@ -93,6 +93,6 @@ export const fasciaNl = {
     title: "Begin met één sessie.",
     body: "Geen verplichtingen. Geen druk. Gewoon duidelijkheid over je lichaam.",
     primary: "Fascia reset sessie boeken",
-    secondary: "Liever eerst een gratis kennismakingsgesprek",
+    secondary: "Liever eerst een gratis kennismakingsgesprek (12-weken programma)",
   },
 } as const;

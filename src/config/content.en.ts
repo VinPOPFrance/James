@@ -25,7 +25,7 @@ export const home = {
     tagline: "Stop feeling ten years older than you are",
     h1: "Rebuild trust in your body.",
     sub: "A 12-week program for women whose back pain keeps coming back after physio, osteopathy and chiropractic. Understand it, release it, and rebuild without pushing through pain.",
-    ctaPrimary: "Book a free discovery call",
+    ctaPrimary: "Book a free discovery call (12-week program)",
     ctaSecondary: "Fascia treatment session",
     proof: "121+ five-star reviews · 10+ years of practice",
     overlay: "No pushing through pain",
@@ -63,7 +63,7 @@ export const home = {
     eyebrow: "Meet the approach",
     title: "See how a session feels",
     body: "A short, calm look at the studio, the pace, and the way we work, so you know exactly what to expect before you book.",
-    cta: "Book a free discovery call",
+    cta: "Book a free discovery call (12-week program)",
   },
   quickFixes: {
     eyebrow: "The real reason",
@@ -195,7 +195,7 @@ export const home = {
       "James has spent 10+ years helping people move with more confidence. He listens first, explains clearly, and never rushes you through pain. His approach is calm, human and grounded in how the body actually works, without burying you in jargon.",
       "You\u2019re the one doing the work. James is simply the guide who helps you understand your body and trust it again.",
     ],
-    cta: "Book a free discovery call",
+    cta: "Book a free discovery call (12-week program)",
   },
   faq: {
     eyebrow: "Before you book",
@@ -226,7 +226,7 @@ export const home = {
   finalCta: {
     title: "If you’re tired of feeling stiff and 10 years older than you actually are",
     body: "Booking a free call is the absolute best next step.",
-    primary: "Book a free discovery call",
+    primary: "Book a free discovery call (12-week program)",
     secondary: "Start with a fascia reset",
   },
   footer: {

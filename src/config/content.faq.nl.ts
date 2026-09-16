@@ -73,6 +73,6 @@ export const faqPageNl = {
   finalCta: {
     title: "Nog vragen?",
     body: "De snelste manier om antwoord te krijgen is een gratis kennismakingsgesprek, een ontspannen gesprek zonder druk.",
-    primary: "Gratis kennismakingsgesprek",
+    primary: "Gratis kennismakingsgesprek (12-weken programma)",
   },
 } as const;

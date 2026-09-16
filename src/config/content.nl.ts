@@ -25,7 +25,7 @@ export const homeNl = {
     tagline: "Stop met je tien jaar ouder te voelen dan je bent",
     h1: "Leer je lichaam opnieuw vertrouwen en beweeg voorbij chronische rugpijn.",
     sub: "Een helder 12-weken programma voor vrouwen die vastlopen na fysiotherapie, osteopathie of chiropractie, en hun lichaam willen begrijpen, loslaten en opbouwen zonder door pijn heen te duwen.",
-    ctaPrimary: "Gratis kennismakingsgesprek",
+    ctaPrimary: "Gratis kennismakingsgesprek (12-weken programma)",
     ctaSecondary: "Fascia treatment session",
     proof: "121+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
     overlay: "Geen “no pain, no gain”",
@@ -63,7 +63,7 @@ export const homeNl = {
     eyebrow: "Ontmoet de aanpak",
     title: "Zie hoe een sessie aanvoelt",
     body: "Een korte, rustige blik op de studio, het tempo en de manier van werken, zodat je precies weet wat je kunt verwachten voor je boekt.",
-    cta: "Gratis kennismakingsgesprek",
+    cta: "Gratis kennismakingsgesprek (12-weken programma)",
   },
   quickFixes: {
     eyebrow: "De echte reden",
@@ -195,7 +195,7 @@ export const homeNl = {
       "James helpt al meer dan 10 jaar mensen met meer zelfvertrouwen te bewegen. Hij luistert eerst, legt helder uit en jaagt je nooit door pijn heen. Zijn aanpak is rustig, menselijk en gebaseerd op hoe het lichaam echt werkt, zonder je te overladen met jargon.",
       "Jij doet het werk. James is de gids die je helpt je lichaam te begrijpen en het opnieuw te vertrouwen.",
     ],
-    cta: "Gratis kennismakingsgesprek",
+    cta: "Gratis kennismakingsgesprek (12-weken programma)",
   },
   faq: {
     eyebrow: "Voordat je boekt",
@@ -226,7 +226,7 @@ export const homeNl = {
   finalCta: {
     title: "Stop met je kapot voelen. Leer je lichaam opnieuw vertrouwen.",
     body: "Een gratis gesprek is alles wat nodig is om te weten of dit bij jou past.",
-    primary: "Gratis kennismakingsgesprek",
+    primary: "Gratis kennismakingsgesprek (12-weken programma)",
     secondary: "Begin met een fascia reset",
   },
   footer: {

@@ -40,6 +40,6 @@ export const faqPage = {
   finalCta: {
     title: "Still have questions?",
     body: "The fastest way to get an answer is a free discovery call, a relaxed conversation with no pressure.",
-    primary: "Book a free discovery call",
+    primary: "Book a free discovery call (12-week program)",
   },
 } as const;

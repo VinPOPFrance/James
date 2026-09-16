@@ -9,7 +9,7 @@ export const fascia = {
     title: "Fascia Reset Session",
     body: "A focused session to release tension, understand what’s driving your pain, and leave with a clear picture of what your body needs — with no commitment to the full program.",
     ctaPrimary: "Book a fascia reset session",
-    ctaSecondary: "Or book a free discovery call",
+    ctaSecondary: "Or book a free discovery call (12-week program)",
     programCard: {
       title: "Are you interested in a 12-week program?",
       body: "Learn more about our comprehensive body reset.",
@@ -93,6 +93,6 @@ export const fascia = {
     title: "Start with one session.",
     body: "No commitment. No pressure. Just clarity about your body.",
     primary: "Book a fascia reset session",
-    secondary: "Book a free discovery call instead",
+    secondary: "Book a free discovery call instead (12-week program)",
   },
 } as const;

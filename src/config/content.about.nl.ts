@@ -38,7 +38,7 @@ export const aboutNl = {
   finalCta: {
     title: "Klaar om je lichaam te begrijpen?",
     body: "Begin met een gratis gesprek, geen druk, geen verplichting.",
-    primary: "Gratis kennismakingsgesprek",
+    primary: "Gratis kennismakingsgesprek (12-weken programma)",
     secondary: "Begin met een fascia reset sessie",
   },
 } as const;

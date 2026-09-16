@@ -38,7 +38,7 @@ export const about = {
   finalCta: {
     title: "Ready to understand your body?",
     body: "Start with a free conversation, no pressure, no obligation.",
-    primary: "Book a free discovery call",
+    primary: "Book a free discovery call (12-week program)",
     secondary: "Start with a fascia reset session",
   },
 } as const;

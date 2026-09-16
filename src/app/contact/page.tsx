@@ -34,7 +34,7 @@ export default function ContactPage() {
           title="Ready to take the first step?"
           body="No pressure. No obligation. A free 20-minute discovery call is the easiest way to find out if this approach is right for you."
           ctaPrimary={{
-            label: "Book a free discovery call",
+            label: "Book a free discovery call (12-week program)",
             href: businessInfo.bookingUrl,
             external: true,
           }}
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   Recommended first step
                 </span>
                 <p className="mb-1 text-[12px] font-medium uppercase tracking-wider text-copper">Online booking</p>
-                <h3 className="mb-3 text-[1.05rem] font-semibold text-navy">Book a free call</h3>
+                <h3 className="mb-3 text-[1.05rem] font-semibold text-navy">Book a free call (12-week program)</h3>
                 <p className="mb-6 text-[14.5px] leading-relaxed text-inkSoft">
                   Choose a time that suits you. A relaxed 20-minute conversation — no commitment, just clarity.
                 </p>
@@ -106,7 +106,7 @@ export default function ContactPage() {
         <section className="rounded-section border border-sage/30 bg-[#F4F6F2] px-8 py-10 md:px-12">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-2 text-[12px] font-medium uppercase tracking-[0.09em] text-sage">Not sure where to start?</p>
-            <p className="mb-1 font-voice text-[1.3rem] font-medium text-navy">Book a free discovery call.</p>
+            <p className="mb-1 font-voice text-[1.3rem] font-medium text-navy">Book a free discovery call (12-week program).</p>
             <p className="text-[14.5px] leading-relaxed text-inkSoft">
               It&apos;s free, relaxed and without obligation. You explain what&apos;s going on — James listens and helps you understand whether this approach could work for you.
             </p>

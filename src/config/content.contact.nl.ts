@@ -8,13 +8,13 @@ export const contactNl = {
     eyebrow: "Neem contact op",
     title: "Klaar voor de eerste stap?",
     body: "Geen druk. Geen verplichting. Een gratis kennismakingsgesprek van 20 minuten is de makkelijkste manier om te ontdekken of deze aanpak bij jou past.",
-    ctaPrimary: "Gratis kennismakingsgesprek",
+    ctaPrimary: "Gratis kennismakingsgesprek (12-weken programma)",
   },
   options: {
     booking: {
       badge: "Aanbevolen eerste stap",
       eyebrow: "Online boeken",
-      title: "Gratis gesprek boeken",
+      title: "Gratis gesprek boeken (12-weken programma)",
       body: "Kies een moment dat jou uitkomt. Een ontspannen gesprek van 20 minuten — zonder verplichtingen, gewoon duidelijkheid.",
       cta: "Boekingskalender openen",
     },
@@ -31,7 +31,7 @@ export const contactNl = {
   },
   reassurance: {
     eyebrow: "Weet je nog niet waar te beginnen?",
-    title: "Boek een gratis kennismakingsgesprek.",
+    title: "Boek een gratis kennismakingsgesprek (12-weken programma).",
     body: "Het is gratis, ontspannen en vrijblijvend. Jij vertelt wat er speelt — James luistert en helpt je begrijpen of deze aanpak iets voor jou kan zijn.",
   },
   studio: {
