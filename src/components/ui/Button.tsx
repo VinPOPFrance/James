@@ -37,7 +37,7 @@ const styles: Record<Surface, Record<Variant, string>> = {
 };
 
 const base =
-  "inline-flex items-center justify-center rounded-[11px] px-6 py-3.5 text-[15px] font-medium cursor-pointer transition-all duration-200 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper focus-visible:ring-offset-2";
+  "inline-flex items-center justify-center text-center rounded-[11px] px-6 py-3.5 text-[15px] font-medium cursor-pointer transition-all duration-200 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper focus-visible:ring-offset-2";
 
 export function Button({
   children,
