@@ -209,6 +209,7 @@ export const home = {
       { q: "What happens during the face to face session?", a: "In 30–45 minutes we look at your posture and movement, explain clearly what\u2019s likely driving your pain, and give you a mini personalised plan. You\u2019ll also get an honest recommendation, whether the full program is right for you or not." },
       { q: "Is this a medical treatment?", a: "No. This is a movement and body-awareness program, not a medical treatment, diagnosis or cure. It works alongside the care of your doctor or specialist. If anything suggests you need medical attention, we\u2019ll always encourage you to seek it." },
       { q: "What if I don\u2019t improve?", a: "That\u2019s exactly why we have the Progress Promise. If after the first 6 weeks you\u2019ve followed the plan and feel no meaningful improvement, we\u2019ll review it together and agree on the fairest next step, including a partial refund if appropriate." },
+      { q: "Do you work with insurances?", a: "No, I do not work with insurances. This is a movement and body-awareness program, not a medical treatment, so it isn\u2019t something health insurers typically reimburse. If cost is a concern, a payment plan is available on request, just mention it during your discovery call." },
     ],
   },
   newsletter: {

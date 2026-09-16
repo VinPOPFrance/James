@@ -34,6 +34,7 @@ export const faqPage = {
         { q: "What if I don't improve?", a: "That's exactly why we have the Progress Promise. If after the first 6 weeks you've followed the plan and feel no meaningful improvement, we'll review it together and agree on the fairest next step, including a partial refund if appropriate." },
         { q: "How much time does the home practice take?", a: "Around 20–30 minutes, 3 times a week. Everything is progressive and clearly explained. You'll never be given a long routine and told to figure it out, James builds it with you, step by step." },
         { q: "Is there a payment plan?", a: "Yes. Payment plans are available on request. Just mention it during your discovery call and we'll find something that works." },
+        { q: "Do you work with insurances?", a: "No, I do not work with insurances. This is a movement and body-awareness program, not a medical treatment, so it isn't something health insurers typically reimburse. If cost is a concern, a payment plan is available on request, just mention it during your discovery call." },
       ],
     },
   ],
