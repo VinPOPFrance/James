@@ -38,7 +38,7 @@ export const home = {
   ],
   problem: {
     eyebrow: "If this sounds familiar",
-    quote: "\u201CI feel broken and I don\u2019t know what to do anymore.\u201D",
+    quote: "\u201CMy recovery is a total roller coaster, every step forward ends in a frustrating setback.\u201D",
     cards: [
       { icon: "refresh", text: "You\u2019ve tried physio, osteopathy and chiropractic, the relief never lasts." },
       { icon: "alert", text: "You move carefully, afraid the next step could set you back again." },
