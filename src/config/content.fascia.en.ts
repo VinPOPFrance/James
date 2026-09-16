@@ -86,7 +86,7 @@ export const fascia = {
   longTermCta: {
     eyebrow: "Looking for a permanent change?",
     body: "A single session is great for instant relief, but if you want permanent, long-term results and are ready to truly work on yourself, our full program is for you.",
-    cta: "Explore the 12-Week Body Reset Program",
+    cta: "Explore the 12 weeks program",
     href: "/12-week-body-reset-program",
   },
   finalCta: {
