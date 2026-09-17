@@ -10,13 +10,14 @@ import { businessInfo } from "@/config/business-info";
 // built. Edit these three fields for the new date and topic; the rest of
 // the page (problem, what we'll cover, who it's for, closing objection)
 // is prose written for the current topic and should be rewritten by hand
-// below when the subject changes.
+// below when the subject changes. The "About James" section stays as-is
+// between cohorts — it's written to be topic-agnostic.
 // ---------------------------------------------------------------------------
 const WEBINAR = {
   topic:
-    "why the ribs stop moving, what it costs you, and the small changes that give the breath back",
-  dayDate: "[DAY, DATE]",
-  time: "[TIME]",
+    "why pain lands in the lower back when the actual restriction is almost always somewhere else, and the three checkpoints worth ruling out before anything else",
+  dayDate: "Tuesday 13 October",
+  time: "8:00pm",
 };
 
 export const metadata: Metadata = {
@@ -33,28 +34,18 @@ export const metadata: Metadata = {
 
 const covers = [
   {
-    text: "Why “breathe deeply” is the least useful instruction you’ve ever been given, and what to do instead",
+    text: "Why the spot where it hurts is so rarely where the actual restriction is",
   },
   {
-    text: "The link between a stiff ribcage and the neck, jaw and lower back pain you thought were separate problems",
+    text: "The three checkpoints worth ruling out before anything else: your hips and legs, your mid-back and ribs, and how you're breathing",
   },
   {
-    text: "Two changes you can make the same evening, and how to tell within a week whether they’re working",
+    text: "Why “release the tension” is often the wrong instruction — and what activating it instead actually means",
   },
   {
-    text: "Live Q&A built into the 45 minutes — bring your question, it’s the best part",
+    text: "Your own back, live: bring what's going on for you and we'll work through it on the call — this is the actual reason to show up live",
   },
 ];
-
-const FOREST = "#25412F";
-
-function Placeholder({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="rounded bg-[#E7DDBE] px-1.5 py-0.5 font-medium text-[#4E3F17]">
-      {children}
-    </span>
-  );
-}
 
 export default function WebinarPage() {
   return (
@@ -74,32 +65,15 @@ export default function WebinarPage() {
 
       {/* 1. HERO */}
       <section className="mx-auto max-w-2xl px-6 pb-14 pt-8 text-center md:pb-20 md:pt-12">
-        <div
-          aria-hidden
-          className="mx-auto mb-8 h-24 w-24 md:h-28 md:w-28"
-          style={{
-            WebkitMaskImage: "url(/media/lungs.svg)",
-            maskImage: "url(/media/lungs.svg)",
-            WebkitMaskRepeat: "no-repeat",
-            maskRepeat: "no-repeat",
-            WebkitMaskPosition: "center",
-            maskPosition: "center",
-            WebkitMaskSize: "contain",
-            maskSize: "contain",
-            backgroundColor: FOREST,
-            opacity: 0.85,
-          }}
-        />
-
         <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#1B3122]">
-          You can&apos;t take a full breath. It isn&apos;t your lungs.
+          Your lower back isn&apos;t the problem. It&apos;s where the
+          problem shows up.
         </h1>
 
         <p className="mx-auto mb-9 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
-          A free 45-minute live session — including questions — on{" "}
-          {WEBINAR.topic}. Live on Google Meet,{" "}
-          <Placeholder>{WEBINAR.dayDate}</Placeholder> at{" "}
-          <Placeholder>{WEBINAR.time}</Placeholder> Amsterdam time.
+          A free 45-minute live session — bring your own question about
+          your back — on {WEBINAR.topic}. Live on Google Meet,{" "}
+          {WEBINAR.dayDate} at {WEBINAR.time} Amsterdam time.
         </p>
 
         <a
@@ -116,17 +90,20 @@ export default function WebinarPage() {
       <section className="mx-auto max-w-2xl px-6 py-14 md:py-20">
         <div className="space-y-5 text-[16px] leading-relaxed text-[#4A4536]">
           <p>
-            You&apos;ve noticed it in the quiet moments. A breath that stops
-            halfway. Shoulders that climb toward your ears by mid-afternoon.
-            That reflexive sigh you take a dozen times a day without
-            deciding to.
+            You&apos;ve tried stretching. You&apos;ve tried strengthening
+            your core, maybe both at once, on alternating days, the way an
+            app told you to. And it still catches — the same way, in the
+            same spot, on some mornings more than others.
           </p>
           <p>
-            You&apos;ve probably been told to relax, to breathe deeply, to
-            try an app. None of it held, because none of it touched the
-            reason. A breath doesn&apos;t get stuck in the lungs. It gets
-            stuck in a ribcage that has quietly stopped moving — and no
-            amount of trying harder will talk it into moving again.
+            You&apos;ve probably been told it&apos;s your posture, or a
+            weak core, or that you sit too much. None of that quite
+            explains why it comes and goes, or why that same &ldquo;weak
+            core&rdquo; doesn&apos;t stop you doing plenty of other things
+            without a flicker of pain. Pain in the lower back is almost
+            never a lower back problem. It&apos;s a symptom showing up in
+            the one place that&apos;s been quietly covering for everything
+            else.
           </p>
         </div>
       </section>
@@ -159,16 +136,15 @@ export default function WebinarPage() {
         </h2>
         <div className="space-y-5 text-[16px] leading-relaxed text-[#4A4536]">
           <p>
-            People who sit for a living and feel it. People who&apos;ve
-            tried the obvious things and stayed stuck. Anyone who&apos;s
-            been quietly holding tension for long enough that it now feels
-            like their normal.
+            People whose lower back flares on some days and not others,
+            who&apos;ve already done the stretching and the strengthening
+            and are still roughly where they started.
           </p>
           <p>
-            Not for you if you want a passive hour of theory. You&apos;ll
-            be moving, and you&apos;ll be asked to notice things. Forty-five
-            minutes, start to finish, questions included — so it respects
-            your evening.
+            Not for you if you&apos;re dealing with a specific acute injury
+            and need a diagnosis — this session is about the common
+            pattern behind recurring pain, not a substitute for seeing
+            someone about a fresh injury.
           </p>
         </div>
 
@@ -182,7 +158,7 @@ export default function WebinarPage() {
 
       <div className="mx-auto max-w-md border-t border-[#25412F]/15" />
 
-      {/* 5. ABOUT JAMES */}
+      {/* 5. ABOUT JAMES — topic-agnostic, left as-is between cohorts */}
       <section className="mx-auto max-w-2xl px-6 py-14 md:py-20">
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center">
           <Image
@@ -200,8 +176,7 @@ export default function WebinarPage() {
               James Daime is a movement therapist in Rotterdam, specialising
               in fascia, breathing and movement re-education. Over 10+ years
               and 121+ five-star reviews, he&apos;s worked with people who
-              were told their tight ribs, their shallow breath, their
-              afternoon shoulder-tension was simply &ldquo;who they
+              were told their pain was simply &ldquo;who they
               are.&rdquo; It usually isn&apos;t — it&apos;s a pattern. And
               patterns can change, once you understand them.
             </p>
@@ -217,9 +192,11 @@ export default function WebinarPage() {
           Tell me you&apos;re coming
         </h2>
         <p className="mx-auto mb-9 max-w-md text-center text-[15.5px] leading-relaxed text-[#4A4536]">
-          Free, live, and recorded — so if something comes up you&apos;ll
-          still get the replay. Places aren&apos;t unlimited, because a room
-          where nobody can ask a question isn&apos;t worth attending.
+          This is live only, no replay. Bring your own back&apos;s version
+          of the problem — the best part of the 45 minutes is working
+          through it with you, out loud, on the call. Places aren&apos;t
+          unlimited, because a room where nobody can ask a question
+          isn&apos;t worth attending.
         </p>
 
         <div className="rounded-[18px] border border-[#25412F]/15 bg-white/60 p-5 md:p-7">
@@ -247,9 +224,10 @@ export default function WebinarPage() {
           &ldquo;I&apos;ll probably be busy that evening.&rdquo;
         </h2>
         <p className="mb-9 text-[16px] leading-relaxed text-[#4A4536]">
-          Sign up anyway. Everyone who registers gets the recording, whether
-          or not they make it live. The only people who definitely
-          don&apos;t get it are the ones who didn&apos;t sign up.
+          Block the time now, before the evening fills itself in on its
+          own. This isn&apos;t something you catch up on later — it&apos;s
+          45 minutes where you can actually ask about your own back and get
+          an answer, live. That only happens once.
         </p>
 
         <a
