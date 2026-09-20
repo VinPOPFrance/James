@@ -82,6 +82,10 @@ export const home = {
       "Built around you, not a generic protocol",
     ],
   },
+  rollerCoaster: {
+    body: "If you\u2019re still stuck on this physical roller coaster two years from now, constantly making progress only to drop back to square one.",
+    question: "How is that going to affect your mind and body?",
+  },
   plan: {
     eyebrow: "A clear path forward",
     title: "3 steps from stuck to confident",

@@ -18,6 +18,7 @@ import { ProofBar } from "@/components/sections/ProofBar";
 import { Problem } from "@/components/sections/Problem";
 import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
+import { RollerCoaster } from "@/components/sections/RollerCoaster";
 import { Plan } from "@/components/sections/Plan";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { Fit } from "@/components/sections/Fit";
@@ -54,6 +55,10 @@ export default function HomePage() {
 
         <Reveal>
           <Solution />
+        </Reveal>
+
+        <Reveal>
+          <RollerCoaster />
         </Reveal>
 
         <Reveal>
