@@ -18,8 +18,8 @@ inkSoft `#444441`, muted `#5F5E5A`, hairline `#E7E1D6`.
 
 ## Typography
 - **Voice (serif display)** — emotional moments only: H1, the problem quote, the promise,
-  section titles. Restraint is the point. Suggest Fraunces or Source Serif 4.
-- **Sans (humanist body)** — everything else: paragraphs, labels, UI. Suggest Inter or Geist.
+  section titles. Restraint is the point. Currently Newsreader.
+- **Sans (humanist body)** — everything else: paragraphs, labels, UI. Currently Inter.
 - Eyebrows: 12px, uppercase, letter-spacing ~0.09em, copper (sage on sage sections).
 
 ## Layout rhythm

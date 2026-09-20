@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Fraunces, Inter } from "next/font/google";
+import { Newsreader, Inter } from "next/font/google";
 import { home } from "@/config/content.en";
 import { businessInfo } from "@/config/business-info";
 import { siteConfig } from "@/config/site-config";
@@ -8,7 +8,12 @@ import { TrackingScripts } from "@/components/analytics/TrackingScripts";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import "./globals.css";
 
-const voice = Fraunces({ subsets: ["latin"], variable: "--font-voice", display: "swap" });
+const voice = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-voice",
+  display: "swap",
+});
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {

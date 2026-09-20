@@ -30,8 +30,8 @@ because it must be built where it can actually be installed, built, and tested.
 - lucide-react (line icons — all emojis already removed)
 - clsx (class merging in Button)
 
-Fonts (via `next/font/google`): a serif **display/voice** face (e.g. Fraunces or Source Serif 4)
-mapped to `--font-voice`, and a humanist **sans** (e.g. Inter or Geist) mapped to `--font-sans`.
+Fonts (via `next/font/google`): a serif **display/voice** face (currently Newsreader)
+mapped to `--font-voice`, and a humanist **sans** (Inter) mapped to `--font-sans`.
 
 ---
 

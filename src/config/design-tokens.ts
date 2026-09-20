@@ -21,9 +21,9 @@ export const colors = {
 
 export const typography = {
   // Display / "voice" — elegant serif for emotional moments (headlines, quotes, promise)
-  voice: 'var(--font-voice)', // e.g. "Fraunces", "Source Serif 4"
+  voice: 'var(--font-voice)', // currently "Newsreader"
   // Body / UI — clean humanist sans
-  sans: 'var(--font-sans)', // e.g. "Inter", "Geist"
+  sans: 'var(--font-sans)', // currently "Inter"
   scale: {
     h1: "clamp(2rem, 4vw, 2.6rem)",
     h2: "clamp(1.5rem, 2.6vw, 1.7rem)",
