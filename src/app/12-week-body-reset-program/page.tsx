@@ -4,6 +4,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { RollerCoaster } from "@/components/sections/RollerCoaster";
 import { icons } from "@/lib/icons";
 import { program } from "@/config/content.program.en";
 import { businessInfo } from "@/config/business-info";
@@ -156,6 +157,10 @@ export default function ProgramPage() {
             </div>
           </div>
         </section>
+      </Reveal>
+
+      <Reveal>
+        <RollerCoaster />
       </Reveal>
 
       {/* Guide */}
