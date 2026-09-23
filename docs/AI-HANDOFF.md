@@ -84,6 +84,7 @@ Dutch mirror:
 - Enabled only when env vars are set:
   - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
   - `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+  - `NEXT_PUBLIC_META_PIXEL_ID`
 
 ## 8) Deployment target
 - Hosting platform: Vercel

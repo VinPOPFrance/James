@@ -42,4 +42,5 @@ Whenever code changes affect structure, behavior, routes, data flow, or setup:
 2. Configure through:
    - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
    - `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+   - `NEXT_PUBLIC_META_PIXEL_ID`
 3. Do not hardcode secret values in source files.

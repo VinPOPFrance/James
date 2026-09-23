@@ -20,6 +20,7 @@ This project is ready to deploy on Vercel.
 In Vercel project settings, add:
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
 - `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+- `NEXT_PUBLIC_META_PIXEL_ID`
 
 If omitted, analytics scripts remain disabled.
 

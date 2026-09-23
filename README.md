@@ -52,14 +52,15 @@ npm run build        # MUST pass
 npx eslint src --ext .ts,.tsx
 ```
 
-## Analytics (GA4 + Clarity)
+## Analytics (GA4 + Clarity + Meta Pixel)
 
 1. Edit `.env.local` in the project root
 2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (example: `G-XXXXXXXXXX`)
 3. Set `NEXT_PUBLIC_CLARITY_PROJECT_ID` to your Clarity Project ID
-4. Restart dev/build process after env changes
+4. Set `NEXT_PUBLIC_META_PIXEL_ID` to your Meta Pixel ID
+5. Restart dev/build process after env changes
 
-If you only want Clarity, you can leave the GA4 variable unset.
+If you only want one of these, you can leave the others unset.
 
 Tracking is automatically enabled only when the IDs are present.
 
