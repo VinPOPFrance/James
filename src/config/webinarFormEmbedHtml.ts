@@ -1,9 +1,9 @@
 // Raw MailerLite embed snippet for the live webinar signup form.
 // Copied verbatim from MailerLite's export — do NOT rebuild, restyle, or
 // reformat this. It must stay byte-for-byte identical or the form may stop
-// submitting to MailerLite correctly. Current form: "Webinar application -
-// Lower back - 13 Oct 2026". When James generates a new embed code for the
-// next cohort, replace this entire string with the new one.
+// submitting to MailerLite correctly. Current form ID: 198842516089341590.
+// When James generates a new embed code for the next cohort, replace this
+// entire string with the new one.
 export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1788452");</style>
     <style type="text/css">
     /* LOADER */
@@ -594,6 +594,168 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
       }
     </style>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="mlb2-46030432" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-46030432">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
@@ -618,11 +780,11 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                   <div class="ml-form-fieldRow ">
                     <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
 
-
+                      <label>Email</label>
 
 
                       <!-- input -->
-                      <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="" autocomplete="email">
                       <!-- /input -->
 
                       <!-- textarea -->
@@ -653,11 +815,11 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                   </div><div class="ml-form-fieldRow ">
                     <div class="ml-field-group ml-field-name">
 
-
+                      <label>Name</label>
 
 
                       <!-- input -->
-                      <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                      <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="" autocomplete="given-name">
                       <!-- /input -->
 
                       <!-- textarea -->
@@ -688,11 +850,11 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                   </div><div class="ml-form-fieldRow ">
                     <div class="ml-field-group ml-field-last_name">
 
-
+                      <label>Last name</label>
 
 
                       <!-- input -->
-                      <input aria-label="last_name" type="text" class="form-control" data-inputmask="" name="fields[last_name]" placeholder="Last name" autocomplete="family-name">
+                      <input aria-label="last_name" type="text" class="form-control" data-inputmask="" name="fields[last_name]" placeholder="" autocomplete="family-name">
                       <!-- /input -->
 
                       <!-- textarea -->
@@ -723,7 +885,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                   </div><div class="ml-form-fieldRow ">
                     <div class="ml-field-group ml-field-why_interested ml-validate-required">
 
-
+                      <label>Why interested</label>
 
 
                       <!-- input -->
@@ -731,7 +893,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                       <!-- /input -->
 
                       <!-- textarea -->
-                      <textarea class="form-control" name="fields[why_interested]" aria-label="why_interested" aria-required="true" maxlength="1024" placeholder="Why interested"></textarea>
+                      <textarea class="form-control" name="fields[why_interested]" aria-label="why_interested" aria-required="true" maxlength="1024" placeholder=""></textarea>
                       <!-- /textarea -->
 
                       <!-- select -->
@@ -758,7 +920,7 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
                   </div><div class="ml-form-fieldRow ml-last-item">
                     <div class="ml-field-group ml-field-heard_about_via ml-validate-required">
 
-
+                      <label>Heard about via</label>
 
 
                       <!-- input -->
@@ -914,17 +1076,20 @@ export const WEBINAR_FORM_EMBED_HTML = `<style type="text/css">@import url("http
 
 
 
-
   <script>
     function ml_webform_success_46030432() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-46030432 .row-success').show();
-      $('.ml-subscribe-form-46030432 .row-form').hide();
+    try {
+        window.top.location.href = 'https://jamesdaime.com/webinar/thanks';
+      } catch (e) {
+        window.location.href = 'https://jamesdaime.com/webinar/thanks';
+      }
     }
       </script>
+
 
 
       <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
         <script>
             fetch("https://assets.mailerlite.com/jsonp/521975/forms/198842516089341590/takel")
-        </script>`;
+        </script>
+`;
