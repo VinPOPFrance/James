@@ -95,6 +95,12 @@ export function TrackingScripts() {
               alt=""
             />
           </noscript>
+
+          {pathname === "/webinar/thanks" ? (
+            <Script id="meta-pixel-lead" strategy="afterInteractive">
+              {`fbq('track', 'Lead');`}
+            </Script>
+          ) : null}
         </>
       ) : null}
     </>
