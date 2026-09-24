@@ -73,6 +73,16 @@ export default function HomePage() {
         </Reveal>
 
         <Reveal>
+          <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-12 text-center md:px-12 md:py-14">
+            <p className="mx-auto max-w-2xl font-voice text-[clamp(1.3rem,2.8vw,1.65rem)] font-medium italic leading-snug text-navy">
+              The real risk isn&apos;t this flare-up. It&apos;s reaching 65
+              more careful, more dependent on clinics, and with fewer options
+              than you have today. The earlier you rebuild, the easier it is.
+            </p>
+          </section>
+        </Reveal>
+
+        <Reveal>
           <FinalCta />
         </Reveal>
 
