@@ -53,6 +53,16 @@ export default function HomeNlPage() {
         </Reveal>
 
         <Reveal>
+          <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-12 text-center md:px-12 md:py-14">
+            <p className="mx-auto max-w-2xl font-voice text-[clamp(1.3rem,2.8vw,1.65rem)] font-medium italic leading-snug text-navy">
+              Pijn die telkens terugkomt, blijft zelden hetzelfde. Met elk
+              jaar dat je wacht, wordt de lijst met dingen die je vermijdt een
+              stukje langer.
+            </p>
+          </section>
+        </Reveal>
+
+        <Reveal>
           <QuickFixes content={homeNl.quickFixes} />
         </Reveal>
 
@@ -70,6 +80,17 @@ export default function HomeNlPage() {
 
         <Reveal>
           <Fit content={homeNl.fit} />
+        </Reveal>
+
+        <Reveal>
+          <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-12 text-center md:px-12 md:py-14">
+            <p className="mx-auto max-w-2xl font-voice text-[clamp(1.3rem,2.8vw,1.65rem)] font-medium italic leading-snug text-navy">
+              Het echte risico is niet deze opflakkering. Het is dat je op je
+              65e voorzichtiger bent, afhankelijker van behandelaars, en met
+              minder opties dan je nu hebt. Hoe eerder je opbouwt, hoe
+              makkelijker het gaat.
+            </p>
+          </section>
         </Reveal>
 
         <Reveal>
