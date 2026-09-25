@@ -56,10 +56,14 @@ export function Hero({ content }: { content?: HeroContent }) {
             {t.h1}
           </h1>
 
-          <p className="mb-7 max-w-prose text-[15.5px] leading-relaxed text-muted">
+          <p className="mb-3 max-w-prose text-[15.5px] leading-relaxed text-muted">
             {highlightedSubParts.map((part, i) =>
               highlightTerms.includes(part.toLowerCase()) ? <strong key={i}>{part}</strong> : part
             )}
+          </p>
+
+          <p className="mb-7 max-w-prose text-[13.5px] italic leading-relaxed text-muted/70">
+            {t.subAside}
           </p>
 
           <div className="mb-5 flex flex-wrap gap-3">
