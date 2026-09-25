@@ -49,6 +49,15 @@ export default function HomePage() {
         </Reveal>
 
         <Reveal>
+          <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-12 text-center md:px-12 md:py-14">
+            <p className="mx-auto max-w-2xl font-voice text-[clamp(1.3rem,2.8vw,1.65rem)] font-medium italic leading-snug text-navy">
+              Pain that keeps coming back rarely stays the same. Every year
+              you wait, the list of things you avoid gets a little longer.
+            </p>
+          </section>
+        </Reveal>
+
+        <Reveal>
           <QuickFixes />
         </Reveal>
 

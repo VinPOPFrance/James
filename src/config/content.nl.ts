@@ -25,7 +25,6 @@ export const homeNl = {
     tagline: "Stop met je tien jaar ouder te voelen dan je bent",
     h1: "Leer je lichaam opnieuw vertrouwen en beweeg voorbij chronische rugpijn.",
     sub: "Een 12-weken programma voor vrouwen van 40+ die er klaar mee zijn dat rugpijn bepaalt wat wel en niet kan. Stap voor stap pak je de simpele dingen weer op: een lange zondagswandeling, de hond uitlaten, familiedagen, je favoriete sport, zonder de angst dat de pijn terugkomt.",
-    subAside: "Pijn die telkens terugkomt, blijft zelden hetzelfde. Met elk jaar dat je wacht, wordt de lijst met dingen die je vermijdt een stukje langer.",
     ctaPrimary: "Gratis kennismakingsgesprek (12-weken programma)",
     ctaSecondary: "Fascia treatment session",
     proof: "121+ vijfsterren beoordelingen · 10+ jaar praktijkervaring",
