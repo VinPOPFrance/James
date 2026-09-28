@@ -207,23 +207,14 @@ export default function WebinarPage() {
           </ul>
         </section>
 
-        {/* 7. SECOND STAKE — copper-tinted card, same urgency treatment used sitewide */}
+        {/* 7. SECOND STAKE — copper-tinted card, same urgency treatment used sitewide.
+            Single line only, no heading. */}
         <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-10 text-center md:px-10 md:py-12">
-          <h2 className="mb-5 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
-            Where this ends up if nothing changes
-          </h2>
-          <div className="mx-auto max-w-lg space-y-4 text-[16px] leading-relaxed text-inkSoft">
-            <p>
-              The real risk isn&apos;t this flare-up. It&apos;s reaching 65
-              more careful, more dependent on clinics, with fewer options
-              than you have today.
-            </p>
-            <p>
-              Every treatment where someone else does the work buys you a
-              few weeks. None of them teach you how your own back works.
-            </p>
-            <p>The earlier you rebuild, the easier it is.</p>
-          </div>
+          <p className="mx-auto max-w-lg text-[16px] leading-relaxed text-inkSoft">
+            The real risk isn&apos;t this flare-up, it&apos;s reaching 65
+            more careful, more dependent on clinics, with fewer options than
+            you have today.
+          </p>
           <div className="mt-8">
             <ApplyButton />
           </div>
