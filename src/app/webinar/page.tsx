@@ -21,7 +21,7 @@ const WEBINAR = {
 };
 
 export const metadata: Metadata = {
-  title: "Free Live Webinar — James Daime",
+  title: "Free Live Webinar · James Daime",
   description: `A free 45-minute live session on ${WEBINAR.topic}.`,
   robots: {
     index: false,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const alreadyTried = [
   "Stretching",
-  "Core work — maybe both, on alternating days, because an app said so",
+  "Core work, maybe both, on alternating days, because an app said so",
   "Standing desk, better chair, sitting less",
   "Being told it's your posture. Or your core. Or just your age.",
 ];
@@ -47,10 +47,10 @@ const covers = [
     text: "The three checkpoints worth ruling out before anything else: your hips and legs, your mid-back and ribs, and how you're breathing",
   },
   {
-    text: "Why “release the tension” is often the wrong instruction — and what activating it instead actually means",
+    text: "Why “release the tension” is often the wrong instruction, and what activating it instead actually means",
   },
   {
-    text: "Your own back, live: bring what's going on for you and we'll work through it on the call — this is the actual reason to show up live",
+    text: "Your own back, live: bring what's going on for you and we'll work through it on the call. This is the actual reason to show up live",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function WebinarPage() {
 
           <p className="mx-auto mb-3 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
             Forty-five minutes, live, on what&apos;s actually driving the
-            pain that keeps coming back — so you can stop guessing, stop
+            pain that keeps coming back, so you can stop guessing, stop
             feeling lost, and finally work on the thing causing it instead of
             the place that hurts.
           </p>
@@ -168,8 +168,8 @@ export default function WebinarPage() {
                 specialising in fascia, breathing and movement
                 re-education. Over 10+ years and 121+ five-star reviews,
                 he&apos;s worked with people who were told their pain was
-                simply &ldquo;who they are.&rdquo; It usually isn&apos;t —
-                it&apos;s a pattern. And patterns can change, once you
+                simply &ldquo;who they are.&rdquo; It usually isn&apos;t.
+                It&apos;s a pattern. And patterns can change, once you
                 understand them.
               </p>
             </div>
@@ -242,7 +242,7 @@ export default function WebinarPage() {
             </p>
             <p>
               Not for you if you&apos;re dealing with a specific acute
-              injury and need a diagnosis — this session is about the
+              injury and need a diagnosis. This session is about the
               common pattern behind recurring pain, not a substitute for
               seeing someone about a fresh injury.
             </p>
@@ -263,7 +263,7 @@ export default function WebinarPage() {
           </h2>
           <p className="mx-auto mb-9 max-w-md text-[15.5px] leading-relaxed text-inkSoft">
             This is live only, no replay. Bring your own back&apos;s version
-            of the problem — the best part of the 45 minutes is working
+            of the problem. The best part of the 45 minutes is working
             through it with you, out loud, on the call. Places aren&apos;t
             unlimited, because a room where nobody can ask a question
             isn&apos;t worth attending.
@@ -275,7 +275,7 @@ export default function WebinarPage() {
 
           <p className="mx-auto mt-5 max-w-md text-[13.5px] leading-relaxed text-inkSoft/80">
             I&apos;ll email your link straight away. If it doesn&apos;t
-            arrive within a few minutes, check your spam folder — and then{" "}
+            arrive within a few minutes, check your spam folder, and then{" "}
             <a
               href={`mailto:${businessInfo.email}`}
               className="text-[#25412F] underline decoration-[#25412F]/40 underline-offset-2 hover:decoration-[#25412F]"
@@ -293,8 +293,8 @@ export default function WebinarPage() {
           </h2>
           <p className="mx-auto mb-9 max-w-md text-[16px] leading-relaxed text-inkSoft">
             Block the time now, before the evening fills itself in on its
-            own. This isn&apos;t something you catch up on later —
-            it&apos;s 45 minutes where you can actually ask about your own
+            own. This isn&apos;t something you catch up on later.
+            It&apos;s 45 minutes where you can actually ask about your own
             back and get an answer, live. That only happens once.
           </p>
 
