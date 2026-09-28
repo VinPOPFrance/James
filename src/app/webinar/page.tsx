@@ -44,7 +44,7 @@ const covers = [
     text: "Why the spot where it hurts is so rarely where the actual restriction is",
   },
   {
-    text: "The three checkpoints worth ruling out before anything else: your hips and legs, your mid-back and ribs, and how you're breathing",
+    text: "The three crucial parts of your body worth ruling out before anything else",
   },
   {
     text: "Why “release the tension” is often the wrong instruction, and what activating it instead actually means",
