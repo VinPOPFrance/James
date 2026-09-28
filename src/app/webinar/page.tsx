@@ -32,6 +32,13 @@ export const metadata: Metadata = {
   },
 };
 
+const alreadyTried = [
+  "Stretching",
+  "Core work — maybe both, on alternating days, because an app said so",
+  "Standing desk, better chair, sitting less",
+  "Being told it's your posture. Or your core. Or just your age.",
+];
+
 const covers = [
   {
     text: "Why the spot where it hurts is so rarely where the actual restriction is",
@@ -46,6 +53,17 @@ const covers = [
     text: "Your own back, live: bring what's going on for you and we'll work through it on the call — this is the actual reason to show up live",
   },
 ];
+
+function ApplyButton() {
+  return (
+    <a
+      href="#apply"
+      className="inline-flex items-center justify-center rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1B3122]"
+    >
+      Apply for your place
+    </a>
+  );
+}
 
 export default function WebinarPage() {
   return (
@@ -67,91 +85,69 @@ export default function WebinarPage() {
         {/* 1. HERO — open, on the cream backdrop, no card */}
         <section className="px-1 pb-4 pt-4 text-center md:pb-8 md:pt-6">
           <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#1B3122]">
-            Your lower back isn&apos;t the problem. It&apos;s where the
-            problem shows up.
+            Your lower back isn&apos;t the problem.
+            <br />
+            It&apos;s the messenger.
           </h1>
 
-          <p className="mx-auto mb-9 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
-            A free 45-minute live session — bring your own question about
-            your back — on {WEBINAR.topic}. Live on Google Meet,{" "}
-            {WEBINAR.dayDate} at {WEBINAR.time} Amsterdam time.
+          <p className="mx-auto mb-3 max-w-lg text-[16.5px] leading-relaxed text-[#4A4536]">
+            Forty-five minutes, live, on what&apos;s actually driving the
+            pain that keeps coming back — so you can stop guessing, stop
+            feeling lost, and finally work on the thing causing it instead of
+            the place that hurts.
           </p>
 
-          <a
-            href="#apply"
-            className="inline-flex items-center justify-center rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1B3122]"
-          >
-            Apply for your place
-          </a>
+          <p className="mx-auto mb-9 max-w-lg text-[14px] leading-relaxed text-[#4A4536]/70">
+            Free. {WEBINAR.dayDate}, {WEBINAR.time} Amsterdam time, on Google
+            Meet. Bring your question about your own back.
+          </p>
+
+          <ApplyButton />
         </section>
 
         {/* 2. THE PROBLEM — white card, like the rest of the site */}
         <section className="rounded-section border border-hairline bg-white px-6 py-10 md:px-10 md:py-12">
           <div className="space-y-5 text-[16px] leading-relaxed text-inkSoft">
-            <p>
-              You&apos;ve tried stretching. You&apos;ve tried strengthening
-              your core, maybe both at once, on alternating days, the way an
-              app told you to. And it still catches — the same way, in the
-              same spot, on some mornings more than others.
-            </p>
-            <p>
-              You&apos;ve probably been told it&apos;s your posture, or a
-              weak core, or that you sit too much. None of that quite
-              explains why it comes and goes, or why that same &ldquo;weak
-              core&rdquo; doesn&apos;t stop you doing plenty of other things
-              without a flicker of pain. Pain in the lower back is almost
-              never a lower back problem. It&apos;s a symptom showing up in
-              the one place that&apos;s been quietly covering for everything
-              else.
-            </p>
-          </div>
-        </section>
+            <p>You&apos;ve already tried the obvious things.</p>
 
-        {/* 3. WHAT WE'LL COVER — sand-tinted card, copper accents */}
-        <section className="rounded-section border border-copper/25 bg-sand/30 px-6 py-10 md:px-10 md:py-12">
-          <h2 className="mb-7 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
-            What we&apos;ll cover
-          </h2>
-          <ul className="space-y-5">
-            {covers.map((item) => (
-              <li key={item.text} className="flex gap-3 text-[16px] leading-relaxed text-inkSoft">
-                <span aria-hidden className="mt-0.5 shrink-0 text-copper">
-                  ✓
-                </span>
-                <span>{item.text}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+            <ul className="space-y-3">
+              {alreadyTried.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 shrink-0 text-[#4A4536]/40">
+                    •
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
 
-        {/* 4. WHO THIS IS FOR — white card */}
-        <section className="rounded-section border border-hairline bg-white px-6 py-10 md:px-10 md:py-12">
-          <h2 className="mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
-            Who this is for
-          </h2>
-          <div className="space-y-5 text-[16px] leading-relaxed text-inkSoft">
             <p>
-              People whose lower back flares on some days and not others,
-              who&apos;ve already done the stretching and the strengthening
-              and are still roughly where they started.
+              And it still catches. Same way, same spot, worse on some
+              mornings than others.
             </p>
             <p>
-              Not for you if you&apos;re dealing with a specific acute
-              injury and need a diagnosis — this session is about the
-              common pattern behind recurring pain, not a substitute for
-              seeing someone about a fresh injury.
+              None of those explanations quite fit, either. If it&apos;s a
+              weak core, why does that same core let you do plenty of other
+              things without a flicker of pain? If it&apos;s posture, why
+              does it come and go?
+            </p>
+            <p>
+              And somewhere along the way, you stopped trusting your own
+              back. You plan around it now.
             </p>
           </div>
-
-          <a
-            href="#apply"
-            className="mt-8 inline-flex items-center gap-1.5 text-[15px] font-medium text-[#25412F] underline decoration-[#25412F]/40 underline-offset-4 transition-colors hover:decoration-[#25412F]"
-          >
-            Apply for your place →
-          </a>
         </section>
 
-        {/* 5. ABOUT JAMES — navy card, matching the main site's CTA sections.
+        {/* 3. ONE-LINE STAKE — open on the cream backdrop, a beat between sections */}
+        <section className="px-1 py-4 text-center md:py-6">
+          <p className="mx-auto mb-8 max-w-md font-voice text-[1.6rem] font-medium leading-snug text-[#1B3122]">
+            Every year you wait, the list of things you avoid gets a little
+            longer.
+          </p>
+          <ApplyButton />
+        </section>
+
+        {/* 4. ABOUT JAMES — navy card, matching the main site's CTA sections.
             Portrait treatment matches the "Your guide" section on the
             homepage (large 3/4 photo, rounded-2xl) instead of a small avatar.
             Content untouched between cohorts, only the container is styled. */}
@@ -180,7 +176,87 @@ export default function WebinarPage() {
           </div>
         </section>
 
-        {/* 6. THE FORM — white card */}
+        {/* 5. WHAT YOU'LL WALK AWAY WITH — white card */}
+        <section className="rounded-section border border-hairline bg-white px-6 py-10 md:px-10 md:py-12">
+          <h2 className="mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
+            What you&apos;ll walk away with
+          </h2>
+          <p className="text-[16px] leading-relaxed text-inkSoft">
+            By the end of the 45 minutes you&apos;ll have a much clearer
+            idea of which of the three areas is most likely yours, why what
+            you&apos;ve been doing hasn&apos;t held, and where to actually
+            put your effort. Not another generic routine. A direction, based
+            on your own back.
+          </p>
+        </section>
+
+        {/* 6. WHAT WE'LL COVER — sand-tinted card, copper accents */}
+        <section className="rounded-section border border-copper/25 bg-sand/30 px-6 py-10 md:px-10 md:py-12">
+          <h2 className="mb-7 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
+            What we&apos;ll cover
+          </h2>
+          <ul className="space-y-5">
+            {covers.map((item) => (
+              <li key={item.text} className="flex gap-3 text-[16px] leading-relaxed text-inkSoft">
+                <span aria-hidden className="mt-0.5 shrink-0 text-copper">
+                  ✓
+                </span>
+                <span>{item.text}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* 7. SECOND STAKE — copper-tinted card, same urgency treatment used sitewide */}
+        <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-10 text-center md:px-10 md:py-12">
+          <h2 className="mb-5 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
+            Where this ends up if nothing changes
+          </h2>
+          <div className="mx-auto max-w-lg space-y-4 text-[16px] leading-relaxed text-inkSoft">
+            <p>
+              The real risk isn&apos;t this flare-up. It&apos;s reaching 65
+              more careful, more dependent on clinics, with fewer options
+              than you have today.
+            </p>
+            <p>
+              Every treatment where someone else does the work buys you a
+              few weeks. None of them teach you how your own back works.
+            </p>
+            <p>The earlier you rebuild, the easier it is.</p>
+          </div>
+          <div className="mt-8">
+            <ApplyButton />
+          </div>
+        </section>
+
+        {/* 8. WHO THIS IS FOR — white card */}
+        <section className="rounded-section border border-hairline bg-white px-6 py-10 md:px-10 md:py-12">
+          <h2 className="mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#1B3122]">
+            Who this is for
+          </h2>
+          <div className="space-y-5 text-[16px] leading-relaxed text-inkSoft">
+            <p>
+              People whose lower back flares on some days and not others,
+              who&apos;ve already done the stretching and the strengthening
+              and are still roughly where they started.
+            </p>
+            <p>
+              Not for you if you&apos;re dealing with a specific acute
+              injury and need a diagnosis — this session is about the
+              common pattern behind recurring pain, not a substitute for
+              seeing someone about a fresh injury.
+            </p>
+          </div>
+
+          <a
+            href="#apply"
+            className="mt-8 inline-flex items-center gap-1.5 text-[15px] font-medium text-[#25412F] underline decoration-[#25412F]/40 underline-offset-4 transition-colors hover:decoration-[#25412F]"
+          >
+            Apply for your place →
+          </a>
+        </section>
+
+        {/* 9. THE FORM — white card */}
         <section id="apply" className="rounded-section border border-hairline bg-white px-6 py-12 text-center md:px-10 md:py-14">
           <h2 className="mb-4 font-voice text-[clamp(1.5rem,3.4vw,2rem)] font-medium text-[#1B3122]">
             Tell me you&apos;re coming
@@ -210,7 +286,7 @@ export default function WebinarPage() {
           </p>
         </section>
 
-        {/* 7. CLOSING OBJECTION — sage-tinted card */}
+        {/* 10. CLOSING OBJECTION — sage-tinted card */}
         <section className="rounded-section border border-sage/30 bg-sage/10 px-6 py-10 text-center md:px-10 md:py-12">
           <h2 className="mb-4 font-voice text-[clamp(1.25rem,2.8vw,1.5rem)] font-medium italic text-[#1B3122]">
             &ldquo;I&apos;ll probably be busy that evening.&rdquo;
@@ -222,12 +298,7 @@ export default function WebinarPage() {
             back and get an answer, live. That only happens once.
           </p>
 
-          <a
-            href="#apply"
-            className="inline-flex items-center justify-center rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1B3122]"
-          >
-            Apply for your place
-          </a>
+          <ApplyButton />
         </section>
 
         <footer className="pb-4 pt-2">
