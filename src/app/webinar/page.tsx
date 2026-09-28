@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { MediaSlot } from "@/components/ui/MediaSlot";
 import { MailerLiteWebinarForm } from "@/components/sections/MailerLiteWebinarForm";
 import { siteConfig } from "@/config/site-config";
 import { businessInfo } from "@/config/business-info";
@@ -152,17 +152,16 @@ export default function WebinarPage() {
         </section>
 
         {/* 5. ABOUT JAMES — navy card, matching the main site's CTA sections.
+            Portrait treatment matches the "Your guide" section on the
+            homepage (large 3/4 photo, rounded-2xl) instead of a small avatar.
             Content untouched between cohorts, only the container is styled. */}
         <section className="relative overflow-hidden rounded-section bg-gradient-to-br from-navy to-navy-light px-6 py-10 md:px-10 md:py-12">
           <div className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-sage/10 blur-3xl" />
           <div className="pointer-events-none absolute -right-16 top-0 h-72 w-72 rounded-full bg-copper/15 blur-3xl" />
-          <div className="relative flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <Image
-              src="/media/jamesPortrait.png"
-              alt="James Daime"
-              width={88}
-              height={88}
-              className="h-[88px] w-[88px] shrink-0 rounded-full border border-ivory/20 object-cover"
+          <div className="relative grid items-center gap-6 sm:grid-cols-[0.8fr_1.2fr]">
+            <MediaSlot
+              name="jamesPortrait"
+              className="mx-auto w-full max-w-[220px] border border-ivory/15 shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)] sm:mx-0 sm:max-w-none"
             />
             <div>
               <p className="mb-2 text-[13px] font-medium uppercase tracking-[0.1em] text-copper-light">
