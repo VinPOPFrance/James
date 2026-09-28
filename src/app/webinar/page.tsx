@@ -207,17 +207,15 @@ export default function WebinarPage() {
           </ul>
         </section>
 
-        {/* 7. SECOND STAKE — copper-tinted card, same urgency treatment used sitewide.
-            Single line only, no heading. */}
-        <section className="rounded-section border border-copper/30 bg-copper/10 px-6 py-10 text-center md:px-10 md:py-12">
-          <p className="mx-auto max-w-lg text-[16px] leading-relaxed text-inkSoft">
+        {/* 7. SECOND STAKE — open on the cream backdrop, same treatment as the
+            one-line stake above About James. */}
+        <section className="px-1 py-4 text-center md:py-6">
+          <p className="mx-auto mb-8 max-w-md font-voice text-[1.6rem] font-medium leading-snug text-[#1B3122]">
             The real risk isn&apos;t this flare-up, it&apos;s reaching 65
             more careful, more dependent on clinics, with fewer options than
             you have today.
           </p>
-          <div className="mt-8">
-            <ApplyButton />
-          </div>
+          <ApplyButton />
         </section>
 
         {/* 8. WHO THIS IS FOR — white card */}
