@@ -35,6 +35,25 @@ Actions required:
 
 Date: 2026-10-05
 Author: AI
+Scope: routing | data | docs
+Files:
+- src/app/workshop/page.tsx
+- docs/AI-HANDOFF.md
+- docs/TECH-CHANGELOG.md
+Change summary:
+- Rewrote `/workshop` with the full long-form copy (hero, problem, stake, what happens, leave-with, how it works, details, form, closing).
+- Removed the inline MailerLite markup and scripts; the form container is now an empty placeholder for a hand-pasted embed.
+Impact:
+- Runtime impact: `/workshop` has no working signup form until the MailerLite embed is pasted in.
+- Deployment/migration impact: requires a redeploy.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
+Date: 2026-10-05
+Author: AI
 Scope: routing | seo | data | docs
 Files:
 - src/app/workshop/page.tsx
