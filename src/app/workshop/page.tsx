@@ -250,17 +250,6 @@ export default function WorkshopPage() {
             First come, first served. It closes once we&apos;re full.
           </p>
         </section>
-
-        {/* 9. CLOSING OBJECTION · open, muted */}
-        <section className="pt-6 text-center md:pt-10">
-          <p className="mx-auto max-w-md text-[14.5px] leading-relaxed text-[#4A4536]">
-            If you&apos;re reading this thinking it probably won&apos;t work
-            for you either, I understand. You&apos;ve been to the
-            appointments. The difference isn&apos;t that I know a secret.
-            It&apos;s that you&apos;ll do the work yourself, in a room, with
-            someone watching who knows what to look for.
-          </p>
-        </section>
       </div>
 
       <Script
