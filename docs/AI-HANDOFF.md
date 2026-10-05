@@ -24,6 +24,7 @@ Main language:
 - `/contact`
 - `/faq`
 - `/workshops`
+- `/workshop` (hidden, direct-URL-only landing page for the 31 October in-person workshop; MailerLite signup)
 - `/fascia-reset-session`
 - `/12-week-body-reset-program`
 - `/blog`
@@ -76,6 +77,7 @@ Dutch mirror:
 - In async submit handlers, capture `event.currentTarget` before `await` and reuse a stable form reference.
 - Discovery call CTAs consume `businessInfo.bookingUrl` from `src/config/business-info.ts` across EN/NL pages and shared sections.
 - Hidden landing pages can be added as direct-URL routes, but they are only private by obscurity unless a separate access control layer is added.
+- `/workshop` is noindex/nofollow, has a fixed canonical URL, embeds the MailerLite signup directly, and is excluded from the floating WhatsApp shortcut; global analytics remain mounted by the shared layout.
 
 ## 7) Analytics
 - Tracking loader: `src/components/analytics/TrackingScripts.tsx`

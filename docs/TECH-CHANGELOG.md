@@ -33,6 +33,27 @@ Actions required:
 
 ## Entries
 
+Date: 2026-10-05
+Author: AI
+Scope: routing | seo | data | docs
+Files:
+- src/app/workshop/page.tsx
+- src/app/workshop/workshop.module.css
+- src/components/ui/FloatingWhatsApp.tsx
+- docs/AI-HANDOFF.md
+- docs/TECH-CHANGELOG.md
+Change summary:
+- Added a short, noindex/nofollow fixed-URL `/workshop` landing page for the 31 October event with the supplied MailerLite form embed.
+- Hid the floating WhatsApp shortcut on the single-purpose landing page; no page-specific tracking or Lead event was added.
+Impact:
+- Runtime impact: visitors can read workshop details and submit their name and email to MailerLite at `/workshop`.
+- Deployment/migration impact: requires a redeploy to publish the route.
+Actions required:
+- [ ] none
+- [x] run npm run lint
+- [ ] set/update env vars
+- [x] manual verification needed
+
 Date: 2026-08-19
 Author: AI
 Scope: routing | seo | data | docs
