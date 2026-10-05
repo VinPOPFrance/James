@@ -50,14 +50,12 @@ export default function WorkshopPage() {
         {/* 1. HERO · open on the cream backdrop */}
         <section className="pb-6 text-center md:pb-10">
           <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#25412F]">
-            You understand it now.
-            <br />
-            Your back hasn&apos;t noticed yet.
+            Find out what&apos;s really causing your back pain.
           </h1>
           <p className="mx-auto mb-4 max-w-lg text-[16.5px] leading-relaxed text-[#2A2A28]">
-            Two and a half hours in a room in Rotterdam, working on your own
-            back with me walking you through it, so you leave knowing which
-            thing is yours, and what to do about it.
+            One Saturday morning in Rotterdam. We go through some simple
+            tests, you find the part that isn&apos;t doing its job, and you
+            leave knowing what to work on.
           </p>
           <p className="mx-auto max-w-lg text-[14px] leading-relaxed text-[#4A4536]">
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
@@ -138,6 +136,14 @@ export default function WorkshopPage() {
               <li key={step}>{step}</li>
             ))}
           </ol>
+        </section>
+
+        {/* SECOND STAKE · dark green card */}
+        <section className={`${card} bg-[#25412F] text-center`}>
+          <p className="mx-auto max-w-md font-voice text-[1.45rem] font-medium leading-snug text-[#F7F2E5]">
+            It&apos;s a relief to finally understand your back. It&apos;s still
+            frustrating to plan your week around it.
+          </p>
         </section>
 
         {/* 7. THE PRACTICAL DETAILS · sage card */}
