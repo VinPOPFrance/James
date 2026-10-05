@@ -16,7 +16,8 @@ const WORKSHOP = {
 
 export const metadata: Metadata = {
   title: "Workshop · James Daime",
-  description: "Two and a half hours, hands-on, on your lower back in Rotterdam.",
+  description:
+    "Two and a half hours in Rotterdam, working on your own back with James walking you through it.",
   robots: {
     index: false,
     follow: false,
@@ -31,9 +32,9 @@ const h2 =
   "mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#25412F]";
 
 const leaveWith = [
-  "Which of the three it is for you. Not the general picture, the one in your body.",
-  "What it feels like when that area actually moves, so you’ve got something to aim at.",
-  "Two or three things to keep doing. No app, no twelve-week plan, no printout.",
+  "Which of the three it is for you. Not the general picture, the one you found in your own body.",
+  "What it feels like when that area actually changes, so you know what you’re aiming for.",
+  "Two or three things to keep doing on your own. No app, no twelve-week plan, no printout.",
 ];
 
 const steps = [
@@ -54,9 +55,9 @@ export default function WorkshopPage() {
             Your back hasn&apos;t noticed yet.
           </h1>
           <p className="mx-auto mb-4 max-w-lg text-[16.5px] leading-relaxed text-[#2A2A28]">
-            Two and a half hours in a room in Rotterdam, with my hands on the
-            thing that&apos;s actually holding it, and you leaving knowing
-            what it feels like when that lets go.
+            Two and a half hours in a room in Rotterdam, working on your own
+            back with me walking you through it, so you leave knowing which
+            thing is yours, and what to do about it.
           </p>
           <p className="mx-auto max-w-lg text-[14px] leading-relaxed text-[#4A4536]">
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
@@ -100,15 +101,21 @@ export default function WorkshopPage() {
           <h2 className={h2}>What actually happens</h2>
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
-              I watch how you move. Not much of it: hips, ribs, breathing, a
-              few minutes each. Somewhere in there is the thing your back has
-              been compensating for, and it&apos;s rarely subtle once you know
-              where to look. Then I work on it, with my hands, while you feel
-              what changes.
+              We go through the three checkpoints together: hips and legs,
+              the mid-back and ribs, how you&apos;re breathing. I show you how
+              to test each one on your own body, you do it, and I come round
+              and correct what I see. By the end you&apos;ll know which one is
+              yours, because you&apos;ll have felt it change.
             </p>
             <p>
-              Twelve people, so nobody&apos;s standing at the back waiting for
-              a turn.
+              It&apos;s practical the whole way through. You&apos;ll be on the
+              floor more than in a chair. Twelve people, so I get round
+              everyone.
+            </p>
+            <p className="text-[14.5px] text-[#4A4536]">
+              To be clear, this is a guided morning rather than a one-to-one
+              treatment. If what you want is me working on your body
+              directly, that&apos;s a private session, not this.
             </p>
           </div>
         </section>
@@ -250,8 +257,8 @@ export default function WorkshopPage() {
             If you&apos;re reading this thinking it probably won&apos;t work
             for you either, I understand. You&apos;ve been to the
             appointments. The difference isn&apos;t that I know a secret.
-            It&apos;s twelve people and two and a half hours, which is enough
-            time to actually find yours.
+            It&apos;s that you&apos;ll do the work yourself, in a room, with
+            someone watching who knows what to look for.
           </p>
         </section>
       </div>
