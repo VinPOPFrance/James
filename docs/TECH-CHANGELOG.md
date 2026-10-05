@@ -42,9 +42,10 @@ Files:
 - docs/TECH-CHANGELOG.md
 Change summary:
 - Rewrote `/workshop` with the full long-form copy (hero, problem, stake, what happens, leave-with, how it works, details, form, closing).
-- Removed the inline MailerLite markup and scripts; the form container is now an empty placeholder for a hand-pasted embed.
+- Re-embedded MailerLite form 46729013 (email, name, "how did you hear about this?"), styled via `workshop.module.css`; MailerLite's own inline CSS was not copied.
+- Sections now use the main site's card colours (white, sand, sage, dark green); capacity changed from 10 to 12.
 Impact:
-- Runtime impact: `/workshop` has no working signup form until the MailerLite embed is pasted in.
+- Runtime impact: visitors submit to MailerLite from `/workshop`; no Lead event or page-specific tracking.
 - Deployment/migration impact: requires a redeploy.
 Actions required:
 - [ ] none
