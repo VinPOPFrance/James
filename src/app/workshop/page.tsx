@@ -90,8 +90,8 @@ export default function WorkshopPage() {
         {/* 3. THE STAKE · dark green card */}
         <section className={`${card} bg-[#25412F] text-center`}>
           <p className="mx-auto max-w-md font-voice text-[1.45rem] font-medium leading-snug text-[#F7F2E5]">
-            The version of this that stings is knowing exactly what&apos;s
-            going on, and still planning your weekends around it.
+            The risk isn&apos;t that it suddenly gets worse. It&apos;s that
+            another year goes by and you&apos;re still working around it.
           </p>
         </section>
 
