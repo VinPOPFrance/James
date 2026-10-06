@@ -30,6 +30,8 @@ export const metadata: Metadata = {
 const card = "rounded-section px-6 py-10 md:px-10 md:py-12";
 const h2 =
   "mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#25412F]";
+const cta =
+  "inline-block rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition hover:-translate-y-px hover:bg-[#1B3122] motion-reduce:transition-none";
 
 const leaveWith = [
   "Which of the three it is for you. Not the general picture, the one you found in your own body.",
@@ -62,6 +64,9 @@ export default function WorkshopPage() {
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
             {WORKSHOP.spots} · {WORKSHOP.price}
           </p>
+          <a href="#apply" className={`${cta} mt-8`}>
+            Tell me you want in
+          </a>
         </section>
 
         {/* 2. THE PROBLEM · white card */}
@@ -131,6 +136,12 @@ export default function WorkshopPage() {
           </ul>
         </section>
 
+        <div className="text-center">
+          <a href="#apply" className={cta}>
+            Tell me you want in
+          </a>
+        </div>
+
         {/* 6. HOW IT WORKS · white card */}
         <section className={`${card} border border-hairline bg-white`}>
           <h2 className={h2}>How it works</h2>
@@ -166,7 +177,7 @@ export default function WorkshopPage() {
         {/* 8. THE FORM · white card */}
         <section
           id="apply"
-          className={`${card} border border-hairline bg-white text-center`}
+          className={`${card} scroll-mt-6 border border-hairline bg-white text-center`}
         >
           <h2 className="mb-4 font-voice text-[clamp(1.5rem,3.4vw,2rem)] font-medium text-[#25412F]">
             Tell me you want in
