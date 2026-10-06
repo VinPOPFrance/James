@@ -100,16 +100,18 @@ export default function WorkshopPage() {
           <h2 className={h2}>What actually happens</h2>
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
-              We go through the three checkpoints together: hips and legs,
-              the mid-back and ribs, how you&apos;re breathing. I show you how
-              to test each one on your own body, you do it, and I come round
-              and correct what I see. By the end you&apos;ll know which one is
-              yours, because you&apos;ll have felt it change.
+              Most of your back has gone quiet. Not injured, just outside
+              your attention for years.
             </p>
             <p>
-              It&apos;s practical the whole way through. You&apos;ll be on the
-              floor more than in a chair. Twelve people, so I get round
-              everyone.
+              We spend the morning bringing it back. Slow, simple movements
+              through the hips, the ribs, the breath, while you notice what
+              you actually feel. Where it moves. Where it doesn&apos;t. Where
+              you feel nothing at all.
+            </p>
+            <p>
+              The part you can&apos;t feel is usually the part causing the
+              trouble. Once you can feel it, you can start to change it.
             </p>
             <p className="text-[14.5px] text-[#4A4536]">
               To be clear, this is a guided morning rather than a one-to-one
