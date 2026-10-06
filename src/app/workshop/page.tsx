@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 const card = "rounded-section px-6 py-10 md:px-10 md:py-12";
 const h2 =
   "mb-6 font-voice text-[clamp(1.35rem,3vw,1.7rem)] font-medium text-[#25412F]";
+const hl = "font-semibold text-[#25412F]";
 const cta =
   "inline-block rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition hover:-translate-y-px hover:bg-[#1B3122] motion-reduce:transition-none";
 
@@ -75,19 +76,19 @@ export default function WorkshopPage() {
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
               Forty-five minutes on a Tuesday evening is enough to make sense
-              of something. It isn&apos;t enough to shift it. You still got up
+              of something. <strong className={hl}>It isn&apos;t enough to shift it.</strong> You still got up
               on Wednesday and your body did exactly what it&apos;s been doing
               for years.
             </p>
             <p>
-              And you&apos;ve already done the effortful part. The physio
+              And <strong className={hl}>you&apos;ve already done the effortful part</strong>. The physio
               exercises, twice a day, for a while. The stretching. The core
               work, on alternating days, because somebody said so. Being
               careful getting out of the car.
             </p>
             <p>
-              None of that was wrong. It was just aimed at the place that
-              hurts.
+              None of that was wrong. It was just <strong className={hl}>aimed at the place that
+              hurts</strong>.
             </p>
           </div>
         </section>
@@ -105,18 +106,18 @@ export default function WorkshopPage() {
           <h2 className={h2}>What actually happens</h2>
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
-              Most of your back has gone quiet. Not injured, just outside
+              <strong className={hl}>Most of your back has gone quiet.</strong> Not injured, just outside
               your attention for years.
             </p>
             <p>
               We spend the morning bringing it back. Slow, simple movements
-              through the hips, the ribs, the breath, while you notice what
-              you actually feel. Where it moves. Where it doesn&apos;t. Where
+              through the hips, the ribs, the breath, while you <strong className={hl}>notice what
+              you actually feel</strong>. Where it moves. Where it doesn&apos;t. Where
               you feel nothing at all.
             </p>
             <p>
-              The part you can&apos;t feel is usually the part causing the
-              trouble. Once you can feel it, you can start to change it.
+              <strong className={hl}>The part you can&apos;t feel is usually the part causing the
+              trouble.</strong> Once you can feel it, you can start to change it.
             </p>
             <p className="text-[14.5px] text-[#4A4536]">
               To be clear, this is a guided morning rather than a one-to-one
