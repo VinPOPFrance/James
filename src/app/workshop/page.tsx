@@ -41,7 +41,7 @@ const leaveWith = [
 
 const steps = [
   "Tell me you want in. Name and email, takes a minute.",
-  "I write back myself, within a day or two, with the address and how to pay.",
+  "I write back myself, within a day or two, with the address and how to pay. Bring your mat.",
   "Once you’ve paid, the spot’s yours. At twelve, it closes.",
 ];
 
