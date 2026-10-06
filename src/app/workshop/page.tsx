@@ -56,9 +56,9 @@ export default function WorkshopPage() {
             pain.
           </h1>
           <p className="mx-auto mb-4 max-w-lg text-[16.5px] leading-relaxed text-[#2A2A28]">
-            One Saturday morning in Rotterdam. We go through some simple
-            tests, you find the part that isn&apos;t doing its job, and you
-            leave knowing what to work on.
+            One Saturday morning in Rotterdam. You&apos;ll slow down enough to
+            feel what your back is actually doing and leave knowing where to
+            put your attention.
           </p>
           <p className="mx-auto max-w-lg text-[14px] leading-relaxed text-[#4A4536]">
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
