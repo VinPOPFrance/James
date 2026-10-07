@@ -35,6 +35,29 @@ Actions required:
 
 Date: 2026-10-07
 Author: AI
+Scope: data | architecture
+Files:
+- dashboard/lib/advertising.mjs
+- dashboard/lib/advertising.d.mts
+- dashboard/lib/data.ts
+- dashboard/app/page.tsx
+- dashboard/tests/advertising.test.mjs
+- dashboard/README.md
+- docs/AI-HANDOFF.md
+Change summary:
+- Restricted all James Meta reports to the confirmed webinar campaign and account.
+- Added ad and device/placement details, weighted CTR/CPC/CPM and explicit action definitions.
+- Reported excluded unconfirmed Meta campaigns without including their spend in James totals.
+Impact:
+- Intentional Meta scope change across overview, advertising and freshness.
+- No public-site, Airbyte, campaign or database-write changes.
+Actions required:
+- [x] six unit tests, lint, build and authenticated local HTTP checks
+- [x] real SQL checks: Meta breakdown spend agrees within EUR 0.01
+- [ ] compare reference figures with the platform interfaces
+
+Date: 2026-10-07
+Author: AI
 Scope: architecture | data | build | infra
 Files:
 - dashboard/app/

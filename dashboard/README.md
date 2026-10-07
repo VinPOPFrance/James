@@ -68,7 +68,18 @@ le role Airbyte `jamie` conserve actuellement des droits d'ecriture.
 - Depenses Google issues de `custom_campaign_device`, sans ajout des autres
   rapports pour eviter le double comptage.
 - Depenses Meta issues de `ads_insights`, non ajoutees aux rapports segmentes.
-  Perimetre compte entier explicitement signale, pas encore filtre sur James.
+  Toutes les lectures Meta sont filtrees sur le compte 141739812 et les IDs
+  de campagnes confirmes dans `lib/advertising.mjs`. Seule la campagne
+  52533374224650 (Webinar - Lower back - 13 Oct) est confirmee par l'utilisateur.
+  Les campagnes non confirmees sont exclues et leur volume/depense signale.
+- Publicites : details annonces Google/Meta, appareils Google et
+  plateforme/placement/appareil Meta. CTR, CPC et CPM calcules sur les sommes.
+  Google conversions reste une mesure plateforme, pas une reservation.
+  Clics sortants Meta distincts des clics totaux ; vues de destination
+  issues seulement de l'action landing_page_view, sans cumul omni.
+  Actions absentes affichees comme indisponibles, pas comme zero.
+  Faible mesure de vues de destination : verifier tracking et consentement
+  avant de conclure a un probleme de chargement du site.
 - Sessions GA4 issues de `traffic_sources` ; vues de pages et engagement
   issus de `pages_path_report`, pas des sessions de pages de destination.
 - Sommes absentes affichees comme indisponibles, pas remplacees par zero.
@@ -87,7 +98,7 @@ le role Airbyte `jamie` conserve actuellement des droits d'ecriture.
 Le compte Meta 141739812 utilise EUR et America/Los_Angeles.
 Les rapports quotidiens doivent conserver cette convention et la signaler ;
 modifier une etiquette de fuseau ne reconstitue pas les journees europeennes.
-Les campagnes James restent a distinguer des autres campagnes du compte.
+Les campagnes James sont incluses uniquement apres confirmation de leurs IDs.
 
 ## Controles de donnees (7 octobre 2026)
 
@@ -111,5 +122,16 @@ Les campagnes James restent a distinguer des autres campagnes du compte.
 - Meta : premier import encore actif, tables finales vides au controle.
   Les volumes extraits affiches par Airbyte ne prouvent pas leur disponibilite
   dans les tables finales avant la fin du chargement.
-- Restent a verifier : fin de l'import Meta, Pixel, domaines/fuseau GA4,
-  chiffres contre les interfaces sources et acces depuis Vercel.
+- Depuis ce controle initial : import Meta final confirme et acces depuis
+  Vercel valide sur dashboard.jamesdaime.com. Restent a verifier le Pixel,
+  les domaines/fuseau GA4 et les chiffres contre les interfaces sources.
+
+## Verification publicites (7 octobre 2026)
+
+Meta final charge : 32 lignes insights, 73 age/genre, 268 plateforme/appareil.
+Sur la periode 7 septembre - 6 octobre : 70,26 EUR dans les insights James,
+les annonces et les placements (accord a 0,01 EUR pres).
+Google : 203,018124 EUR dans les details annonces et appareils sur cette
+periode. Ces accords internes ne remplacent pas le controle dans Ads Manager
+et Google Ads. Six tests unitaires, lint, build et quatre pages authentifiees
+verifies localement avec les donnees reelles.

@@ -108,6 +108,12 @@ Dutch mirror:
 - Dashboard data: Google `custom_campaign_device`, Meta `ads_insights`,
   GA4 `traffic_sources` and `pages_path_report`; parameterized READ ONLY
   transactions with validated TLS. Bookings and clients are not measured yet.
+- Advertising details additionally read `custom_ad_group_ad` and
+  `ads_insights_platform_and_device`. Meta totals, details and freshness
+  are restricted by account ID and confirmed campaign IDs in
+  `dashboard/lib/advertising.mjs`; new campaigns require confirmation.
+  Breakdown totals are never added to base spend. Missing actions and
+  undefined ratios remain unavailable; platform conversions are not clients.
 - Root `tsconfig.json` excludes `dashboard` so site compilation does not
   mix React 18/site dependencies with the dashboard's independent stack.
 

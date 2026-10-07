@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { requireAuth } from '../lib/auth';
-import { getReport } from '../lib/data';
+import { getReport, type AdvertisingRow } from '../lib/data';
 import { parsePeriod } from '../lib/period.mjs';
+import { dividedMetric } from '../lib/advertising.mjs';
 
 export const dynamic = 'force-dynamic';
 const sections = ['overview', 'advertising', 'website', 'actions'] as const;
@@ -43,11 +44,12 @@ export default async function Dashboard({ searchParams }: {
     </form>
     <p className="notice">Acquisition V1: appointments, qualified leads and clients are not yet measured.
       Google Ads uses Europe/Amsterdam; Meta uses America/Los_Angeles.
-      Meta totals cover the entire connected account until James campaign filtering is validated.</p>
+      Meta includes only the confirmed James campaign: Webinar - Lower back - 13 Oct.
+      New Meta campaigns are excluded until their scope is confirmed.</p>
     {section === 'overview' && <>
       <div className="metrics">
         <article className="card"><p>Google Ads spend</p><strong>{money(report.google.spend)}</strong><small>{count(report.google.clicks)} clicks</small></article>
-        <article className="card"><p>Meta account spend</p><strong>{money(report.meta.spend)}</strong><small>{count(report.meta.clicks)} total clicks (not outbound clicks)</small></article>
+        <article className="card"><p>Meta James spend</p><strong>{money(report.meta.spend)}</strong><small>{count(report.meta.clicks)} total clicks (not outbound clicks)</small></article>
         <article className="card"><p>GA4 sessions</p><strong>{count(report.sessions.sessions)}</strong><small>All acquisition channels</small></article>
         <article className="card"><p>Qualified appointments</p><strong>Not measured</strong><small>Booking tracking still to validate</small></article>
       </div>
@@ -59,7 +61,14 @@ export default async function Dashboard({ searchParams }: {
     </>}
     {section === 'advertising' && <>
       <Campaigns title="Google Ads campaigns" rows={report.campaigns} />
-      <Campaigns title="Meta campaigns · account-wide, scope not yet validated" rows={report.metaCampaigns} />
+      <Campaigns title="Meta campaigns · confirmed James scope" rows={report.metaCampaigns} />
+      <p className="notice">Meta scope: {report.excludedMeta.campaigns} unconfirmed campaigns with data
+        excluded in this period{report.excludedMeta.spend !== null ? ` (${money(report.excludedMeta.spend)})` : ''}.
+        Breakdown reports are alternative views, never additional spend.</p>
+      <AdvertisingTable title="Google Ads · individual ads" rows={report.googleAds} platform="google" />
+      <AdvertisingTable title="Google Ads · devices" rows={report.googleDevices} platform="google" />
+      <AdvertisingTable title="Meta · individual ads" rows={report.metaAds} platform="meta" />
+      <AdvertisingTable title="Meta · platform, placement & device" rows={report.metaPlacements} platform="placement" />
       <p className="muted">Platform conversions are not treated as qualified appointments or clients.</p>
     </>}
     {section === 'website' && <section className="card"><h2>Most viewed pages</h2>
@@ -71,7 +80,7 @@ export default async function Dashboard({ searchParams }: {
     </section>}
     {section === 'actions' && <section className="card"><h2>Measurement priorities</h2>
       <ol><li>Validate completed SimplyBook bookings, not only booking button clicks.</li>
-        <li>Identify which Meta campaigns belong to James.</li>
+        <li>Confirm new Meta campaigns before including them; the webinar campaign is already confirmed.</li>
         <li>Compare imported totals against the source platforms for the same dates.</li>
         <li>Confirm GA4 domains and timezone; distinguish old pages from current offers.</li>
         <li>Record qualified appointments and clients before judging cost per client.</li></ol>
@@ -81,11 +90,42 @@ export default async function Dashboard({ searchParams }: {
 }
 
 function Campaigns({ title, rows }: {
-  title: string; rows: { name: string; spend: string; clicks: string }[];
+  title: string; rows: { id: string; name: string; spend: string; clicks: string }[];
 }) {
   return <section className="card"><h2>{title}</h2>
     <table><thead><tr><th>Campaign</th><th>Spend</th><th>Clicks</th></tr></thead>
-      <tbody>{rows.map(row => <tr key={row.name}><td>{row.name}</td><td>{money(row.spend)}</td><td>{count(row.clicks)}</td></tr>)}</tbody></table>
+      <tbody>{rows.map(row => <tr key={`${row.id}:${row.name}`}><td>{row.name}</td><td>{money(row.spend)}</td><td>{count(row.clicks)}</td></tr>)}</tbody></table>
     {!rows.length && <p>No campaign data available for this period.</p>}
+  </section>;
+}
+
+function AdvertisingTable({ title, rows, platform }: {
+  title: string; rows: AdvertisingRow[]; platform: 'google' | 'meta' | 'placement';
+}) {
+  return <section className="card"><h2>{title}</h2>
+    <p className="muted">CTR = total clicks / impressions. CPC = spend / total clicks.
+      CPM = spend per 1,000 impressions. Ratios use aggregated totals, not averages of daily ratios.</p>
+    <table><thead><tr><th>Ad / segment</th><th>Spend</th><th>Impressions</th><th>Clicks</th>
+      <th>CTR</th><th>CPC</th><th>CPM</th>
+      {platform === 'google' && <th>Google conversions</th>}
+      {platform === 'meta' && <><th>Outbound clicks</th><th>Landing page views</th><th>Cost / landing view</th></>}
+    </tr></thead><tbody>{rows.map(row => {
+      const ctr = dividedMetric(row.clicks, row.impressions, 100);
+      return <tr key={`${row.id}:${row.name}`}><td>{row.name}<small style={{ display: 'block' }}>{row.id}</small></td>
+        <td>{money(row.spend)}</td><td>{count(row.impressions)}</td><td>{count(row.clicks)}</td>
+        <td>{ctr === null ? 'Not available' : `${Number(ctr).toFixed(2)}%`}</td>
+        <td>{money(dividedMetric(row.spend, row.clicks))}</td>
+        <td>{money(dividedMetric(row.spend, row.impressions, 1000))}</td>
+        {platform === 'google' && <td>{count(row.conversions ?? null)}</td>}
+        {platform === 'meta' && <><td>{count(row.outbound ?? null)}</td>
+          <td>{count(row.landing_views ?? null)}</td>
+          <td>{money(dividedMetric(row.spend, row.landing_views ?? null))}</td></>}
+      </tr>;
+    })}</tbody></table>
+    {!rows.length && <p>No data available for this period.</p>}
+    {platform === 'google' && <p className="muted">Google conversions are platform-reported events, not verified appointments or clients.</p>}
+    {platform === 'meta' && <p className="muted">Landing views use only the landing_page_view action, not the overlapping omni metric.
+      Missing action values remain unavailable rather than being assumed zero.
+      A low reported landing-view count can reflect tracking or consent issues; it is not proof that visitors failed to load the page.</p>}
   </section>;
 }
