@@ -16,8 +16,8 @@ This file is the fast technical context for AI agents. Keep it updated when the 
 - `src/lib`: helper modules and integrations
 - `src/data`: local static data sources (blog snapshot)
 - `public/media`: static media assets
-- `dashboard`: preparation for a separate private dashboard application in
-  this repository; currently configuration and documentation only.
+- `dashboard`: separate private Next.js 16 / React 19 dashboard application in
+  this repository, with its own package manifest, lockfile and build config.
   Its data source is the dedicated James PostgreSQL database, populated by
   Airbyte GA4, Google Ads and Meta connections, not the VinPop database.
 
@@ -103,6 +103,13 @@ Dutch mirror:
   repository root; no site deployment settings have been changed.
 - Dashboard secrets must stay in `dashboard/.env.local` locally and in the
   dashboard project's Vercel environment only, never in `NEXT_PUBLIC_*`.
+- Dashboard routes: `/login`, `/` (section/from/to filters), POST `/api/login`
+  and POST `/api/logout`. Its root page checks authentication before SQL reads.
+- Dashboard data: Google `custom_campaign_device`, Meta `ads_insights`,
+  GA4 `traffic_sources` and `pages_path_report`; parameterized READ ONLY
+  transactions with validated TLS. Bookings and clients are not measured yet.
+- Root `tsconfig.json` excludes `dashboard` so site compilation does not
+  mix React 18/site dependencies with the dashboard's independent stack.
 
 ## 9) Collaboration workflow (required)
 Before any implementation task:

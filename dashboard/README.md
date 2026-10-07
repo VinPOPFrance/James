@@ -1,8 +1,8 @@
 # James Dashboard
 
 Application privee prevue dans le meme depot que le site James.
-Le dossier contient uniquement la preparation de configuration ;
-aucune application executable ni aucun projet Vercel ne sont encore crees.
+Premiere version acquisition executable : Next.js 16, React 19, TypeScript,
+PostgreSQL (`pg`). Aucun projet Vercel dashboard n'est encore cree.
 
 ## Architecture prevue
 
@@ -14,6 +14,29 @@ aucune application executable ni aucun projet Vercel ne sont encore crees.
 - Connexion PostgreSQL cote serveur uniquement ; authentification requise.
 - Aucun acces aux donnees ou secrets VinPop.
 
+## Demarrer et valider
+
+Depuis ce dossier :
+
+```bash
+npm ci
+npm run dev
+npm test
+npm run lint
+npm run build
+```
+
+Preview local : http://localhost:3001. Renseigner `DASHBOARD_PASSWORD`
+dans `.env.local` pour activer l'acces. Aucune valeur par defaut n'est fournie.
+
+Routes : `/login`, `/`, POST `/api/login`, POST `/api/logout`.
+Les quatre rubriques utilisent le parametre `section` sur `/`.
+Filtres `from` et `to` : dates calendaires, du 1 janvier 2025 a hier.
+Le rapport est dynamique, non mis en cache, protege avant toute lecture SQL.
+Les requetes sont parametrees et executees dans une transaction READ ONLY
+avec un timeout de 15 secondes. Cela ne remplace pas des droits de role
+limites cote PostgreSQL.
+
 ## Configuration privee
 
 Pour le controle initial de la base, les parametres `PGHOST`, `PGPORT`,
@@ -24,6 +47,40 @@ Le futur dashboard utilisera `DATABASE_URL` avec un compte de lecture
 dedie et `DASHBOARD_PASSWORD`, comme indique dans `.env.example`.
 Ces variables seront configurees uniquement dans le projet Vercel du
 dashboard, jamais comme variables `NEXT_PUBLIC_*`.
+
+## Deploiement Vercel
+
+1. Importer a nouveau le depot `VinPOPFrance/James` comme nouveau projet.
+2. Nom propose : `james-dashboard` (selon disponibilite).
+3. Framework Next.js ; Root Directory : `dashboard`.
+4. Installation `npm ci`, build `npm run build`, sortie par defaut.
+5. Renseigner `DATABASE_URL` (ou les variables PG locales) et
+   `DASHBOARD_PASSWORD` dans ce projet uniquement. TLS valide le certificat.
+6. Verifier les acces sans connexion et les rapports sur l'URL vercel.app.
+7. Ajouter `dashboard.jamesdaime.com` et suivre les valeurs DNS de Vercel.
+
+Ne pas modifier la Root Directory ou les domaines du projet du site public.
+La creation d'un role PostgreSQL dedie en lecture seule reste recommandee ;
+le role Airbyte `jamie` conserve actuellement des droits d'ecriture.
+
+## Limites de cette V1
+
+- Depenses Google issues de `custom_campaign_device`, sans ajout des autres
+  rapports pour eviter le double comptage.
+- Depenses Meta issues de `ads_insights`, non ajoutees aux rapports segmentes.
+  Perimetre compte entier explicitement signale, pas encore filtre sur James.
+- Sessions GA4 issues de `traffic_sources` ; vues de pages et engagement
+  issus de `pages_path_report`, pas des sessions de pages de destination.
+- Sommes absentes affichees comme indisponibles, pas remplacees par zero.
+- Reservations, qualification et clients non mesures ; aucun cout par client.
+- Actions : checklist statique, pas encore un outil de suivi des experiences.
+- Authentification par mot de passe partage comme VinPop ; envisager un
+  fournisseur d'identite ou une protection Vercel avant d'ouvrir l'acces
+  a plusieurs utilisateurs. Aucun mecanisme de limitation des essais
+  applicatif n'est encore configure.
+- Audit npm : aucune alerte production au controle du 7 octobre 2026 ;
+  cinq alertes high transitives dans l'outillage ESLint (braces/fast-glob),
+  sans correction non-cassante proposee par npm. Pas de `audit fix --force`.
 
 ## Mesure
 

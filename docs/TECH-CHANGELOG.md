@@ -35,6 +35,36 @@ Actions required:
 
 Date: 2026-10-07
 Author: AI
+Scope: architecture | data | build | infra
+Files:
+- dashboard/app/
+- dashboard/lib/
+- dashboard/tests/
+- dashboard/package.json
+- dashboard/package-lock.json
+- dashboard/next.config.ts
+- dashboard/postcss.config.mjs
+- dashboard/tsconfig.json
+- dashboard/eslint.config.mjs
+- dashboard/README.md
+- tsconfig.json
+- docs/AI-HANDOFF.md
+Change summary:
+- Built an independent authenticated acquisition dashboard in the James repo.
+- Added four sections, date filters, real SQL reports and explicit data limitations.
+- Isolated dashboard TypeScript and PostCSS configuration from the public site.
+Impact:
+- No public-site route or tracking change; dashboard awaits Vercel deployment.
+- Queries use READ ONLY transactions, but Airbyte credentials still have write rights.
+- Separate dashboard password and Vercel project configuration are required.
+Actions required:
+- [x] dashboard build, lint, three date tests and authenticated HTTP data checks
+- [x] public-site lint and TypeScript validation (three existing image warnings)
+- [ ] deploy a second Vercel project with Root Directory dashboard
+- [ ] configure private server environment and verify deployment
+
+Date: 2026-10-07
+Author: AI
 Scope: architecture | infra | data
 Files:
 - dashboard/.gitignore
