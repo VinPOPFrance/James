@@ -16,6 +16,10 @@ This file is the fast technical context for AI agents. Keep it updated when the 
 - `src/lib`: helper modules and integrations
 - `src/data`: local static data sources (blog snapshot)
 - `public/media`: static media assets
+- `dashboard`: preparation for a separate private dashboard application in
+  this repository; currently configuration and documentation only.
+  Its data source is the dedicated James PostgreSQL database, populated by
+  Airbyte GA4, Google Ads and Meta connections, not the VinPop database.
 
 ## 3) Routing model
 Main language:
@@ -94,6 +98,11 @@ Dutch mirror:
 - Primary domain: `jamesdaime.com`
 - Canonical host rule: redirect `www.jamesdaime.com` to `jamesdaime.com` (see `vercel.json`)
 - Deployment runbook: `docs/DEPLOY-VERCEL.md`
+- Planned dashboard deployment: a second Vercel project with Root Directory
+  `dashboard`, then `dashboard.jamesdaime.com`. Keep the public site at the
+  repository root; no site deployment settings have been changed.
+- Dashboard secrets must stay in `dashboard/.env.local` locally and in the
+  dashboard project's Vercel environment only, never in `NEXT_PUBLIC_*`.
 
 ## 9) Collaboration workflow (required)
 Before any implementation task:

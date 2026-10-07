@@ -33,6 +33,29 @@ Actions required:
 
 ## Entries
 
+Date: 2026-10-07
+Author: AI
+Scope: architecture | infra | data
+Files:
+- dashboard/.gitignore
+- dashboard/.env.example
+- dashboard/README.md
+- docs/AI-HANDOFF.md
+- docs/TECH-CHANGELOG.md
+Change summary:
+- Prepared a dashboard subdirectory in the existing James repository.
+- Kept the public site at the root to avoid a site migration.
+- Documented dedicated PostgreSQL data and a separate Vercel deployment.
+- Verified local TLS database access, import coverage and reporting role
+  permissions using read-only transactions; recorded checks in dashboard/README.md.
+Impact:
+- No runtime change; dashboard application and deployment are not created yet.
+- Private local connection configuration is excluded from Git.
+Actions required:
+- [ ] configure local James database credentials
+- [ ] verify database access and read-only reporting permissions
+- [ ] implement and deploy the authenticated dashboard
+
 Date: 2026-10-05
 Author: AI
 Scope: routing | data | docs
