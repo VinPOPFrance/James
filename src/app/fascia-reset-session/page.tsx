@@ -4,7 +4,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { icons } from "@/lib/icons";
 import { fascia } from "@/config/content.fascia.en";
-import { businessInfo } from "@/config/business-info";
 import { siteConfig } from "@/config/site-config";
 
 export const metadata: Metadata = {
@@ -22,6 +21,7 @@ export const metadata: Metadata = {
 
 export default function FasciaPage() {
   const t = fascia;
+  const thirtyMinuteBookingUrl = "https://motionline.simplybook.it/v2/#book/service/13";
   const sixtyMinuteBookingUrl = "https://motionline.simplybook.it/v2/?_gl=1*1nlw5gn*_gcl_au*OTYzMDEzOTUwLjE3ODEwMTYzNTM.*_ga*MTczNDczODYwNi4xNzczMjE4MzMw*_ga_MP20K2TZ75*czE3ODQyMTUxNDEkbzgyJGcxJHQxNzg0MjE4MTA1JGo1OCRsMCRoMA..#book/category/1/service/2/count/1/";
 
   return (
@@ -47,7 +47,7 @@ export default function FasciaPage() {
                 <p className="mb-6 flex-1 text-[14px] leading-relaxed text-inkSoft">
                   A focused release session for one area. Good if you’re curious and want a low-commitment first step.
                 </p>
-                <Button href={businessInfo.bookingUrl} surface="light" variant="primary" external fullWidth>
+                <Button href={thirtyMinuteBookingUrl} surface="light" variant="primary" external fullWidth>
                   Book 30 Min Session
                 </Button>
               </div>
