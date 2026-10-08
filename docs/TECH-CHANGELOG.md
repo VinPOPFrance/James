@@ -33,6 +33,82 @@ Actions required:
 
 ## Entries
 
+Date: 2026-10-07
+Author: AI
+Scope: data | architecture
+Files:
+- dashboard/lib/advertising.mjs
+- dashboard/lib/advertising.d.mts
+- dashboard/lib/data.ts
+- dashboard/app/page.tsx
+- dashboard/tests/advertising.test.mjs
+- dashboard/README.md
+- docs/AI-HANDOFF.md
+Change summary:
+- Restricted all James Meta reports to the confirmed webinar campaign and account.
+- Added ad and device/placement details, weighted CTR/CPC/CPM and explicit action definitions.
+- Reported excluded unconfirmed Meta campaigns without including their spend in James totals.
+Impact:
+- Intentional Meta scope change across overview, advertising and freshness.
+- No public-site, Airbyte, campaign or database-write changes.
+Actions required:
+- [x] six unit tests, lint, build and authenticated local HTTP checks
+- [x] real SQL checks: Meta breakdown spend agrees within EUR 0.01
+- [ ] compare reference figures with the platform interfaces
+
+Date: 2026-10-07
+Author: AI
+Scope: architecture | data | build | infra
+Files:
+- dashboard/app/
+- dashboard/lib/
+- dashboard/tests/
+- dashboard/package.json
+- dashboard/package-lock.json
+- dashboard/next.config.ts
+- dashboard/postcss.config.mjs
+- dashboard/tsconfig.json
+- dashboard/eslint.config.mjs
+- dashboard/README.md
+- tsconfig.json
+- docs/AI-HANDOFF.md
+Change summary:
+- Built an independent authenticated acquisition dashboard in the James repo.
+- Added four sections, date filters, real SQL reports and explicit data limitations.
+- Isolated dashboard TypeScript and PostCSS configuration from the public site.
+Impact:
+- No public-site route or tracking change; dashboard awaits Vercel deployment.
+- Queries use READ ONLY transactions, but Airbyte credentials still have write rights.
+- Separate dashboard password and Vercel project configuration are required.
+Actions required:
+- [x] dashboard build, lint, three date tests and authenticated HTTP data checks
+- [x] public-site lint and TypeScript validation (three existing image warnings)
+- [ ] deploy a second Vercel project with Root Directory dashboard
+- [ ] configure private server environment and verify deployment
+
+Date: 2026-10-07
+Author: AI
+Scope: architecture | infra | data
+Files:
+- dashboard/.gitignore
+- dashboard/.env.example
+- dashboard/README.md
+- docs/AI-HANDOFF.md
+- docs/TECH-CHANGELOG.md
+Change summary:
+- Prepared a dashboard subdirectory in the existing James repository.
+- Kept the public site at the root to avoid a site migration.
+- Documented dedicated PostgreSQL data and a separate Vercel deployment.
+- Verified local TLS database access, import coverage and reporting role
+  permissions using read-only transactions; recorded checks in dashboard/README.md.
+Impact:
+- No runtime change; dashboard application and deployment are not created yet.
+- Private local connection configuration is excluded from Git.
+Actions required:
+- [ ] configure local James database credentials
+- [ ] verify database access and read-only reporting permissions
+- [ ] implement and deploy the authenticated dashboard
+
 Date: 2026-10-05
 Author: AI
 Scope: routing | data | docs
