@@ -194,12 +194,8 @@ export const home = {
   fascia: {
     badge: "Not sure yet? Start here",
     title: "Fascia Reset Session",
-    body: "A 60-minute session to release tension, understand what\u2019s happening in your body, and see if the full program is right for you.",
-    cta: "Book a fascia reset session",
-    tiers: [
-      { dur: "30 minutes", sub: "Quick tension release", price: "\u20AC49", dark: false },
-      { dur: "60 minutes", sub: "Full first experience", price: "\u20AC90", dark: true },
-    ],
+    body: "Start with a fascia treatment and posture check.",
+    cta: "Book your session",
   },
   promise: {
     badge: "Progress promise",
