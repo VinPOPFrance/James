@@ -20,7 +20,6 @@ import { QuickFixes } from "@/components/sections/QuickFixes";
 import { Solution } from "@/components/sections/Solution";
 import { Plan } from "@/components/sections/Plan";
 import { Newsletter } from "@/components/sections/Newsletter";
-import { Fit } from "@/components/sections/Fit";
 import { Fascia } from "@/components/sections/Fascia";
 import { WorkshopPromoCard } from "@/components/sections/WorkshopPromoCard";
 import { home } from "@/config/content.en";
@@ -85,10 +84,6 @@ export default function HomePage() {
 
         <Reveal>
           <Newsletter />
-        </Reveal>
-
-        <Reveal>
-          <Fit />
         </Reveal>
 
         <Reveal>
