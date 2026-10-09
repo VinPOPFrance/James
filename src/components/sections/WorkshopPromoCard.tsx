@@ -8,9 +8,14 @@ type WorkshopPromoContent = DeepLoosen<typeof home.workshopPromo.card>;
 interface WorkshopPromoCardProps {
   content?: WorkshopPromoContent;
   href?: string;
+  image?: { src: string; alt: string };
 }
 
-export function WorkshopPromoCard({ content, href = "/lower-back-pain-reset" }: WorkshopPromoCardProps) {
+export function WorkshopPromoCard({
+  content,
+  href = "/lower-back-pain-reset",
+  image = { src: "/media/group-1.png", alt: "Group training session" },
+}: WorkshopPromoCardProps) {
   const t = content ?? home.workshopPromo.card;
 
   return (
@@ -33,8 +38,8 @@ export function WorkshopPromoCard({ content, href = "/lower-back-pain-reset" }: 
         <div className="inline-flex w-full shrink-0 flex-col gap-3 md:w-auto md:items-end">
           <div className="overflow-hidden rounded-[14px] border border-ivory/30 bg-ivory/10 shadow-[0_16px_32px_-22px_rgba(0,0,0,0.65)]">
             <Image
-              src="/media/group-1.png"
-              alt="Group training session"
+              src={image.src}
+              alt={image.alt}
               width={320}
               height={220}
               className="h-[180px] w-full object-cover md:h-[150px] md:w-[230px]"

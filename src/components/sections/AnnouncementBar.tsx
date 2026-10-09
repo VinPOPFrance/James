@@ -5,21 +5,29 @@ import Link from "next/link";
 import { X } from "lucide-react";
 import { home } from "@/config/content.en";
 import { homeNl } from "@/config/content.nl";
+import type { DeepLoosen } from "@/types/content";
 
-const DISMISS_KEY = "pe-reset-bar-dismissed";
+type AnnouncementBarContent = DeepLoosen<typeof home.workshopPromo.bar>;
 
 interface AnnouncementBarProps {
   locale?: "en" | "nl";
+  content?: AnnouncementBarContent;
+  href?: string;
+  dismissKey?: string;
 }
 
-export function AnnouncementBar({ locale = "en" }: AnnouncementBarProps) {
+export function AnnouncementBar({
+  locale = "en",
+  content,
+  href = locale === "nl" ? "/nl/lower-back-pain-reset" : "/lower-back-pain-reset",
+  dismissKey = "pe-reset-bar-dismissed",
+}: AnnouncementBarProps) {
   const [dismissed, setDismissed] = useState(false);
-  const t = locale === "nl" ? homeNl.workshopPromo.bar : home.workshopPromo.bar;
-  const href = locale === "nl" ? "/nl/lower-back-pain-reset" : "/lower-back-pain-reset";
+  const t = content ?? (locale === "nl" ? homeNl.workshopPromo.bar : home.workshopPromo.bar);
 
   useEffect(() => {
-    setDismissed(window.localStorage.getItem(DISMISS_KEY) === "1");
-  }, []);
+    setDismissed(window.localStorage.getItem(dismissKey) === "1");
+  }, [dismissKey]);
 
   if (dismissed) return null;
 
@@ -40,7 +48,7 @@ export function AnnouncementBar({ locale = "en" }: AnnouncementBarProps) {
         type="button"
         aria-label="Dismiss announcement"
         onClick={() => {
-          window.localStorage.setItem(DISMISS_KEY, "1");
+          window.localStorage.setItem(dismissKey, "1");
           setDismissed(true);
         }}
         className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-ivory/70 transition-colors hover:bg-ivory/10 hover:text-ivory"

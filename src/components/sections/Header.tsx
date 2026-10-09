@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { home } from "@/config/content.en";
 import { homeNl } from "@/config/content.nl";
 import { businessInfo } from "@/config/business-info";
+import { AnnouncementBar } from "@/components/sections/AnnouncementBar";
 
 interface HeaderProps {
   locale?: "en" | "nl";
@@ -24,6 +25,13 @@ export function Header({ locale = "en" }: HeaderProps) {
 
   return (
     <div className="sticky top-0 z-50">
+      {locale === "en" && pathname === "/" && (
+        <AnnouncementBar
+          content={home.webinarPromo.bar}
+          href="/webinar"
+          dismissKey="webinar-2026-10-13-bar-dismissed"
+        />
+      )}
       <header className="border-b border-hairline bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Link href={locale === "nl" ? "/nl" : "/"} className="flex flex-col leading-tight">

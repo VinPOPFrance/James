@@ -59,6 +59,20 @@ export const home = {
       cta: "See workshop details",
     },
   },
+  webinarPromo: {
+    bar: {
+      label: "Free · Online",
+      text: "Live webinar on lower back pain, Tuesday 13 October, 8pm.",
+      cta: "Apply for your place",
+    },
+    card: {
+      badge: "Free live webinar",
+      title: "Your lower back isn’t the problem. It’s the messenger.",
+      body: "45 minutes, live on Google Meet, on what’s actually driving the pain that keeps coming back. Tuesday 13 October, 8pm Amsterdam time. Bring your question about your own back.",
+      detail: "Tuesday 13 October, 8pm Amsterdam time, on Google Meet.",
+      cta: "Apply for your place",
+    },
+  },
   video: {
     eyebrow: "Meet the approach",
     title: "See how a session feels",
