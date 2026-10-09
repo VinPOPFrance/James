@@ -54,7 +54,7 @@ export default function HomePage() {
           <WorkshopPromoCard
             content={home.webinarPromo.card}
             href="/webinar"
-            image={{ src: "/media/jamesPortrait.png", alt: "James Daime" }}
+            image={null}
           />
         </Reveal>
 

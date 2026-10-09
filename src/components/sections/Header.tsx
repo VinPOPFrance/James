@@ -25,9 +25,9 @@ export function Header({ locale = "en" }: HeaderProps) {
 
   return (
     <div className="sticky top-0 z-50">
-      {locale === "en" && pathname === "/" && (
+      {pathname === (locale === "nl" ? "/nl" : "/") && (
         <AnnouncementBar
-          content={home.webinarPromo.bar}
+          content={locale === "nl" ? homeNl.webinarPromo.bar : home.webinarPromo.bar}
           href="/webinar"
           dismissKey="webinar-2026-10-13-bar-dismissed"
         />

@@ -8,7 +8,7 @@ type WorkshopPromoContent = DeepLoosen<typeof home.workshopPromo.card>;
 interface WorkshopPromoCardProps {
   content?: WorkshopPromoContent;
   href?: string;
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string } | null;
 }
 
 export function WorkshopPromoCard({
@@ -36,16 +36,18 @@ export function WorkshopPromoCard({
         </div>
 
         <div className="inline-flex w-full shrink-0 flex-col gap-3 md:w-auto md:items-end">
-          <div className="overflow-hidden rounded-[14px] border border-ivory/30 bg-ivory/10 shadow-[0_16px_32px_-22px_rgba(0,0,0,0.65)]">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={320}
-              height={220}
-              className="h-[180px] w-full object-cover md:h-[150px] md:w-[230px]"
-              sizes="(max-width: 768px) 100vw, 230px"
-            />
-          </div>
+          {image && (
+            <div className="overflow-hidden rounded-[14px] border border-ivory/30 bg-ivory/10 shadow-[0_16px_32px_-22px_rgba(0,0,0,0.65)]">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={320}
+                height={220}
+                className="h-[180px] w-full object-cover md:h-[150px] md:w-[230px]"
+                sizes="(max-width: 768px) 100vw, 230px"
+              />
+            </div>
+          )}
           <Button
             href={href}
             surface="dark"

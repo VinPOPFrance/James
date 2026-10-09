@@ -59,6 +59,20 @@ export const homeNl = {
       cta: "Bekijk workshopdetails",
     },
   },
+  webinarPromo: {
+    bar: {
+      label: "Gratis · Online",
+      text: "Live webinar (in het Engels) over lage rugpijn, dinsdag 13 oktober, 20:00.",
+      cta: "Meld je aan",
+    },
+    card: {
+      badge: "Gratis live webinar",
+      title: "Je onderrug is niet het probleem. Het is de boodschapper.",
+      body: "45 minuten live via Google Meet, in het Engels, over wat de pijn die steeds terugkomt echt veroorzaakt. Dinsdag 13 oktober, 20:00 (Nederlandse tijd). Neem je vraag over je eigen rug mee.",
+      detail: "Dinsdag 13 oktober, 20:00 (Nederlandse tijd), via Google Meet, in het Engels.",
+      cta: "Meld je aan",
+    },
+  },
   video: {
     eyebrow: "Ontmoet de aanpak",
     title: "Zie hoe een sessie aanvoelt",
