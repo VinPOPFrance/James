@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Script from "next/script";
 import { siteConfig } from "@/config/site-config";
 import styles from "./workshop.module.css";
@@ -68,6 +69,17 @@ export default function WorkshopPage() {
           <a href="#apply" className={`${cta} mt-8`}>
             Tell me you want in
           </a>
+          <div className="mt-10 overflow-hidden rounded-section border border-hairline">
+            <Image
+              src="/media/workshop-group.jpg"
+              alt="James guiding a group seated on mats during a workshop"
+              width={896}
+              height={656}
+              priority
+              sizes="(max-width: 768px) 100vw, 680px"
+              className="h-auto w-full"
+            />
+          </div>
         </section>
 
         {/* 2. THE PROBLEM · white card */}
