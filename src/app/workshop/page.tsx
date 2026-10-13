@@ -115,7 +115,7 @@ export default function WorkshopPage() {
 
         {/* 4. WHAT ACTUALLY HAPPENS · white card */}
         <section className={`${card} border border-hairline bg-white`}>
-          <h2 className={h2}>What actually happens</h2>
+          <h2 className={h2}>What if you could take action on your physical issue?</h2>
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
               <strong className={hl}>Most of your back has gone quiet.</strong> Not injured, just outside
