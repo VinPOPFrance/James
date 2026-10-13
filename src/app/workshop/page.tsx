@@ -35,8 +35,8 @@ const cta =
   "inline-block rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition hover:-translate-y-px hover:bg-[#1B3122] motion-reduce:transition-none";
 
 const leaveWith = [
-  "Which of the three it is for you. Not the general picture, the one you found in your own body.",
-  "What it feels like when that area actually changes, so you know what you’re aiming for.",
+  "The realisation that there’s something you can actually do yourself to feel better. You don’t have to wait for someone else to fix it.",
+  "A simpler, more whole way of looking at your body, instead of a list of separate problems.",
   "Two or three things to keep doing on your own. No app, no twelve-week plan, no printout.",
 ];
 
