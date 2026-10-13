@@ -118,23 +118,17 @@ export default function WorkshopPage() {
           <h2 className={h2}>What if you could take action on your physical issue?</h2>
           <div className="space-y-5 text-[16px] leading-relaxed">
             <p>
-              <strong className={hl}>Most of your back has gone quiet.</strong> Not injured, just outside
-              your attention for years.
+              <strong className={hl}>Most of your back has gone quiet.</strong> Not injured, just
+              forgotten.
             </p>
             <p>
-              We spend the morning bringing it back. Slow, simple movements
-              through the hips, the ribs, the breath, while you <strong className={hl}>notice what
-              you actually feel</strong>. Where it moves. Where it doesn&apos;t. Where
-              you feel nothing at all.
+              Through slow, simple movements of the hips, ribs and breath,
+              you <strong className={hl}>notice what you actually feel</strong>, and
+              where you feel nothing.
             </p>
             <p>
-              <strong className={hl}>The part you can&apos;t feel is usually the part causing the
-              trouble.</strong> Once you can feel it, you can start to change it.
-            </p>
-            <p className="text-[14.5px] text-[#4A4536]">
-              To be clear, this is a guided morning rather than a one-to-one
-              treatment. If what you want is me working on your body
-              directly, that&apos;s a private session, not this.
+              <strong className={hl}>That quiet part is usually the cause.</strong> Once you can
+              feel it, you can change it.
             </p>
           </div>
         </section>
