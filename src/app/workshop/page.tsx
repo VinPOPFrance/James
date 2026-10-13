@@ -113,6 +113,12 @@ export default function WorkshopPage() {
           </p>
         </section>
 
+        <div className="text-center">
+          <a href="#apply" className={cta}>
+            Tell me you want in
+          </a>
+        </div>
+
         {/* 4. WHAT ACTUALLY HAPPENS · white card */}
         <section className={`${card} border border-hairline bg-white`}>
           <h2 className={h2}>What if you could take action on your physical issue?</h2>
