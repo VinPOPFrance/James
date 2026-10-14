@@ -232,7 +232,7 @@ export default function WorkshopPage() {
                             />
                           </div>
                         </div>
-                        <div className="ml-form-fieldRow">
+                        <div className="ml-form-fieldRow ml-last-item">
                           <div className="ml-field-group ml-field-name">
                             <input
                               aria-label="name"
@@ -241,17 +241,6 @@ export default function WorkshopPage() {
                               name="fields[name]"
                               placeholder="Name"
                               autoComplete="given-name"
-                            />
-                          </div>
-                        </div>
-                        <div className="ml-form-fieldRow ml-last-item">
-                          <div className="ml-field-group ml-field-heard_about_via">
-                            <input
-                              aria-label="heard_about_via"
-                              type="text"
-                              className="form-control"
-                              name="fields[heard_about_via]"
-                              placeholder="How did you hear about this?"
                             />
                           </div>
                         </div>
