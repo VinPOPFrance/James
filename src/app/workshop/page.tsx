@@ -54,8 +54,7 @@ export default function WorkshopPage() {
         {/* 1. HERO · open on the cream backdrop */}
         <section className="pb-6 text-center md:pb-10">
           <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#25412F]">
-            Get a better understanding of what is causing your lower back
-            pain.
+            Take action on what is causing your lower back pain.
           </h1>
           <p className="mx-auto mb-4 max-w-lg text-[16.5px] leading-relaxed text-[#2A2A28]">
             One Saturday morning in Rotterdam. You&apos;ll slow down enough to
