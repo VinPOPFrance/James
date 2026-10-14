@@ -82,29 +82,6 @@ export default function WorkshopPage() {
           </div>
         </section>
 
-        {/* 2. THE PROBLEM · white card */}
-        <section className={`${card} border border-hairline bg-white`}>
-          <h2 className={h2}>The gap between knowing and changing</h2>
-          <div className="space-y-5 text-[16px] leading-relaxed">
-            <p>
-              Forty-five minutes on a Tuesday evening is enough to make sense
-              of something. <strong className={hl}>It isn&apos;t enough to shift it.</strong> You still got up
-              on Wednesday and your body did exactly what it&apos;s been doing
-              for years.
-            </p>
-            <p>
-              And <strong className={hl}>you&apos;ve already done the effortful part</strong>. The physio
-              exercises, twice a day, for a while. The stretching. The core
-              work, on alternating days, because somebody said so. Being
-              careful getting out of the car.
-            </p>
-            <p>
-              None of that was wrong. It was just <strong className={hl}>aimed at the place that
-              hurts</strong>.
-            </p>
-          </div>
-        </section>
-
         {/* 3. THE STAKE · dark green card */}
         <section className={`${card} bg-[#25412F] text-center`}>
           <p className="mx-auto max-w-md font-voice text-[1.45rem] font-medium leading-snug text-[#F7F2E5]">
