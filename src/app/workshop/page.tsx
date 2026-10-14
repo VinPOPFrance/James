@@ -139,6 +139,31 @@ export default function WorkshopPage() {
           </div>
         </section>
 
+        {/* BREATHING AND HIPS · white card */}
+        <section className={`${card} border border-hairline bg-white`}>
+          <h2 className={h2}>
+            We will tackle poor breathing and hip and pelvis mobility.
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Image
+              src="/media/workshop-lungs.jpg"
+              alt="Single-line drawing of the lungs"
+              width={2752}
+              height={1536}
+              sizes="(max-width: 640px) 100vw, 320px"
+              className="h-auto w-full rounded-[18px]"
+            />
+            <Image
+              src="/media/workshop-pelvis.jpg"
+              alt="Single-line drawing of the hips and pelvis"
+              width={2752}
+              height={1536}
+              sizes="(max-width: 640px) 100vw, 320px"
+              className="h-auto w-full rounded-[18px]"
+            />
+          </div>
+        </section>
+
         {/* 5. WHAT YOU'LL LEAVE WITH · sand card */}
         <section className={`${card} border border-copper/25 bg-sand/30`}>
           <h2 className={h2}>What you&apos;ll leave with</h2>
