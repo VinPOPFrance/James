@@ -95,8 +95,9 @@ export default function WorkshopPage() {
         {/* 3. THE STAKE · dark green card */}
         <section className={`${card} bg-[#25412F] text-center`}>
           <p className="mx-auto max-w-md font-voice text-[1.45rem] font-medium leading-snug text-[#F7F2E5]">
-            The risk isn&apos;t that it suddenly gets worse. It&apos;s that
-            another year goes by and you&apos;re still working around it.
+            Most women have a sheet of physio exercises somewhere in a drawer.
+            They did them, nothing really changed, so they stopped. And the
+            back stayed the same.
           </p>
         </section>
 
@@ -180,8 +181,8 @@ export default function WorkshopPage() {
         {/* SECOND STAKE · dark green card */}
         <section className={`${card} bg-[#25412F] text-center`}>
           <p className="mx-auto max-w-md font-voice text-[1.45rem] font-medium leading-snug text-[#F7F2E5]">
-            It&apos;s a relief to finally understand your back. It&apos;s still
-            frustrating to plan your week around it.
+            Keep the same routine and you&apos;ll keep the same back. Or give
+            yourself one Saturday morning to try something new.
           </p>
         </section>
 
