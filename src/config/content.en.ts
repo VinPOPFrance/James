@@ -73,6 +73,20 @@ export const home = {
       cta: "Apply for your place",
     },
   },
+  workshopEventPromo: {
+    bar: {
+      label: "Rotterdam · 12 spots",
+      text: "Saturday morning workshop on lower back pain, 31 October, 10:00–12:30.",
+      cta: "Save me a spot",
+    },
+    card: {
+      badge: "Saturday workshop",
+      title: "Take action on what is causing your lower back pain.",
+      body: "Two and a half hours in Rotterdam, working on your own back with James walking you through it. Saturday 31 October, 10:00–12:30. 12 spots, €80.",
+      detail: "Saturday 31 October, 10:00–12:30, Rotterdam city centre.",
+      cta: "Save me a spot",
+    },
+  },
   video: {
     eyebrow: "Meet the approach",
     title: "See how a session feels",

@@ -73,6 +73,20 @@ export const homeNl = {
       cta: "Meld je aan",
     },
   },
+  workshopEventPromo: {
+    bar: {
+      label: "Rotterdam · 12 plekken",
+      text: "Workshop op zaterdagochtend over lage rugpijn, 31 oktober, 10:00–12:30.",
+      cta: "Reserveer je plek",
+    },
+    card: {
+      badge: "Zaterdagworkshop",
+      title: "Pak aan wat je lage rugpijn veroorzaakt.",
+      body: "Tweeënhalf uur in Rotterdam, waarin je zelf met je rug aan de slag gaat en James je stap voor stap begeleidt. Zaterdag 31 oktober, 10:00–12:30. 12 plekken, €80.",
+      detail: "Zaterdag 31 oktober, 10:00–12:30, centrum Rotterdam.",
+      cta: "Reserveer je plek",
+    },
+  },
   video: {
     eyebrow: "Ontmoet de aanpak",
     title: "Zie hoe een sessie aanvoelt",
