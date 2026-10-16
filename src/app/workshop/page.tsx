@@ -48,7 +48,7 @@ const leaveWith = [
 ];
 
 const steps = [
-  "Tell me you want in. Name and email, takes a minute.",
+  "Save me a spot. Name and email, takes a minute.",
   "I write back myself, within a day or two, with the address and how to pay. Bring your mat.",
   "Once you’ve paid, the spot’s yours. At twelve, it closes.",
 ];
@@ -77,7 +77,7 @@ export default function WorkshopPage() {
             ))}
           </ul>
           <a href="#apply" className={`${cta} mt-8`}>
-            Tell me you want in
+            Save me a spot
           </a>
           <div className="mt-10 overflow-hidden rounded-section border border-hairline">
             <Image
@@ -102,7 +102,7 @@ export default function WorkshopPage() {
 
         <div className="text-center">
           <a href="#apply" className={cta}>
-            Tell me you want in
+            Save me a spot
           </a>
         </div>
 
@@ -163,7 +163,7 @@ export default function WorkshopPage() {
 
         <div className="text-center">
           <a href="#apply" className={cta}>
-            Tell me you want in
+            Save me a spot
           </a>
         </div>
 
@@ -205,7 +205,7 @@ export default function WorkshopPage() {
           className={`${card} scroll-mt-6 border border-hairline bg-white text-center`}
         >
           <h2 className="mb-4 font-voice text-[clamp(1.5rem,3.4vw,2rem)] font-medium text-[#25412F]">
-            Tell me you want in
+            Save me a spot
           </h2>
           <p className="mx-auto mb-8 max-w-md text-[15.5px] leading-relaxed">
             Name and email, that&apos;s all I need.
@@ -259,7 +259,7 @@ export default function WorkshopPage() {
                       <input type="hidden" name="ml-submit" value="1" />
                       <div className="ml-form-embedSubmit">
                         <button type="submit" className="primary">
-                          Tell me you want in
+                          Save me a spot
                         </button>
                         <button disabled type="button" className="loading">
                           <span className="ml-form-embedSubmitLoad" />
