@@ -44,7 +44,7 @@ const benefits = [
 const leaveWith = [
   "The realisation that there’s something you can actually do yourself to feel better. You don’t have to wait for someone else to fix it.",
   "A simpler, more whole way of looking at your body, instead of a list of separate problems.",
-  "Two or three things to keep doing on your own. No app, no twelve-week plan, no printout.",
+  "Videos of everything we do together, so you can replay it at home for three weeks after the workshop.",
 ];
 
 const steps = [
