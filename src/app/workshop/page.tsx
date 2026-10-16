@@ -62,23 +62,20 @@ export default function WorkshopPage() {
           <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#25412F]">
             Take action on what is causing your lower back pain.
           </h1>
-          <ol className="mx-auto mb-6 grid max-w-lg gap-3 text-left sm:grid-cols-3">
-            {benefits.map((benefit, i) => (
-              <li
-                key={benefit}
-                className="flex items-center gap-3 rounded-[18px] border border-hairline bg-white px-4 py-3 text-[15.5px] leading-snug sm:flex-col sm:items-start sm:gap-2 sm:py-4"
-              >
-                <span className="font-voice text-[1.3rem] font-medium leading-none text-copper">
-                  {i + 1}
-                </span>
-                <span className="font-medium text-[#25412F]">{benefit}</span>
-              </li>
-            ))}
-          </ol>
-          <p className="mx-auto max-w-lg text-[14px] leading-relaxed text-[#4A4536]">
+          <p className="mx-auto mb-6 max-w-lg text-[16px] leading-relaxed text-[#4A4536]">
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
             {WORKSHOP.spots} · {WORKSHOP.price}
           </p>
+          <ul className="mx-auto grid max-w-lg gap-3 sm:grid-cols-3">
+            {benefits.map((benefit) => (
+              <li
+                key={benefit}
+                className="flex items-center justify-center rounded-[18px] border border-hairline bg-white px-4 py-4 text-center text-[19.5px] font-medium leading-snug text-[#25412F]"
+              >
+                {benefit}
+              </li>
+            ))}
+          </ul>
           <a href="#apply" className={`${cta} mt-8`}>
             Tell me you want in
           </a>
