@@ -35,6 +35,12 @@ const hl = "font-semibold text-[#25412F]";
 const cta =
   "inline-block rounded-full bg-[#25412F] px-8 py-4 text-[15.5px] font-medium text-[#F7F2E5] transition hover:-translate-y-px hover:bg-[#1B3122] motion-reduce:transition-none";
 
+const benefits = [
+  "Release tension",
+  "Get more space to breathe",
+  "Increase mobility",
+];
+
 const leaveWith = [
   "The realisation that there’s something you can actually do yourself to feel better. You don’t have to wait for someone else to fix it.",
   "A simpler, more whole way of looking at your body, instead of a list of separate problems.",
@@ -56,11 +62,19 @@ export default function WorkshopPage() {
           <h1 className="mb-6 font-voice text-[clamp(1.9rem,5.4vw,2.7rem)] font-medium leading-[1.15] text-[#25412F]">
             Take action on what is causing your lower back pain.
           </h1>
-          <p className="mx-auto mb-4 max-w-lg text-[16.5px] leading-relaxed text-[#2A2A28]">
-            One Saturday morning in Rotterdam. You&apos;ll slow down enough to
-            feel what your back is actually doing and leave knowing where to
-            put your attention.
-          </p>
+          <ol className="mx-auto mb-6 grid max-w-lg gap-3 text-left sm:grid-cols-3">
+            {benefits.map((benefit, i) => (
+              <li
+                key={benefit}
+                className="flex items-center gap-3 rounded-[18px] border border-hairline bg-white px-4 py-3 text-[15.5px] leading-snug sm:flex-col sm:items-start sm:gap-2 sm:py-4"
+              >
+                <span className="font-voice text-[1.3rem] font-medium leading-none text-copper">
+                  {i + 1}
+                </span>
+                <span className="font-medium text-[#25412F]">{benefit}</span>
+              </li>
+            ))}
+          </ol>
           <p className="mx-auto max-w-lg text-[14px] leading-relaxed text-[#4A4536]">
             {WORKSHOP.date}, {WORKSHOP.time} · {WORKSHOP.place} ·{" "}
             {WORKSHOP.spots} · {WORKSHOP.price}
